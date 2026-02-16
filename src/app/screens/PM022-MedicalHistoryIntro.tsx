@@ -79,7 +79,7 @@ export default function MedicalHistoryIntro({ onContinue, onBack }: MedicalHisto
       <div className="bg-white border-t border-[#E5E7EB] p-4">
         <Button 
           onClick={onContinue}
-          className="w-full h-[52px] bg-[#1F2937] text-white rounded-xl text-base font-medium hover:bg-[#374151]"
+          className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"
         >
           Continue
         </Button>

@@ -3,7 +3,10 @@
 :root {
   --font-size: 16px;
   
-  /* UrgentCareX Color Palette */
+  /* UrgentCareX Brand Color Palette */
+  --brand-red: #D72638;
+  --brand-red-hover: #B91C2E;
+  --brand-red-light: #FEF2F2;
   --primary-dark: #1F2937;
   --secondary-gray: #6B7280;
   --light-gray: #F3F4F6;
@@ -14,7 +17,7 @@
   --urgent-orange: #F97316;
   --error-red: #EF4444;
   --inactive-gray: #9CA3AF;
-  
+
   /* Base theme colors */
   --background: #ffffff;
   --foreground: #1F2937;
@@ -22,7 +25,7 @@
   --card-foreground: #1F2937;
   --popover: #ffffff;
   --popover-foreground: #1F2937;
-  --primary: #1F2937;
+  --primary: #D72638;
   --primary-foreground: #ffffff;
   --secondary: #F3F4F6;
   --secondary-foreground: #1F2937;
@@ -38,7 +41,7 @@
   --switch-background: #cbced4;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: #1F2937;
+  --ring: #D72638;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -140,6 +143,7 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Alice', serif;
   }
 
   /**

@@ -22,7 +22,6 @@ export default function SignUpOTP({ email, onVerify, onBack }: SignUpOTPProps) {
 
   const handleChange = (index: number, value: string) => {
     if (value.length > 1) {
-      // Handle paste
       const pastedData = value.slice(0, 6).split('');
       const newOtp = [...otp];
       pastedData.forEach((char, i) => {
@@ -31,10 +30,10 @@ export default function SignUpOTP({ email, onVerify, onBack }: SignUpOTPProps) {
         }
       });
       setOtp(newOtp);
-      
+
       const nextIndex = Math.min(index + pastedData.length, 5);
       inputRefs.current[nextIndex]?.focus();
-      
+
       if (newOtp.every(digit => digit !== '')) {
         setTimeout(() => onVerify(), 300);
       }
@@ -61,29 +60,28 @@ export default function SignUpOTP({ email, onVerify, onBack }: SignUpOTPProps) {
 
   const handleResend = () => {
     setResendTimer(30);
-    // In real app, trigger resend API call here
   };
 
   return (
-    <div className="flex flex-col h-full bg-white">
+    <div className="flex flex-col h-full bg-[#D72638]">
       {/* Header with Back Button */}
       <div className="flex items-center p-4">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
       </div>
 
       {/* Content */}
       <div className="flex-1 px-8 pt-8">
         {/* Headline */}
-        <h1 className="text-[28px] font-bold text-[#1F2937] mb-3">
+        <h1 className="text-[28px] font-bold text-white mb-3">
           Verify Your Account
         </h1>
 
         {/* Subhead */}
-        <p className="text-base text-[#6B7280] mb-12">
+        <p className="text-base text-white/70 mb-12">
           We sent a 6-digit code to{' '}
-          <span className="font-medium text-[#1F2937]">{email}</span>
+          <span className="font-medium text-white">{email}</span>
         </p>
 
         {/* OTP Input Boxes */}
@@ -98,10 +96,11 @@ export default function SignUpOTP({ email, onVerify, onBack }: SignUpOTPProps) {
               value={digit}
               onChange={(e) => handleChange(index, e.target.value)}
               onKeyDown={(e) => handleKeyDown(index, e)}
-              className="w-12 h-14 text-center text-2xl font-bold border-2 border-[#E5E7EB] rounded-xl focus:border-[#1F2937] focus:outline-none transition-colors"
+              className="w-12 h-14 text-center text-2xl font-bold border-2 rounded-xl focus:outline-none transition-colors"
               style={{
-                backgroundColor: digit ? '#1F2937' : 'white',
-                color: digit ? 'white' : '#1F2937',
+                backgroundColor: digit ? 'white' : 'rgba(255,255,255,0.15)',
+                borderColor: digit ? 'white' : 'rgba(255,255,255,0.3)',
+                color: digit ? '#D72638' : 'white',
               }}
             />
           ))}
@@ -109,13 +108,13 @@ export default function SignUpOTP({ email, onVerify, onBack }: SignUpOTPProps) {
 
         {/* Resend Link */}
         <div className="text-center mb-12">
-          <span className="text-base text-[#6B7280]">Didn't receive the code? </span>
+          <span className="text-base text-white/60">Didn't receive the code? </span>
           {resendTimer > 0 ? (
-            <span className="text-base text-[#6B7280]">Resend ({resendTimer}s)</span>
+            <span className="text-base text-white/60">Resend ({resendTimer}s)</span>
           ) : (
-            <button 
+            <button
               onClick={handleResend}
-              className="text-base font-medium text-[#1F2937] underline"
+              className="text-base font-bold text-white underline"
             >
               Resend
             </button>
@@ -123,10 +122,10 @@ export default function SignUpOTP({ email, onVerify, onBack }: SignUpOTPProps) {
         </div>
 
         {/* Verify Button */}
-        <Button 
+        <Button
           onClick={onVerify}
           disabled={otp.some(digit => !digit)}
-          className="w-full h-[52px] bg-[#1F2937] text-white rounded-xl text-base font-medium hover:bg-[#374151] disabled:bg-[#E5E7EB] disabled:text-[#9CA3AF]"
+          className="w-full h-[52px] bg-white text-[#D72638] rounded-xl text-base font-semibold hover:bg-white/90 disabled:bg-white/30 disabled:text-white/50"
         >
           Verify
         </Button>

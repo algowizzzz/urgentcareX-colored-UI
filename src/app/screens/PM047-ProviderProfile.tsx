@@ -256,7 +256,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
       <div className="bg-white border-t border-[#E5E7EB] p-4">
         <Button
           onClick={onBookAppointment}
-          className="w-full h-[52px] bg-[#1F2937] text-white rounded-xl text-base font-medium hover:bg-[#374151]"
+          className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"
         >
           <Calendar className="w-5 h-5 mr-2" />
           Book Appointment
