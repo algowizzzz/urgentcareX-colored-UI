@@ -176,7 +176,7 @@ export default function MedicalDisclaimer({ onUnderstand, onBack }: MedicalDiscl
       <div className="p-6 border-t border-[#E5E7EB] bg-white">
         <Button 
           onClick={onUnderstand}
-          className="w-full h-[52px] bg-[#1F2937] text-white rounded-xl text-base font-medium hover:bg-[#374151]"
+          className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"
         >
           I Understand
         </Button>

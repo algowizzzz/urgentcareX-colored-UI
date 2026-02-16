@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-import { Button } from '../components/ui/button';
 import { ArrowLeft, Send, Mic, MicOff } from 'lucide-react';
 
 interface Message {
@@ -71,7 +70,7 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
     // Simulate AI response based on conversation step
     setTimeout(() => {
       let aiResponse: Message;
-      
+
       if (conversationStep === 0) {
         aiResponse = {
           id: (Date.now() + 1).toString(),
@@ -107,7 +106,7 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
           timestamp: new Date()
         };
         setMessages(prev => [...prev, aiResponse]);
-        
+
         // Complete the conversation after final message
         setTimeout(() => {
           onComplete(symptoms);
@@ -128,7 +127,7 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
     if (isRecording) {
       // Stop recording
       setIsRecording(false);
-      
+
       // Simulate speech-to-text transcription after a short delay
       setTimeout(() => {
         const mockTranscriptions = [
@@ -148,16 +147,28 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
   };
 
   return (
-    <div className="flex flex-col h-full bg-white">
+    <div className="flex flex-col h-full bg-[#F8F9FA]">
       {/* Header */}
-      <div className="flex items-center p-4 border-b border-[#E5E7EB]">
+      <div className="bg-white flex items-center gap-3 px-4 py-3 border-b border-[#E5E7EB]" style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-5 h-5 text-[#1F2937]" />
         </button>
+        <div className="flex items-center gap-2.5 flex-1">
+          <div className="w-9 h-9 bg-[#D72638] rounded-xl flex items-center justify-center">
+            <span className="text-white text-sm font-bold">X</span>
+          </div>
+          <div>
+            <h2 className="text-[15px] font-semibold text-[#1F2937] leading-tight">Symptom Checker</h2>
+            <div className="flex items-center gap-1">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#10B981]"></div>
+              <span className="text-[11px] text-[#10B981] font-medium">AI Online</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto px-4 py-6">
+      <div className="flex-1 overflow-y-auto px-4 py-5">
         <div className="space-y-4 max-w-full">
           {messages.map((message) => (
             <div
@@ -166,41 +177,43 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
             >
               <div className="max-w-[80%]">
                 {message.sender === 'ai' && (
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="w-8 h-8 bg-[#1F2937] rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">AI</span>
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <div className="w-7 h-7 bg-[#D72638] rounded-lg flex items-center justify-center">
+                      <span className="text-white text-[10px] font-bold">X</span>
                     </div>
-                    <span className="text-xs text-[#6B7280]">UrgentCareX AI</span>
+                    <span className="text-[11px] text-[#9CA3AF] font-medium">UrgentCareX AI</span>
                   </div>
                 )}
-                
+
                 <div
                   className={`rounded-2xl px-4 py-3 ${
                     message.sender === 'user'
-                      ? 'bg-[#1F2937] text-white rounded-tr-sm'
-                      : 'bg-[#F3F4F6] text-[#1F2937] rounded-tl-sm'
+                      ? 'bg-[#D72638] text-white rounded-tr-md'
+                      : 'bg-white text-[#1F2937] rounded-tl-md border border-[#E5E7EB]'
                   }`}
+                  style={message.sender === 'ai' ? { boxShadow: '0 1px 2px rgba(0,0,0,0.04)' } : {}}
                 >
-                  <p className="text-base">{message.text}</p>
+                  <p className="text-[15px] leading-relaxed">{message.text}</p>
                 </div>
 
                 {/* Option Buttons - only show on last AI message */}
                 {message.options && message.sender === 'ai' && message.id === messages[messages.length - 1].id && (
-                  <div className="mt-3 space-y-2">
+                  <div className="mt-2.5 space-y-2">
                     {message.options.map((option, index) => (
                       <button
                         key={index}
                         onClick={() => handleOptionClick(option)}
-                        className="w-full text-left px-4 py-3 bg-white border border-[#E5E7EB] rounded-xl text-base text-[#1F2937] hover:bg-[#F3F4F6] transition-colors"
+                        className="w-full text-left px-4 py-3 bg-white border border-[#E5E7EB] rounded-xl text-[15px] text-[#1F2937] hover:border-[#D72638]/40 hover:bg-[#FEF2F2] transition-all group"
+                        style={{ boxShadow: '0 1px 2px rgba(0,0,0,0.03)' }}
                       >
-                        {option}
+                        <span className="group-hover:text-[#D72638] transition-colors">{option}</span>
                       </button>
                     ))}
                   </div>
                 )}
 
                 {message.sender === 'user' && (
-                  <p className="text-xs text-[#6B7280] mt-1 text-right">
+                  <p className="text-[11px] text-[#9CA3AF] mt-1 text-right">
                     {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                   </p>
                 )}
@@ -212,39 +225,41 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
       </div>
 
       {/* Input Area */}
-      <div className="border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#E5E7EB] p-3" style={{ boxShadow: '0 -1px 3px rgba(0,0,0,0.04)' }}>
         {/* Recording Indicator */}
         {isRecording && (
           <div className="mb-3 flex items-center justify-center gap-2 text-[#EF4444] animate-pulse">
-            <div className="w-3 h-3 bg-[#EF4444] rounded-full"></div>
-            <span className="text-sm font-medium">Recording...</span>
+            <div className="w-2.5 h-2.5 bg-[#EF4444] rounded-full"></div>
+            <span className="text-xs font-medium">Recording...</span>
           </div>
         )}
-        
+
         <div className="flex items-center gap-2">
-          <input
-            type="text"
-            value={inputText}
-            onChange={(e) => setInputText(e.target.value)}
-            onKeyPress={(e) => e.key === 'Enter' && handleSendMessage(inputText)}
-            placeholder={isRecording ? "Listening..." : "Type your message..."}
-            className="flex-1 h-[48px] px-4 rounded-xl border border-[#E5E7EB] text-base focus:outline-none focus:border-[#1F2937]"
-            disabled={isRecording}
-          />
+          <div className="flex-1 relative">
+            <input
+              type="text"
+              value={inputText}
+              onChange={(e) => setInputText(e.target.value)}
+              onKeyPress={(e) => e.key === 'Enter' && handleSendMessage(inputText)}
+              placeholder={isRecording ? "Listening..." : "Describe your symptoms..."}
+              className="w-full h-[44px] px-4 rounded-xl border border-[#E5E7EB] text-[15px] focus:outline-none focus:border-[#D72638] focus:ring-1 focus:ring-[#D72638]/20 bg-[#F9FAFB] transition-all"
+              disabled={isRecording}
+            />
+          </div>
           <button
             onClick={handleMicClick}
-            className={`w-[48px] h-[48px] rounded-xl flex items-center justify-center transition-colors ${
-              isRecording 
-                ? 'bg-[#EF4444] hover:bg-[#DC2626]' 
-                : 'bg-[#1F2937] hover:bg-[#374151]'
+            className={`w-[44px] h-[44px] rounded-xl flex items-center justify-center transition-all shrink-0 ${
+              isRecording
+                ? 'bg-[#EF4444] hover:bg-[#DC2626] ring-4 ring-[#EF4444]/20'
+                : 'bg-[#F3F4F6] hover:bg-[#E5E7EB] border border-[#E5E7EB]'
             }`}
           >
-            {isRecording ? <MicOff className="w-5 h-5 text-white" /> : <Mic className="w-5 h-5 text-white" />}
+            {isRecording ? <MicOff className="w-5 h-5 text-white" /> : <Mic className="w-5 h-5 text-[#6B7280]" />}
           </button>
           <button
             onClick={() => handleSendMessage(inputText)}
-            disabled={isRecording}
-            className="w-[48px] h-[48px] bg-[#1F2937] rounded-xl flex items-center justify-center hover:bg-[#374151] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={isRecording || !inputText.trim()}
+            className="w-[44px] h-[44px] bg-[#D72638] rounded-xl flex items-center justify-center hover:bg-[#B91C2E] transition-colors disabled:opacity-30 disabled:cursor-not-allowed shrink-0"
           >
             <Send className="w-5 h-5 text-white" />
           </button>

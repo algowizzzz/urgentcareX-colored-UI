@@ -38,7 +38,7 @@ export default function SignUpSuccess({ onSetupProfile, onSkip }: SignUpSuccessP
       {/* Set Up Profile Button */}
       <Button 
         onClick={onSetupProfile}
-        className="w-full max-w-[326px] h-[52px] bg-[#1F2937] text-white rounded-xl text-base font-medium hover:bg-[#374151] mb-4"
+        className="w-full max-w-[326px] h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E] mb-4"
       >
         Set Up Profile
       </Button>
