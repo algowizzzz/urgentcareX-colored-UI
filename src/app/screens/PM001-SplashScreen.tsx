@@ -25,7 +25,7 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
   }, [onComplete]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-full bg-[#D72638] px-8 overflow-hidden">
+    <div className="flex flex-col items-center justify-center h-full bg-[#1F2937] px-8 overflow-hidden">
       {/* Logo - same red asset across all themes */}
       <div className="mb-6">
         <img src={logo} alt="UrgentCareX Logo" width={160} height={160} />
