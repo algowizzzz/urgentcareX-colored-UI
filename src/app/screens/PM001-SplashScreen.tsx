@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import { Progress } from '../components/ui/progress';
+import { useEffect } from 'react';
 import logo from '../../assets/logo.svg';
 
 interface SplashScreenProps {
@@ -7,47 +6,25 @@ interface SplashScreenProps {
 }
 
 export default function SplashScreen({ onComplete }: SplashScreenProps) {
-  const [progress, setProgress] = useState(0);
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(interval);
-          setTimeout(() => onComplete(), 300);
-          return 100;
-        }
-        return prev + 10;
-      });
-    }, 200);
-
-    return () => clearInterval(interval);
+    const timer = setTimeout(() => onComplete(), 2500);
+    return () => clearTimeout(timer);
   }, [onComplete]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-full bg-[#1F2937] px-8 overflow-hidden">
-      {/* Logo - same red asset across all themes */}
-      <div className="mb-6">
-        <img src={logo} alt="UrgentCareX Logo" width={160} height={160} />
+    <div className="flex flex-col items-center justify-center h-full bg-[#D72638] px-8 overflow-hidden">
+      {/* Logo in dark rounded square */}
+      <div className="w-[180px] h-[180px] bg-[#1A1A1A] rounded-[32px] flex items-center justify-center mb-8 shadow-2xl">
+        <img src={logo} alt="UrgentCareX Logo" width={140} height={140} />
       </div>
 
       {/* App Name */}
       <h1
-        className="text-[32px] font-bold text-white mb-2"
+        className="text-[32px] font-bold text-white"
         style={{ fontFamily: "'Alice', serif" }}
       >
         UrgentCareX
       </h1>
-
-      {/* Tagline */}
-      <p className="text-base text-white/80 mb-16">
-        Find Care Fast
-      </p>
-
-      {/* Loading Progress Bar */}
-      <div className="w-[200px]">
-        <Progress value={progress} className="h-1 bg-white/20 [&>div]:bg-white" />
-      </div>
     </div>
   );
 }
