@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Progress } from '../components/ui/progress';
+import logo from '../../assets/logo.svg';
 
 interface SplashScreenProps {
   onComplete: () => void;
@@ -25,16 +26,9 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
 
   return (
     <div className="flex flex-col items-center justify-center h-full bg-[#D72638] px-8 overflow-hidden">
-      {/* Logo X */}
+      {/* Logo - same red asset across all themes */}
       <div className="mb-6">
-        <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
-          <path
-            d="M20 10L50 50L80 10H95L58 55L95 95H80L50 58L20 95H5L42 55L5 10H20Z"
-            fill="#FFFFFF"
-            stroke="#FFFFFF"
-            strokeWidth="1"
-          />
-        </svg>
+        <img src={logo} alt="UrgentCareX Logo" width={160} height={160} />
       </div>
 
       {/* App Name */}
