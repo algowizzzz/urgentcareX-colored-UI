@@ -26,7 +26,7 @@ export default function PastAppointmentDetails({
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Header */}
-      <div className="bg-[#D72638] flex items-center px-4 py-4">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
           <ArrowLeft className="w-6 h-6 text-white" />
         </button>
@@ -36,7 +36,7 @@ export default function PastAppointmentDetails({
       {/* Content */}
       <div className="flex-1 overflow-y-auto pb-8">
         {/* Status Banner */}
-        <div className="bg-[#D72638] px-6 py-4">
+        <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] px-6 py-4">
           <div className="flex items-center gap-2 text-white">
             <span className="text-lg">✓</span>
             <p className="text-sm font-medium">Visit Completed</p>

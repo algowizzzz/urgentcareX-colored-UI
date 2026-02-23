@@ -9,10 +9,11 @@ interface SettingsProps {
   onBack: () => void;
   onNavigateHome?: () => void;
   onNavigateAppointments?: () => void;
+  onNavigateChat?: () => void;
   onNavigateHistory?: () => void;
 }
 
-export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome, onNavigateAppointments, onNavigateHistory }: SettingsProps) {
+export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome, onNavigateAppointments, onNavigateChat, onNavigateHistory }: SettingsProps) {
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
   const [showLanguageModal, setShowLanguageModal] = useState(false);
   const [showConfirmModal, setShowConfirmModal] = useState(false);
@@ -165,7 +166,7 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
   return (
     <div className="flex flex-col h-full bg-[#F8F9FA]">
       {/* Header */}
-      <div className="bg-[#D72638] flex items-center px-4 py-4">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
           <ArrowLeft className="w-5 h-5 text-white" />
         </button>
@@ -286,6 +287,7 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
         activeTab="profile"
         onNavigateHome={onNavigateHome || (() => {})}
         onNavigateAppointments={onNavigateAppointments || (() => {})}
+        onNavigateChat={onNavigateChat || (() => {})}
         onNavigateHistory={onNavigateHistory || (() => {})}
         onNavigateProfile={() => {}}
       />

@@ -27,17 +27,19 @@ interface SymptomCheckHistoryProps {
   onBack: () => void;
   onNavigateHome?: () => void;
   onNavigateAppointments?: () => void;
+  onNavigateChat?: () => void;
   onNavigateProfile?: () => void;
 }
 
-export default function SymptomCheckHistory({ 
-  sessions, 
+export default function SymptomCheckHistory({
+  sessions,
   onViewTranscript,
   onResumeSession,
   onDeleteSession,
   onBack,
   onNavigateHome,
   onNavigateAppointments,
+  onNavigateChat,
   onNavigateProfile
 }: SymptomCheckHistoryProps) {
   // Sort sessions by most recent first
@@ -87,7 +89,7 @@ export default function SymptomCheckHistory({
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Header */}
-      <div className="bg-[#D72638] flex items-center px-4 py-4">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
           <ArrowLeft className="w-6 h-6 text-white" />
         </button>
@@ -170,6 +172,7 @@ export default function SymptomCheckHistory({
           activeTab="history"
           onNavigateHome={onNavigateHome || (() => {})}
           onNavigateAppointments={onNavigateAppointments || (() => {})}
+          onNavigateChat={onNavigateChat || (() => {})}
           onNavigateHistory={() => {}}
           onNavigateProfile={onNavigateProfile || (() => {})}
         />

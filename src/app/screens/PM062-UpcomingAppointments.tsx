@@ -22,6 +22,7 @@ interface UpcomingAppointmentsProps {
   onLeaveReview?: (appointment: Appointment) => void;
   onViewHistory?: () => void;
   onViewProfile?: () => void;
+  onNavigateChat?: () => void;
   onCompleteROS?: (appointmentId: string) => void; // Add ROS callback
   onRebook?: (appointment: Appointment) => void; // Rebook cancelled appointment
 }
@@ -131,7 +132,7 @@ const DEMO_APPOINTMENTS: Appointment[] = [
   }
 ];
 
-export default function UpcomingAppointments({ onViewDetails, onBack, initialFilter, onMarkComplete, onLeaveReview, onViewHistory, onViewProfile, onCompleteROS, onRebook }: UpcomingAppointmentsProps) {
+export default function UpcomingAppointments({ onViewDetails, onBack, initialFilter, onMarkComplete, onLeaveReview, onViewHistory, onViewProfile, onNavigateChat, onCompleteROS, onRebook }: UpcomingAppointmentsProps) {
   const [appointments] = useState<Appointment[]>(DEMO_APPOINTMENTS);
   const [filter, setFilter] = useState<'all' | 'pending' | 'confirmed' | 'completed' | 'cancelled'>(initialFilter || 'all');
 
@@ -195,7 +196,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Header */}
-      <div className="bg-[#D72638] flex items-center justify-between px-4 py-4">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center justify-between px-4 py-4">
         <button onClick={onBack} className="p-2">
           <ArrowLeft className="w-6 h-6 text-white" />
         </button>
@@ -378,6 +379,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
           activeTab="appointments"
           onNavigateHome={onBack}
           onNavigateAppointments={() => {}}
+          onNavigateChat={onNavigateChat || (() => {})}
           onNavigateHistory={onViewHistory || (() => {})}
           onNavigateProfile={onViewProfile || (() => {})}
         />

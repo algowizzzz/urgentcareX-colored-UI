@@ -71,7 +71,7 @@ export default function Dashboard({
   return (
     <div className="flex flex-col h-full bg-[#F3F4F6] relative">
       {/* Header */}
-      <div className="bg-[#D72638] px-6 pt-8 pb-5">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] px-6 pt-8 pb-5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             {/* User Avatar */}
@@ -109,7 +109,7 @@ export default function Dashboard({
           {/* Notification Panel */}
           <div className="absolute top-0 right-0 bottom-0 w-full bg-[#F9FAFB] z-50 shadow-2xl">
             {/* Panel Header */}
-            <div className="bg-[#D72638] px-6 py-4 flex items-center justify-between">
+            <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] px-6 py-4 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <h2 className="text-lg font-semibold text-white">Notifications</h2>
                 <div className="px-2 py-0.5 bg-[#D72638] rounded-full">
@@ -395,6 +395,7 @@ export default function Dashboard({
           activeTab="home"
           onNavigateHome={() => {}}
           onNavigateAppointments={onViewAppointments}
+          onNavigateChat={onStartSymptomCheck}
           onNavigateHistory={onViewHistory}
           onNavigateProfile={onViewProfile}
         />

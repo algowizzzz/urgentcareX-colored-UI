@@ -905,7 +905,7 @@ export default function App() {
       
       {/* Phase 5: Appointments Management */}
       {currentScreen === 'upcoming-appointments' && (
-        <UpcomingAppointments 
+        <UpcomingAppointments
           onViewDetails={(appointment) => navigate('appointment-details', { currentAppointment: appointment })}
           onBack={() => navigate('dashboard')}
           initialFilter={userData.appointmentFilter}
@@ -913,6 +913,7 @@ export default function App() {
           onLeaveReview={(appointment) => navigate('provider-feedback', { currentAppointment: appointment })}
           onViewHistory={() => navigate('symptom-check-history')}
           onViewProfile={() => navigate('settings')}
+          onNavigateChat={() => navigate('symptom-checker-start')}
           onCompleteROS={(appointmentId) => navigate('ros-intro')}
         />
       )}
@@ -1071,12 +1072,13 @@ export default function App() {
       
       {/* Phase 7: Settings and Profile Management */}
       {currentScreen === 'settings' && (
-        <Settings 
+        <Settings
           onNavigate={(section) => navigate(section)}
           onLogout={() => navigate('signin')}
           onBack={() => navigate('dashboard')}
           onNavigateHome={() => navigate('dashboard')}
           onNavigateAppointments={() => navigate('upcoming-appointments')}
+          onNavigateChat={() => navigate('symptom-checker-start')}
           onNavigateHistory={() => navigate('symptom-check-history')}
         />
       )}
@@ -1172,7 +1174,7 @@ export default function App() {
       
       {/* Symptom Check History */}
       {currentScreen === 'symptom-check-history' && (
-        <SymptomCheckHistory 
+        <SymptomCheckHistory
           sessions={chatSessions}
           onViewTranscript={(sessionId) => navigate('symptom-check-transcript', { viewingSessionId: sessionId })}
           onResumeSession={(sessionId) => {
@@ -1183,6 +1185,7 @@ export default function App() {
           onBack={() => navigate('dashboard')}
           onNavigateHome={() => navigate('dashboard')}
           onNavigateAppointments={() => navigate('upcoming-appointments')}
+          onNavigateChat={() => navigate('symptom-checker-start')}
           onNavigateProfile={() => navigate('settings')}
         />
       )}

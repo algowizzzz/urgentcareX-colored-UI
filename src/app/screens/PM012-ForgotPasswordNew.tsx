@@ -28,7 +28,7 @@ export default function ForgotPasswordNew({ onReset, onBack }: ForgotPasswordNew
     password.length > 0;
 
   return (
-    <div className="flex flex-col h-full bg-[#D72638]">
+    <div className="flex flex-col h-full bg-gradient-to-br from-[#8B1A2B] via-[#B91C2E] to-[#D72638]">
       {/* Header with Back Button */}
       <div className="flex items-center p-4">
         <button onClick={onBack} className="p-2">

@@ -4,6 +4,7 @@ interface BottomNavigationProps {
   activeTab: NavTab;
   onNavigateHome: () => void;
   onNavigateAppointments: () => void;
+  onNavigateChat: () => void;
   onNavigateHistory: () => void;
   onNavigateProfile: () => void;
 }
@@ -69,45 +70,76 @@ function ProfileIcon({ active }: { active: boolean }) {
   );
 }
 
+/* Chat/AI icon for the center FAB */
+function ChatIcon() {
+  return (
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+      <path d="M21 11.5C21 16.19 16.97 20 12 20C10.82 20 9.69 19.79 8.65 19.41L3 21L4.59 16.35C3.59 14.93 3 13.27 3 11.5C3 6.81 7.03 3 12 3C16.97 3 21 6.81 21 11.5Z" fill="white" />
+      <circle cx="8.5" cy="11.5" r="1" fill="#D72638" />
+      <circle cx="12" cy="11.5" r="1" fill="#D72638" />
+      <circle cx="15.5" cy="11.5" r="1" fill="#D72638" />
+    </svg>
+  );
+}
+
 export default function BottomNavigation({
   activeTab,
   onNavigateHome,
   onNavigateAppointments,
+  onNavigateChat,
   onNavigateHistory,
   onNavigateProfile
 }: BottomNavigationProps) {
-  const tabs = [
+  const leftTabs = [
     { id: 'home' as NavTab, label: 'Home', icon: HomeIcon, onClick: onNavigateHome },
     { id: 'appointments' as NavTab, label: 'Appointments', icon: AppointmentsIcon, onClick: onNavigateAppointments },
+  ];
+
+  const rightTabs = [
     { id: 'history' as NavTab, label: 'History', icon: HistoryIcon, onClick: onNavigateHistory },
     { id: 'profile' as NavTab, label: 'Profile', icon: ProfileIcon, onClick: onNavigateProfile },
   ];
 
-  return (
-    <div className="bg-white border-t border-[#E5E7EB] px-4 pb-2 pt-1.5 flex justify-around items-center" style={{ boxShadow: '0 -2px 10px rgba(0,0,0,0.04)' }}>
-      {tabs.map((tab) => {
-        const Icon = tab.icon;
-        const isActive = activeTab === tab.id;
+  const renderTab = (tab: { id: NavTab; label: string; icon: React.FC<{ active: boolean }>; onClick: () => void }) => {
+    const Icon = tab.icon;
+    const isActive = activeTab === tab.id;
 
-        return (
-          <button
-            key={tab.id}
-            onClick={tab.onClick}
-            className={`flex flex-col items-center gap-0.5 py-1.5 px-3 rounded-xl transition-all duration-200 relative ${isActive ? 'bg-[#FEF2F2]' : ''}`}
-          >
-            {/* Active top bar */}
-            {isActive && (
-              <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-6 h-[3px] rounded-full bg-[#D72638]" />
-            )}
-            <div className="relative">
-              <Icon active={isActive} />
-            </div>
-            <span className={`text-[10px] leading-tight ${isActive ? 'text-[#D72638] font-bold' : 'text-[#9CA3AF] font-medium'}`}>
-              {tab.label}
-            </span>
-          </button>
-        );
-      })}
+    return (
+      <button
+        key={tab.id}
+        onClick={tab.onClick}
+        className={`flex flex-col items-center gap-0.5 py-1.5 px-3 rounded-xl transition-all duration-200 relative ${isActive ? 'bg-[#FEF2F2]' : ''}`}
+      >
+        {isActive && (
+          <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-6 h-[3px] rounded-full bg-[#D72638]" />
+        )}
+        <div className="relative">
+          <Icon active={isActive} />
+        </div>
+        <span className={`text-[10px] leading-tight ${isActive ? 'text-[#D72638] font-bold' : 'text-[#9CA3AF] font-medium'}`}>
+          {tab.label}
+        </span>
+      </button>
+    );
+  };
+
+  return (
+    <div className="bg-white border-t border-[#E5E7EB] px-4 pb-2 pt-1.5 flex justify-around items-end relative" style={{ boxShadow: '0 -2px 10px rgba(0,0,0,0.04)' }}>
+      {leftTabs.map(renderTab)}
+
+      {/* Center FAB - Chat/AI Button */}
+      <div className="flex flex-col items-center -mt-6">
+        <button
+          onClick={onNavigateChat}
+          className="w-14 h-14 rounded-full bg-gradient-to-br from-[#D72638] to-[#B91C2E] flex items-center justify-center shadow-lg transition-transform duration-200 active:scale-95"
+          style={{ boxShadow: '0 4px 15px rgba(215, 38, 56, 0.4)' }}
+        >
+          <ChatIcon />
+        </button>
+        <span className="text-[10px] leading-tight text-[#9CA3AF] font-medium mt-0.5">AI Chat</span>
+      </div>
+
+      {rightTabs.map(renderTab)}
     </div>
   );
 }
