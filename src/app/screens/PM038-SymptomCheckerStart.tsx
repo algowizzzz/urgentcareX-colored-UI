@@ -20,7 +20,7 @@ export default function SymptomCheckerStart({ onStart, onBack }: SymptomCheckerS
       <div className="flex-1 px-8 overflow-y-auto pb-4">
         {/* Icon */}
         <div className="flex justify-center mb-6">
-          <div className="w-24 h-24 bg-[#1F2937]/5 rounded-full flex items-center justify-center">
+          <div className="w-24 h-24 bg-[#D72638]/5 rounded-full flex items-center justify-center">
             <Stethoscope className="w-12 h-12 text-[#1F2937]" />
           </div>
         </div>

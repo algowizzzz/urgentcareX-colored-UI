@@ -143,11 +143,11 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'confirmed': return 'bg-[#D72638]';
-      case 'pending': return 'bg-[#D72638]/60';
-      case 'completed': return 'bg-[#D72638]';
+      case 'confirmed': return 'bg-[#10B981]';
+      case 'pending': return 'bg-[#F59E0B]';
+      case 'completed': return 'bg-[#3B82F6]';
       case 'cancelled': return 'bg-[#EF4444]';
-      default: return 'bg-[#D72638]';
+      default: return 'bg-[#6B7280]';
     }
   };
 
@@ -210,7 +210,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
           onClick={() => setFilter('all')}
           className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             filter === 'all'
-              ? 'bg-[#D72638] text-white'
+              ? 'bg-[#F06070] text-white'
               : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
           }`}
         >
@@ -220,7 +220,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
           onClick={() => setFilter('pending')}
           className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             filter === 'pending'
-              ? 'bg-[#D72638] text-white'
+              ? 'bg-[#F06070] text-white'
               : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
           }`}
         >
@@ -230,7 +230,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
           onClick={() => setFilter('confirmed')}
           className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             filter === 'confirmed'
-              ? 'bg-[#D72638] text-white'
+              ? 'bg-[#F06070] text-white'
               : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
           }`}
         >
@@ -240,7 +240,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
           onClick={() => setFilter('completed')}
           className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             filter === 'completed'
-              ? 'bg-[#D72638] text-white'
+              ? 'bg-[#F06070] text-white'
               : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
           }`}
         >
@@ -250,7 +250,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
           onClick={() => setFilter('cancelled')}
           className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             filter === 'cancelled'
-              ? 'bg-[#EF4444] text-white'
+              ? 'bg-[#F06070] text-white'
               : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
           }`}
         >
@@ -259,7 +259,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
       </div>
 
       {/* Content */}
-      <div className="flex-1 overflow-y-auto px-4 py-4 pb-20">
+      <div className="flex-1 overflow-y-auto px-4 py-4 pb-24">
         {filteredAppointments.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full py-12">
             <div className="w-24 h-24 bg-[#F3F4F6] rounded-full flex items-center justify-center mb-4">
@@ -281,9 +281,9 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
                 {/* Type Badge */}
                 <div className="flex items-center gap-2 mb-3">
                   {appointment.type === 'facility' ? (
-                    <div className="flex items-center gap-1.5 px-2.5 py-1 bg-[#1F2937]/5 rounded-full">
-                      <Building2 className="w-3.5 h-3.5 text-[#1F2937]" />
-                      <span className="text-xs font-medium text-[#1F2937]">Facility</span>
+                    <div className="flex items-center gap-1.5 px-2.5 py-1 bg-[#3B82F6]/10 rounded-full">
+                      <Building2 className="w-3.5 h-3.5 text-[#3B82F6]" />
+                      <span className="text-xs font-medium text-[#3B82F6]">Facility</span>
                     </div>
                   ) : (
                     <div className="flex items-center gap-1.5 px-2.5 py-1 bg-[#10B981]/10 rounded-full">

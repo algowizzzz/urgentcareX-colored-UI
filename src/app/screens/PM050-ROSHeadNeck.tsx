@@ -58,7 +58,7 @@ export default function ROSHeadNeck({ onContinue, onBack, initialData }: ROSHead
             {QUESTIONNAIRE_NAME}: Step 2 of 8
           </p>
           <div className="w-full h-1 bg-[#E5E7EB] rounded-full overflow-hidden">
-            <div className="h-full bg-[#1F2937] rounded-full" style={{ width: '25%' }}></div>
+            <div className="h-full bg-[#D72638] rounded-full" style={{ width: '25%' }}></div>
           </div>
         </div>
 
@@ -83,7 +83,7 @@ export default function ROSHeadNeck({ onContinue, onBack, initialData }: ROSHead
               onClick={() => handleToggle(symptom)}
               className={`flex items-center gap-3 cursor-pointer p-4 rounded-xl transition-all ${
                 selectedSymptoms[symptom]
-                  ? 'bg-[#1F2937]/5 border-2 border-[#1F2937]'
+                  ? 'bg-[#D72638]/5 border-2 border-[#D72638]'
                   : 'bg-white border-2 border-[#E5E7EB] hover:border-[#D72638]/30'
               }`}
             >

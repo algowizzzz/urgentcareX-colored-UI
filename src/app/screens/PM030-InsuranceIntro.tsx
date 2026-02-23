@@ -20,7 +20,7 @@ export default function InsuranceIntro({ onAddInsurance, onNoInsurance, onBack }
             Step 8 of 9
           </p>
           <div className="w-full h-1 bg-[#E5E7EB] rounded-full overflow-hidden">
-            <div className="h-full bg-[#1F2937] rounded-full" style={{ width: '88.89%' }}></div>
+            <div className="h-full bg-[#D72638] rounded-full" style={{ width: '88.89%' }}></div>
           </div>
         </div>
       </div>

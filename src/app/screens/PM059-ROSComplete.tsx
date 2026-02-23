@@ -24,7 +24,7 @@ export default function ROSComplete({ onViewResults, onGoHome, onBack }: ROSComp
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Success Header */}
-      <div className="bg-[#1F2937] px-6 pt-12 pb-8 relative">
+      <div className="bg-gradient-to-br from-[#8B1A2B] to-[#D72638] px-6 pt-12 pb-8 relative">
         {/* Back Button */}
         {onBack && (
           <button 

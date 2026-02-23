@@ -146,7 +146,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
             Step 5 of 9
           </p>
           <div className="w-full h-1 bg-[#E5E7EB] rounded-full overflow-hidden">
-            <div className="h-full bg-[#1F2937] rounded-full" style={{ width: '55.56%' }}></div>
+            <div className="h-full bg-[#D72638] rounded-full" style={{ width: '55.56%' }}></div>
           </div>
         </div>
       </div>

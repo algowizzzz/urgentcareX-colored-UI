@@ -52,7 +52,7 @@ export default function Lifestyle({ onContinue, onSkip, onBack, initialData }: L
       onClick={onClick}
       className={`px-4 py-3 rounded-xl text-sm font-medium transition-all ${
         selected
-          ? 'bg-[#1F2937] text-white'
+          ? 'bg-[#D72638] text-white'
           : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:bg-[#F3F4F6]'
       }`}
     >
@@ -72,7 +72,7 @@ export default function Lifestyle({ onContinue, onSkip, onBack, initialData }: L
             Step 7 of 9
           </p>
           <div className="w-full h-1 bg-[#E5E7EB] rounded-full overflow-hidden">
-            <div className="h-full bg-[#1F2937] rounded-full" style={{ width: '77.78%' }}></div>
+            <div className="h-full bg-[#D72638] rounded-full" style={{ width: '77.78%' }}></div>
           </div>
         </div>
       </div>

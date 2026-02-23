@@ -45,7 +45,7 @@ export default function AppFeedback({ onSubmit, onSkip, onBack }: AppFeedbackPro
       <div className="flex-1 overflow-y-auto px-6 py-6 pb-24">
         {/* Header Text */}
         <div className="text-center mb-8">
-          <div className="w-20 h-20 bg-[#1F2937]/10 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
+          <div className="w-20 h-20 bg-[#D72638]/10 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
             📱
           </div>
           <h3 className="text-xl font-bold text-[#1F2937] mb-2">
@@ -104,7 +104,7 @@ export default function AppFeedback({ onSubmit, onSkip, onBack }: AppFeedbackPro
                   onClick={() => setSelectedCategory(category)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                     selectedCategory === category
-                      ? 'bg-[#1F2937] text-white'
+                      ? 'bg-[#D72638] text-white'
                       : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
                   }`}
                 >

@@ -97,7 +97,7 @@ export default function SymptomCheckHistory({
       </div>
 
       {/* Content */}
-      <div className="flex-1 overflow-y-auto pb-20">
+      <div className="flex-1 overflow-y-auto pb-24">
         {sortedSessions.length === 0 ? (
           // Empty State
           <div className="flex flex-col items-center justify-center h-full px-6 text-center">
@@ -130,7 +130,7 @@ export default function SymptomCheckHistory({
                     onClick={() => onDeleteSession(session.sessionId)}
                     className="p-2 hover:bg-[#F3F4F6] rounded-lg transition-colors"
                   >
-                    <Trash2 className="w-5 h-5 text-[#6B7280]" />
+                    <Trash2 className="w-5 h-5 text-[#F59E0B]" />
                   </button>
                 </div>
 

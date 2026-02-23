@@ -98,7 +98,7 @@ export default function MedicalRecords({
             </div>
 
             <div className="flex items-start gap-3 p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#D72638] transition-colors cursor-pointer">
-              <div className="w-10 h-10 bg-[#1F2937]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-[#D72638]/10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Pill className="w-5 h-5 text-[#1F2937]" />
               </div>
               <div className="flex-1">
@@ -111,7 +111,7 @@ export default function MedicalRecords({
             </div>
 
             <div className="flex items-start gap-3 p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#D72638] transition-colors cursor-pointer">
-              <div className="w-10 h-10 bg-[#1F2937]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-[#D72638]/10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <FileText className="w-5 h-5 text-[#1F2937]" />
               </div>
               <div className="flex-1">

@@ -23,7 +23,7 @@ export default function InsuranceManagement({ onAddInsurance, onEditInsurance, o
           <div className="border border-[#E5E7EB] rounded-xl p-5">
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-start gap-3">
-                <div className="w-12 h-12 bg-[#1F2937]/10 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#D72638]/10 rounded-lg flex items-center justify-center">
                   <CreditCard className="w-6 h-6 text-[#1F2937]" />
                 </div>
                 <div>

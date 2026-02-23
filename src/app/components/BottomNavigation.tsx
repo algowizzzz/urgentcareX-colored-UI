@@ -1,3 +1,5 @@
+import logo from '../../assets/logo.svg';
+
 export type NavTab = 'home' | 'appointments' | 'history' | 'profile';
 
 interface BottomNavigationProps {
@@ -70,17 +72,6 @@ function ProfileIcon({ active }: { active: boolean }) {
   );
 }
 
-/* Chat/AI icon for the center FAB */
-function ChatIcon() {
-  return (
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-      <path d="M21 11.5C21 16.19 16.97 20 12 20C10.82 20 9.69 19.79 8.65 19.41L3 21L4.59 16.35C3.59 14.93 3 13.27 3 11.5C3 6.81 7.03 3 12 3C16.97 3 21 6.81 21 11.5Z" fill="white" />
-      <circle cx="8.5" cy="11.5" r="1" fill="#D72638" />
-      <circle cx="12" cy="11.5" r="1" fill="#D72638" />
-      <circle cx="15.5" cy="11.5" r="1" fill="#D72638" />
-    </svg>
-  );
-}
 
 export default function BottomNavigation({
   activeTab,
@@ -134,7 +125,7 @@ export default function BottomNavigation({
           className="w-14 h-14 rounded-full bg-gradient-to-br from-[#D72638] to-[#B91C2E] flex items-center justify-center shadow-lg transition-transform duration-200 active:scale-95"
           style={{ boxShadow: '0 4px 15px rgba(215, 38, 56, 0.4)' }}
         >
-          <ChatIcon />
+          <img src={logo} alt="AI Chat" className="w-8 h-8 brightness-0 invert" />
         </button>
         <span className="text-[10px] leading-tight text-[#9CA3AF] font-medium mt-0.5">AI Chat</span>
       </div>

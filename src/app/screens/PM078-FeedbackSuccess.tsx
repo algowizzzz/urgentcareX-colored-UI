@@ -17,10 +17,10 @@ export default function FeedbackSuccess({
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Success Header */}
-      <div className="bg-[#1F2937] px-6 pt-12 pb-8">
+      <div className="bg-gradient-to-br from-[#8B1A2B] to-[#D72638] px-6 pt-12 pb-8">
         <div className="text-center">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full mb-4">
-            <CheckCircle className="w-12 h-12 text-[#1F2937]" />
+            <CheckCircle className="w-12 h-12 text-[#D72638]" />
           </div>
           <h1 className="text-2xl font-bold text-white mb-2">
             Thank You!
@@ -34,7 +34,7 @@ export default function FeedbackSuccess({
       {/* Content */}
       <div className="flex-1 px-6 py-6 overflow-y-auto pb-8">
         {/* Rating Summary */}
-        <div className="bg-white border-2 border-[#6B7280] rounded-2xl p-6 mb-6">
+        <div className="bg-white border-2 border-[#D72638] rounded-2xl p-6 mb-6">
           <h2 className="text-lg font-semibold text-[#1F2937] mb-4 text-center">Your Rating</h2>
           
           <div className="text-center mb-4">
@@ -50,7 +50,7 @@ export default function FeedbackSuccess({
                 key={star}
                 className={`w-8 h-8 ${
                   star <= rating
-                    ? 'fill-[#4B5563] text-[#4B5563]'
+                    ? 'fill-[#D72638] text-[#D72638]'
                     : 'text-[#E5E7EB]'
                 }`}
               />

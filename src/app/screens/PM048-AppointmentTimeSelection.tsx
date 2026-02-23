@@ -63,8 +63,8 @@ export default function AppointmentTimeSelection({ providerName, onSelectTime, o
                 }}
                 className={`flex-shrink-0 w-16 py-3 rounded-xl text-center transition-all ${
                   selectedDate === date.date
-                    ? 'bg-[#1F2937] text-white'
-                    : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#D72638]'
+                    ? 'bg-[#F06070] text-white'
+                    : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#F06070]'
                 }`}
               >
                 <p className="text-xs mb-1">{date.day}</p>
@@ -89,8 +89,8 @@ export default function AppointmentTimeSelection({ providerName, onSelectTime, o
                   onClick={() => setSelectedTime(time)}
                   className={`py-3 rounded-xl text-sm font-medium transition-all ${
                     selectedTime === time
-                      ? 'bg-[#1F2937] text-white'
-                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#D72638]'
+                      ? 'bg-[#F06070] text-white'
+                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#F06070]'
                   }`}
                 >
                   {time}
@@ -109,8 +109,8 @@ export default function AppointmentTimeSelection({ providerName, onSelectTime, o
                   onClick={() => setSelectedTime(time)}
                   className={`py-3 rounded-xl text-sm font-medium transition-all ${
                     selectedTime === time
-                      ? 'bg-[#1F2937] text-white'
-                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#D72638]'
+                      ? 'bg-[#F06070] text-white'
+                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#F06070]'
                   }`}
                 >
                   {time}
@@ -129,8 +129,8 @@ export default function AppointmentTimeSelection({ providerName, onSelectTime, o
                   onClick={() => setSelectedTime(time)}
                   className={`py-3 rounded-xl text-sm font-medium transition-all ${
                     selectedTime === time
-                      ? 'bg-[#1F2937] text-white'
-                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#D72638]'
+                      ? 'bg-[#F06070] text-white'
+                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#F06070]'
                   }`}
                 >
                   {time}

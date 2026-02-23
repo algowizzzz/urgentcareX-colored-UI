@@ -39,7 +39,7 @@ export default function InsuranceProviderSelection({ onSelectProvider, onBack }:
             Step 9 of 9
           </p>
           <div className="w-full h-1 bg-[#E5E7EB] rounded-full overflow-hidden">
-            <div className="h-full bg-[#1F2937] rounded-full" style={{ width: '100%' }}></div>
+            <div className="h-full bg-[#D72638] rounded-full" style={{ width: '100%' }}></div>
           </div>
         </div>
       </div>

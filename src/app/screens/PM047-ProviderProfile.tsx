@@ -33,10 +33,11 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Header */}
-      <div className="flex items-center p-4 border-b border-[#E5E7EB]">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
+        <h2 className="text-lg font-semibold text-white ml-2">Provider Details</h2>
       </div>
 
       {/* Content */}
@@ -45,7 +46,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
         {/* Provider Header */}
         <div className="px-6 py-6">
           <div className="flex gap-4 mb-4">
-            <div className="w-20 h-20 bg-[#F3F4F6] rounded-full flex items-center justify-center text-4xl flex-shrink-0">
+            <div className="w-20 h-20 bg-[#FEF2F2] rounded-full flex items-center justify-center text-4xl flex-shrink-0">
               {provider.image}
             </div>
             <div className="flex-1">
@@ -103,21 +104,21 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
             <h2 className="text-xl font-semibold text-[#1F2937] mb-4">Credentials & Experience</h2>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <Award className="w-5 h-5 text-[#1F2937] mt-0.5" />
+                <Award className="w-5 h-5 text-[#D72638] mt-0.5" />
                 <div>
                   <p className="text-sm font-medium text-[#1F2937]">Medical School</p>
                   <p className="text-sm text-[#6B7280]">Harvard Medical School</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Award className="w-5 h-5 text-[#1F2937] mt-0.5" />
+                <Award className="w-5 h-5 text-[#D72638] mt-0.5" />
                 <div>
                   <p className="text-sm font-medium text-[#1F2937]">Residency</p>
                   <p className="text-sm text-[#6B7280]">Johns Hopkins Hospital</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Award className="w-5 h-5 text-[#1F2937] mt-0.5" />
+                <Award className="w-5 h-5 text-[#D72638] mt-0.5" />
                 <div>
                   <p className="text-sm font-medium text-[#1F2937]">Years of Experience</p>
                   <p className="text-sm text-[#6B7280]">15+ years</p>
@@ -133,7 +134,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
             <h2 className="text-xl font-semibold text-[#1F2937] mb-4">Hours & Services</h2>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <Clock className="w-5 h-5 text-[#1F2937] mt-0.5" />
+                <Clock className="w-5 h-5 text-[#D72638] mt-0.5" />
                 <div>
                   <p className="text-sm font-medium text-[#1F2937]">Today's Hours</p>
                   <p className="text-sm text-[#6B7280]">{provider.hoursToday || 'Open 8:00 AM - 8:00 PM'}</p>
@@ -141,7 +142,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
               </div>
               {provider.waitTime !== undefined && (
                 <div className="flex items-start gap-3">
-                  <Clock className="w-5 h-5 text-[#1F2937] mt-0.5" />
+                  <Clock className="w-5 h-5 text-[#D72638] mt-0.5" />
                   <div>
                     <p className="text-sm font-medium text-[#1F2937]">Estimated Wait Time</p>
                     <p className="text-sm text-[#6B7280]">~{provider.waitTime} minutes</p>
@@ -150,14 +151,14 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
                 </div>
               )}
               <div className="flex items-start gap-3">
-                <Building2 className="w-5 h-5 text-[#1F2937] mt-0.5" />
+                <Building2 className="w-5 h-5 text-[#D72638] mt-0.5" />
                 <div>
                   <p className="text-sm font-medium text-[#1F2937]">Services Available</p>
                   <p className="text-sm text-[#6B7280]">{provider.servicesCount || 15} medical services offered</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-[#1F2937] mt-0.5" />
+                <Phone className="w-5 h-5 text-[#D72638] mt-0.5" />
                 <div>
                   <p className="text-sm font-medium text-[#1F2937]">Contact</p>
                   <p className="text-sm text-[#6B7280]">(555) 123-4567</p>
@@ -172,8 +173,8 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">Specialties</h2>
           <div className="flex flex-wrap gap-2">
             {['Preventive Care', 'Chronic Disease', 'Diabetes Management', 'Hypertension', 'Annual Checkups'].map((specialty) => (
-              <div key={specialty} className="px-4 py-2 bg-[#F3F4F6] rounded-full">
-                <p className="text-sm text-[#1F2937]">{specialty}</p>
+              <div key={specialty} className="px-4 py-2 bg-[#FEF2F2] border border-[#D72638]/20 rounded-full">
+                <p className="text-sm text-[#D72638]">{specialty}</p>
               </div>
             ))}
           </div>
@@ -182,7 +183,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
         {/* Location */}
         <div className="px-6 py-6 border-t border-[#E5E7EB]">
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">Location</h2>
-          <div className="bg-[#F3F4F6] rounded-xl p-4 mb-3">
+          <div className="bg-[#FEF2F2] rounded-xl p-4 mb-3">
             <p className="text-sm font-medium text-[#1F2937] mb-1">UrgentCareX Medical Center</p>
             <p className="text-sm text-[#6B7280] mb-2">123 Healthcare Drive, Los Angeles, CA 90210</p>
             <div className="flex items-center gap-1 text-sm text-[#6B7280]">
@@ -198,7 +199,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
             {provider.type === 'facility' ? 'Facility Reviews' : 'Patient Reviews'}
           </h2>
           <div className="space-y-4">
-            <div className="border border-[#E5E7EB] rounded-xl p-4">
+            <div className="border border-[#E5E7EB] rounded-xl p-4 border-l-4 border-l-[#D72638]">
               <div className="flex items-center gap-2 mb-2">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
@@ -217,7 +218,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
             </div>
             {provider.type === 'facility' && (
               <>
-                <div className="border border-[#E5E7EB] rounded-xl p-4">
+                <div className="border border-[#E5E7EB] rounded-xl p-4 border-l-4 border-l-[#D72638]">
                   <div className="flex items-center gap-2 mb-2">
                     <div className="flex">
                       {[...Array(4)].map((_, i) => (
@@ -232,7 +233,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
                   </p>
                   <p className="text-xs text-[#6B7280]">- Maria S.</p>
                 </div>
-                <div className="border border-[#E5E7EB] rounded-xl p-4">
+                <div className="border border-[#E5E7EB] rounded-xl p-4 border-l-4 border-l-[#D72638]">
                   <div className="flex items-center gap-2 mb-2">
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (

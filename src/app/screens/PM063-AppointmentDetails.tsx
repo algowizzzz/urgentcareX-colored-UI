@@ -67,7 +67,7 @@ export default function AppointmentDetails({
           {/* Type Badge */}
           <div className="flex items-center gap-2 mb-4">
             {appointment.type === 'facility' ? (
-              <div className="flex items-center gap-1.5 px-2.5 py-1 bg-[#1F2937]/5 rounded-full">
+              <div className="flex items-center gap-1.5 px-2.5 py-1 bg-[#D72638]/5 rounded-full">
                 <Building2 className="w-3.5 h-3.5 text-[#1F2937]" />
                 <span className="text-xs font-medium text-[#1F2937]">Facility</span>
               </div>

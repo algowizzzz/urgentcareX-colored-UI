@@ -36,10 +36,10 @@ export default function EditProfile({ onSave, onBack }: EditProfileProps) {
         {/* Profile Photo */}
         <div className="flex flex-col items-center mb-8">
           <div className="relative">
-            <div className="w-24 h-24 bg-[#1F2937] rounded-full flex items-center justify-center text-white text-3xl font-bold mb-3">
+            <div className="w-24 h-24 bg-[#D72638] rounded-full flex items-center justify-center text-white text-3xl font-bold mb-3">
               JS
             </div>
-            <button className="absolute bottom-2 right-0 w-8 h-8 bg-[#1F2937] rounded-full flex items-center justify-center">
+            <button className="absolute bottom-2 right-0 w-8 h-8 bg-[#D72638] rounded-full flex items-center justify-center">
               <Camera className="w-4 h-4 text-white" />
             </button>
           </div>

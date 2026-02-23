@@ -19,7 +19,7 @@ export default function AppointmentConfirmation({
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Success Header */}
-      <div className="bg-[#1F2937] px-6 pt-12 pb-8">
+      <div className="bg-gradient-to-br from-[#8B1A2B] to-[#D72638] px-6 pt-12 pb-8">
         <div className="text-center">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full mb-4">
             <span className="text-4xl">✓</span>
@@ -36,7 +36,7 @@ export default function AppointmentConfirmation({
       {/* Content */}
       <div className="flex-1 px-6 py-6 overflow-y-auto pb-24">
         {/* Appointment Details Card */}
-        <div className="bg-white border-2 border-[#1F2937] rounded-2xl p-6 mb-6">
+        <div className="bg-white border-2 border-[#D72638] rounded-2xl p-6 mb-6">
           <h2 className="text-lg font-semibold text-[#1F2937] mb-4">Appointment Details</h2>
           
           <div className="space-y-4">

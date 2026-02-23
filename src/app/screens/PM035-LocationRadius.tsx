@@ -63,13 +63,13 @@ export default function LocationRadius({ onContinue, onBack, initialData }: Loca
                   [&::-webkit-slider-thumb]:w-6
                   [&::-webkit-slider-thumb]:h-6
                   [&::-webkit-slider-thumb]:rounded-full
-                  [&::-webkit-slider-thumb]:bg-[#1F2937]
+                  [&::-webkit-slider-thumb]:bg-[#D72638]
                   [&::-webkit-slider-thumb]:cursor-pointer
                   [&::-webkit-slider-thumb]:shadow-md
                   [&::-moz-range-thumb]:w-6
                   [&::-moz-range-thumb]:h-6
                   [&::-moz-range-thumb]:rounded-full
-                  [&::-moz-range-thumb]:bg-[#1F2937]
+                  [&::-moz-range-thumb]:bg-[#D72638]
                   [&::-moz-range-thumb]:border-0
                   [&::-moz-range-thumb]:cursor-pointer
                   [&::-moz-range-thumb]:shadow-md"

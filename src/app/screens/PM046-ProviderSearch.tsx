@@ -141,19 +141,19 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
 
   return (
     <div className="flex flex-col h-full bg-white">
-      {/* Header - No filter icon */}
-      <div className="flex items-center p-4 border-b border-[#E5E7EB]">
+      {/* Header */}
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
-        <h2 className="text-lg font-semibold text-[#1F2937] ml-2">Available Providers Near You</h2>
+        <h2 className="text-lg font-semibold text-white ml-2">Available Providers Near You</h2>
       </div>
 
       {/* Location - With change button */}
       <div className="px-4 py-3 bg-[#F3F4F6] flex items-center gap-2">
         <MapPin className="w-4 h-4 text-[#6B7280]" />
         <span className="text-sm text-[#6B7280]">Los Angeles, CA 90210 • Within 10 miles</span>
-        <button className="ml-auto text-sm text-[#1F2937] font-medium">Change</button>
+        <button className="ml-auto text-sm text-[#D72638] font-medium">Change</button>
       </div>
 
       {/* Filter Tabs */}
@@ -163,7 +163,7 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
             onClick={() => setActiveTab('all')}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               activeTab === 'all'
-                ? 'bg-[#1F2937] text-white'
+                ? 'bg-[#F06070] text-white'
                 : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
             }`}
           >
@@ -173,7 +173,7 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
             onClick={() => setActiveTab('facilities')}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               activeTab === 'facilities'
-                ? 'bg-[#1F2937] text-white'
+                ? 'bg-[#F06070] text-white'
                 : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
             }`}
           >
@@ -183,7 +183,7 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
             onClick={() => setActiveTab('doctors')}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               activeTab === 'doctors'
-                ? 'bg-[#1F2937] text-white'
+                ? 'bg-[#F06070] text-white'
                 : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
             }`}
           >
@@ -195,7 +195,7 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
               onClick={() => setActiveTab('insurance')}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 activeTab === 'insurance'
-                  ? 'bg-[#1F2937] text-white'
+                  ? 'bg-[#F06070] text-white'
                   : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
               }`}
             >
@@ -207,7 +207,7 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
 
       {/* Results Count */}
       <div className="px-4 py-3">
-        <p className="text-sm text-[#6B7280]">{filteredProviders.length} providers found</p>
+        <p className="text-sm text-[#D72638] font-medium">{filteredProviders.length} providers found</p>
       </div>
 
       {/* Provider List */}
@@ -222,9 +222,9 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
               {/* Type Badge + Insurance Tag */}
               <div className="flex items-center gap-2 mb-3 flex-wrap">
                 {provider.type === 'facility' ? (
-                  <div className="flex items-center gap-1.5 px-2.5 py-1 bg-[#1F2937]/5 rounded-full">
-                    <Building2 className="w-3.5 h-3.5 text-[#1F2937]" />
-                    <span className="text-xs font-medium text-[#1F2937]">Facility</span>
+                  <div className="flex items-center gap-1.5 px-2.5 py-1 bg-[#3B82F6]/10 rounded-full">
+                    <Building2 className="w-3.5 h-3.5 text-[#3B82F6]" />
+                    <span className="text-xs font-medium text-[#3B82F6]">Facility</span>
                   </div>
                 ) : (
                   <div className="flex items-center gap-1.5 px-2.5 py-1 bg-[#10B981]/10 rounded-full">
@@ -247,7 +247,7 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
               </div>
 
               <div className="flex gap-4 mb-3">
-                <div className="w-16 h-16 bg-[#F3F4F6] rounded-full flex items-center justify-center text-3xl flex-shrink-0">
+                <div className="w-16 h-16 bg-[#FEF2F2] rounded-full flex items-center justify-center text-3xl flex-shrink-0">
                   {provider.image}
                 </div>
                 <div className="flex-1">
@@ -273,7 +273,7 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
 
               {/* Facility-specific info */}
               {provider.type === 'facility' && provider.hoursToday && (
-                <div className="flex items-center gap-2 px-3 py-2 bg-[#F3F4F6] rounded-lg">
+                <div className="flex items-center gap-2 px-3 py-2 bg-[#FEF2F2] rounded-lg">
                   <Clock className="w-4 h-4 text-[#6B7280]" />
                   <span className="text-sm text-[#1F2937]">{provider.hoursToday}</span>
                   {provider.waitTime !== undefined && (

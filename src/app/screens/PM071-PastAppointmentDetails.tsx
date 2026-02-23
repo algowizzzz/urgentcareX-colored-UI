@@ -146,7 +146,7 @@ export default function PastAppointmentDetails({
           <div className="space-y-3">
             <button className="w-full flex items-center justify-between p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#D72638] transition-colors">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#1F2937]/10 rounded-lg flex items-center justify-center">
+                <div className="w-10 h-10 bg-[#D72638]/10 rounded-lg flex items-center justify-center">
                   <FileText className="w-5 h-5 text-[#1F2937]" />
                 </div>
                 <div className="text-left">
@@ -159,7 +159,7 @@ export default function PastAppointmentDetails({
 
             <button className="w-full flex items-center justify-between p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#D72638] transition-colors">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#1F2937]/10 rounded-lg flex items-center justify-center">
+                <div className="w-10 h-10 bg-[#D72638]/10 rounded-lg flex items-center justify-center">
                   <FileText className="w-5 h-5 text-[#1F2937]" />
                 </div>
                 <div className="text-left">
@@ -172,7 +172,7 @@ export default function PastAppointmentDetails({
 
             <button className="w-full flex items-center justify-between p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#D72638] transition-colors">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#1F2937]/10 rounded-lg flex items-center justify-center">
+                <div className="w-10 h-10 bg-[#D72638]/10 rounded-lg flex items-center justify-center">
                   <FileText className="w-5 h-5 text-[#1F2937]" />
                 </div>
                 <div className="text-left">

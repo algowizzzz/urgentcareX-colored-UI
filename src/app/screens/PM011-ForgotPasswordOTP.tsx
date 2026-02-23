@@ -85,7 +85,7 @@ export default function ForgotPasswordOTP({ email, onVerify, onBack }: ForgotPas
         </p>
 
         {/* OTP Input Boxes */}
-        <div className="flex gap-3 justify-center mb-8">
+        <div className="flex gap-2 justify-center mb-8">
           {otp.map((digit, index) => (
             <input
               key={index}
@@ -96,7 +96,7 @@ export default function ForgotPasswordOTP({ email, onVerify, onBack }: ForgotPas
               value={digit}
               onChange={(e) => handleChange(index, e.target.value)}
               onKeyDown={(e) => handleKeyDown(index, e)}
-              className="w-12 h-14 text-center text-2xl font-bold border-2 rounded-xl focus:outline-none transition-colors"
+              className="w-11 h-13 text-center text-2xl font-bold border-2 rounded-xl focus:outline-none transition-colors"
               style={{
                 backgroundColor: digit ? 'white' : 'rgba(255,255,255,0.15)',
                 borderColor: digit ? 'white' : 'rgba(255,255,255,0.3)',

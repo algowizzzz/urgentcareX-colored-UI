@@ -48,27 +48,27 @@ export default function MedicalHistoryIntro({ onContinue, onBack }: MedicalHisto
 
           <div className="space-y-3 mb-6">
             <div className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-[#1F2937]"></div>
+              <div className="w-2 h-2 rounded-full bg-[#D72638]"></div>
               <p className="text-base text-[#6B7280]">Chronic conditions</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-[#1F2937]"></div>
+              <div className="w-2 h-2 rounded-full bg-[#D72638]"></div>
               <p className="text-base text-[#6B7280]">Past surgeries</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-[#1F2937]"></div>
+              <div className="w-2 h-2 rounded-full bg-[#D72638]"></div>
               <p className="text-base text-[#6B7280]">Family medical history</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-[#1F2937]"></div>
+              <div className="w-2 h-2 rounded-full bg-[#D72638]"></div>
               <p className="text-base text-[#6B7280]">Allergies</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-[#1F2937]"></div>
+              <div className="w-2 h-2 rounded-full bg-[#D72638]"></div>
               <p className="text-base text-[#6B7280]">Current medications</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-[#1F2937]"></div>
+              <div className="w-2 h-2 rounded-full bg-[#D72638]"></div>
               <p className="text-base text-[#6B7280]">Lifestyle factors</p>
             </div>
           </div>

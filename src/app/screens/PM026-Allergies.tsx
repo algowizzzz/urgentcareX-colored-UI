@@ -91,7 +91,7 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
             Step 4 of 9
           </p>
           <div className="w-full h-1 bg-[#E5E7EB] rounded-full overflow-hidden">
-            <div className="h-full bg-[#1F2937] rounded-full" style={{ width: '44.44%' }}></div>
+            <div className="h-full bg-[#D72638] rounded-full" style={{ width: '44.44%' }}></div>
           </div>
         </div>
       </div>

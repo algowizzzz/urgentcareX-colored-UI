@@ -118,7 +118,7 @@ export default function Dashboard({
               </div>
               <button
                 onClick={() => setShowNotifications(false)}
-                className="p-2 hover:bg-[#374151] rounded-lg transition-colors"
+                className="p-2 hover:bg-white/20 rounded-lg transition-colors"
               >
                 <X className="w-5 h-5 text-white" />
               </button>

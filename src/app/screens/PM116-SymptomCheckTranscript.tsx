@@ -1,5 +1,6 @@
 import { Button } from '../components/ui/button';
 import { ArrowLeft, MapPin } from 'lucide-react';
+import logo from '../../assets/logo.svg';
 import { Message, ChatSession } from './PM072-SymptomCheckHistory';
 
 interface SymptomCheckTranscriptProps {
@@ -13,7 +14,7 @@ export default function SymptomCheckTranscript({ session, onBack, onFindCare }: 
     switch (status) {
       case 'completed':
         return (
-          <span className="px-3 py-1 bg-[#1F2937] text-white text-xs rounded-full">
+          <span className="px-3 py-1 bg-[#D72638] text-white text-xs rounded-full">
             Completed
           </span>
         );
@@ -71,8 +72,8 @@ export default function SymptomCheckTranscript({ session, onBack, onFindCare }: 
               <div className="max-w-[80%]">
                 {message.sender === 'ai' && (
                   <div className="flex items-center gap-2 mb-2">
-                    <div className="w-8 h-8 bg-[#1F2937] rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">AI</span>
+                    <div className="w-8 h-8 bg-[#D72638] rounded-full flex items-center justify-center">
+                      <img src={logo} alt="UrgentCareX" className="w-5 h-5 brightness-0 invert" />
                     </div>
                     <span className="text-xs text-[#6B7280]">UrgentCareX AI</span>
                   </div>
@@ -81,7 +82,7 @@ export default function SymptomCheckTranscript({ session, onBack, onFindCare }: 
                 <div
                   className={`rounded-2xl px-4 py-3 ${
                     message.sender === 'user'
-                      ? 'bg-[#1F2937] text-white rounded-tr-sm'
+                      ? 'bg-[#D72638] text-white rounded-tr-sm'
                       : 'bg-[#F3F4F6] text-[#1F2937] rounded-tl-sm'
                   }`}
                 >

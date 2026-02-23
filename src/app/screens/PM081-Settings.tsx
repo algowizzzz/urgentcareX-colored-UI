@@ -283,14 +283,16 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
       </div>
 
       {/* Bottom Navigation */}
-      <BottomNavigation
-        activeTab="profile"
-        onNavigateHome={onNavigateHome || (() => {})}
-        onNavigateAppointments={onNavigateAppointments || (() => {})}
-        onNavigateChat={onNavigateChat || (() => {})}
-        onNavigateHistory={onNavigateHistory || (() => {})}
-        onNavigateProfile={() => {}}
-      />
+      <div className="absolute bottom-0 left-0 right-0">
+        <BottomNavigation
+          activeTab="profile"
+          onNavigateHome={onNavigateHome || (() => {})}
+          onNavigateAppointments={onNavigateAppointments || (() => {})}
+          onNavigateChat={onNavigateChat || (() => {})}
+          onNavigateHistory={onNavigateHistory || (() => {})}
+          onNavigateProfile={() => {}}
+        />
+      </div>
 
       {/* Language Selection Modal */}
       {showLanguageModal && (

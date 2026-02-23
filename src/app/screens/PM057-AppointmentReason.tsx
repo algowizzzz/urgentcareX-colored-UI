@@ -59,7 +59,7 @@ export default function AppointmentReason({ providerName, onContinue, onBack }: 
                 onClick={() => setSelectedReason(reason)}
                 className={`w-full text-left p-4 rounded-xl transition-all ${
                   selectedReason === reason
-                    ? 'bg-[#1F2937] text-white'
+                    ? 'bg-[#D72638] text-white'
                     : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#D72638]'
                 }`}
               >

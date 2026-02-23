@@ -14,7 +14,7 @@ export function SuccessModal({ title, message, onClose }: { title: string; messa
         </div>
         <h3 className="text-xl font-bold text-[#1F2937] text-center mb-3">{title}</h3>
         <p className="text-base text-[#6B7280] text-center mb-6">{message}</p>
-        <Button onClick={onClose} className="w-full h-[52px] bg-[#1F2937] text-white rounded-xl">
+        <Button onClick={onClose} className="w-full h-[52px] bg-[#D72638] text-white rounded-xl">
           Continue
         </Button>
       </div>
@@ -36,7 +36,7 @@ export function ErrorModal({ title, message, onClose, onRetry }: { title: string
         <p className="text-base text-[#6B7280] text-center mb-6">{message}</p>
         <div className="space-y-3">
           {onRetry && (
-            <Button onClick={onRetry} className="w-full h-[52px] bg-[#1F2937] text-white rounded-xl">
+            <Button onClick={onRetry} className="w-full h-[52px] bg-[#D72638] text-white rounded-xl">
               Try Again
             </Button>
           )}
@@ -117,7 +117,7 @@ export function InfoModal({ title, message, onClose }: { title: string; message:
         </div>
         <h3 className="text-xl font-bold text-[#1F2937] mb-3">{title}</h3>
         <p className="text-base text-[#6B7280] mb-6">{message}</p>
-        <Button onClick={onClose} className="w-full h-[52px] bg-[#1F2937] text-white rounded-xl">
+        <Button onClick={onClose} className="w-full h-[52px] bg-[#D72638] text-white rounded-xl">
           Got It
         </Button>
       </div>
@@ -139,7 +139,7 @@ export function ToastNotification({
     success: 'bg-[#10B981]',
     error: 'bg-[#EF4444]',
     warning: 'bg-[#F59E0B]',
-    info: 'bg-[#1F2937]'
+    info: 'bg-[#D72638]'
   }[type];
 
   return (
