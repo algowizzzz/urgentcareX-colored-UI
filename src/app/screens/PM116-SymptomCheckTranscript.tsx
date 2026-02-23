@@ -36,9 +36,9 @@ export default function SymptomCheckTranscript({ session, onBack, onFindCare }: 
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Header */}
-      <div className="flex items-center p-4 border-b border-[#E5E7EB]">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
       </div>
 

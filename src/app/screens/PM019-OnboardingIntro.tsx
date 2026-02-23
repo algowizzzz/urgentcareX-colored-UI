@@ -8,8 +8,8 @@ export default function OnboardingIntro({ onStart }: OnboardingIntroProps) {
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Header */}
-      <div className="px-8 pt-12 pb-4 border-b border-[#E5E7EB]">
-        <h1 className="text-[28px] font-bold text-[#1F2937]">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] px-8 pt-12 pb-4">
+        <h1 className="text-[28px] font-bold text-white">
           Let's Set Up Your Profile
         </h1>
       </div>

@@ -150,16 +150,16 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
   return (
     <div className="flex flex-col h-full bg-[#F8F9FA]">
       {/* Header */}
-      <div className="bg-white flex items-center gap-3 px-4 py-3 border-b border-[#E5E7EB]" style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center gap-3 px-4 py-3">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-5 h-5 text-[#1F2937]" />
+          <ArrowLeft className="w-5 h-5 text-white" />
         </button>
         <div className="flex items-center gap-2.5 flex-1">
-          <div className="w-9 h-9 bg-[#D72638] rounded-xl flex items-center justify-center">
+          <div className="w-9 h-9 bg-white/20 rounded-xl flex items-center justify-center">
             <img src={logo} alt="UrgentCareX" className="w-6 h-6 brightness-0 invert" />
           </div>
           <div>
-            <h2 className="text-[15px] font-semibold text-[#1F2937] leading-tight">Symptom Checker</h2>
+            <h2 className="text-[15px] font-semibold text-white leading-tight">Symptom Checker</h2>
             <div className="flex items-center gap-1">
               <div className="w-1.5 h-1.5 rounded-full bg-[#10B981]"></div>
               <span className="text-[11px] text-[#10B981] font-medium">AI Online</span>

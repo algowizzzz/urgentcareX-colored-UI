@@ -63,16 +63,16 @@ export default function Lifestyle({ onContinue, onSkip, onBack, initialData }: L
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Header with Progress */}
-      <div className="px-4 pt-4 pb-4 border-b border-[#E5E7EB]">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] px-4 py-4">
         <button onClick={onBack} className="p-2 mb-4">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
         <div className="px-2">
-          <p className="text-sm font-medium text-[#6B7280] mb-2">
+          <p className="text-sm font-medium text-white/80 mb-2">
             Step 7 of 9
           </p>
-          <div className="w-full h-1 bg-[#E5E7EB] rounded-full overflow-hidden">
-            <div className="h-full bg-[#D72638] rounded-full" style={{ width: '77.78%' }}></div>
+          <div className="w-full h-1 bg-white/30 rounded-full overflow-hidden">
+            <div className="h-full bg-white rounded-full" style={{ width: '77.78%' }}></div>
           </div>
         </div>
       </div>
