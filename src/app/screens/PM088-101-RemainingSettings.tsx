@@ -16,22 +16,22 @@ interface PolicyDetailProps {
 export function HelpSupport({ onBack }: { onBack: () => void }) {
   return (
     <div className="flex flex-col h-full bg-white">
-      <div className="flex items-center p-4 border-b border-[#E5E7EB]">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
-        <h2 className="text-lg font-semibold text-[#1F2937] ml-2">Help & Support</h2>
+        <h2 className="text-lg font-semibold text-white ml-2">Help & Support</h2>
       </div>
       <div className="flex-1 overflow-y-auto px-6 py-6 space-y-6">
         {/* Contact Support */}
-        <div className="bg-[#EFF6FF] border border-[#BFDBFE] rounded-xl p-5">
+        <div className="bg-[#FEF2F2] border border-[#D72638]/20 rounded-xl p-5">
           <h3 className="text-base font-semibold text-[#1F2937] mb-3">Contact Support</h3>
           <p className="text-sm text-[#6B7280] mb-2">
             Need help? Email us anytime:
           </p>
           <a 
             href="mailto:support@urgentcarex.com"
-            className="text-base font-medium text-[#1F2937] underline"
+            className="text-base font-medium text-[#D72638] underline"
           >
             support@urgentcarex.com
           </a>
@@ -44,7 +44,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
         <div>
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">Frequently Asked Questions</h3>
           <div className="space-y-4">
-            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
+            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 How do I book an appointment?
               </h4>
@@ -53,7 +53,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
               </p>
             </div>
 
-            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
+            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 How does the AI symptom checker work?
               </h4>
@@ -62,7 +62,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
               </p>
             </div>
 
-            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
+            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 Is my health information secure?
               </h4>
@@ -71,7 +71,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
               </p>
             </div>
 
-            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
+            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 Can I book for family members?
               </h4>
@@ -80,7 +80,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
               </p>
             </div>
 
-            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
+            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 What if I need to cancel my appointment?
               </h4>
@@ -89,7 +89,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
               </p>
             </div>
 
-            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
+            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 Do you accept insurance?
               </h4>
@@ -108,11 +108,11 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
 export function FAQ({ onBack }: { onBack: () => void }) {
   return (
     <div className="flex flex-col h-full bg-white">
-      <div className="flex items-center p-4 border-b border-[#E5E7EB]">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
-        <h2 className="text-lg font-semibold text-[#1F2937] ml-2">FAQ</h2>
+        <h2 className="text-lg font-semibold text-white ml-2">FAQ</h2>
       </div>
       <div className="flex-1 overflow-y-auto px-6 py-6">
         <p className="text-sm text-[#6B7280]">Frequently Asked Questions coming soon...</p>
@@ -125,11 +125,11 @@ export function FAQ({ onBack }: { onBack: () => void }) {
 export function ContactSupport({ onBack }: { onBack: () => void }) {
   return (
     <div className="flex flex-col h-full bg-white">
-      <div className="flex items-center p-4 border-b border-[#E5E7EB]">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
-        <h2 className="text-lg font-semibold text-[#1F2937] ml-2">Contact Support</h2>
+        <h2 className="text-lg font-semibold text-white ml-2">Contact Support</h2>
       </div>
       <div className="flex-1 overflow-y-auto px-6 py-6">
         <textarea
@@ -148,14 +148,14 @@ export function ContactSupport({ onBack }: { onBack: () => void }) {
 export function GenericSettings({ title, onBack }: GenericSettingsProps) {
   return (
     <div className="flex flex-col h-full bg-white">
-      <div className="flex items-center p-4 border-b border-[#E5E7EB]">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
-        <h2 className="text-lg font-semibold text-[#1F2937] ml-2">{title}</h2>
+        <h2 className="text-lg font-semibold text-white ml-2">{title}</h2>
       </div>
       <div className="flex-1 overflow-y-auto px-6 py-6">
-        <div className="bg-[#F3F4F6] rounded-xl p-4">
+        <div className="bg-[#FEF2F2] rounded-xl p-4">
           <p className="text-sm text-[#6B7280]">{title} screen</p>
         </div>
       </div>
@@ -167,11 +167,11 @@ export function GenericSettings({ title, onBack }: GenericSettingsProps) {
 export function LegalPolicies({ onBack, onNavigate }: { onBack: () => void; onNavigate: (screen: string) => void }) {
   return (
     <div className="flex flex-col h-full bg-white">
-      <div className="flex items-center p-4 border-b border-[#E5E7EB]">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
-        <h2 className="text-lg font-semibold text-[#1F2937] ml-2">Legal & Policies</h2>
+        <h2 className="text-lg font-semibold text-white ml-2">Legal & Policies</h2>
       </div>
       <div className="flex-1 overflow-y-auto px-6 py-6 pb-6 space-y-3">
         {/* Privacy Policy */}
@@ -183,7 +183,7 @@ export function LegalPolicies({ onBack, onNavigate }: { onBack: () => void; onNa
             <span className="text-xl">🔒</span>
             <span className="text-base font-medium text-[#1F2937]">Privacy Policy</span>
           </div>
-          <ChevronRight className="w-5 h-5 text-[#6B7280]" />
+          <ChevronRight className="w-5 h-5 text-[#D72638]" />
         </button>
 
         {/* Terms of Service */}
@@ -195,7 +195,7 @@ export function LegalPolicies({ onBack, onNavigate }: { onBack: () => void; onNa
             <span className="text-xl">📄</span>
             <span className="text-base font-medium text-[#1F2937]">Terms of Service</span>
           </div>
-          <ChevronRight className="w-5 h-5 text-[#6B7280]" />
+          <ChevronRight className="w-5 h-5 text-[#D72638]" />
         </button>
 
         {/* How We Use Your Data */}
@@ -207,7 +207,7 @@ export function LegalPolicies({ onBack, onNavigate }: { onBack: () => void; onNa
             <span className="text-xl">📋</span>
             <span className="text-base font-medium text-[#1F2937]">How We Use Your Data</span>
           </div>
-          <ChevronRight className="w-5 h-5 text-[#6B7280]" />
+          <ChevronRight className="w-5 h-5 text-[#D72638]" />
         </button>
 
         {/* Important Disclaimer */}
@@ -219,7 +219,7 @@ export function LegalPolicies({ onBack, onNavigate }: { onBack: () => void; onNa
             <span className="text-xl">⚠️</span>
             <span className="text-base font-medium text-[#1F2937]">Important Disclaimer</span>
           </div>
-          <ChevronRight className="w-5 h-5 text-[#6B7280]" />
+          <ChevronRight className="w-5 h-5 text-[#D72638]" />
         </button>
 
         {/* HIPAA Notice */}
@@ -231,11 +231,11 @@ export function LegalPolicies({ onBack, onNavigate }: { onBack: () => void; onNa
             <span className="text-xl">🏥</span>
             <span className="text-base font-medium text-[#1F2937]">HIPAA Notice</span>
           </div>
-          <ChevronRight className="w-5 h-5 text-[#6B7280]" />
+          <ChevronRight className="w-5 h-5 text-[#D72638]" />
         </button>
 
         {/* Version Info */}
-        <div className="mt-4 p-4 bg-[#F3F4F6] rounded-xl text-center">
+        <div className="mt-4 p-4 bg-[#FEF2F2] rounded-xl text-center">
           <p className="text-xs text-[#6B7280]">Last updated: January 10, 2026</p>
           <p className="text-xs text-[#6B7280] mt-1">Version 1.0.0</p>
         </div>
@@ -396,12 +396,12 @@ export function PolicyDetail({ policyType, onBack }: PolicyDetailProps) {
 
   return (
     <div className="flex flex-col h-full bg-white">
-      <div className="flex items-center p-4 border-b border-[#E5E7EB]">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center px-4 py-4">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
         <span className="text-xl ml-2">{policy.icon}</span>
-        <h2 className="text-lg font-semibold text-[#1F2937] ml-2">{policy.title}</h2>
+        <h2 className="text-lg font-semibold text-white ml-2">{policy.title}</h2>
       </div>
       <div className="flex-1 overflow-y-auto px-6 py-6 space-y-6">
         <div className="text-xs text-[#6B7280] mb-4">
@@ -415,7 +415,7 @@ export function PolicyDetail({ policyType, onBack }: PolicyDetailProps) {
           </div>
         ))}
 
-        <div className="mt-8 p-4 bg-[#F3F4F6] rounded-xl">
+        <div className="mt-8 p-4 bg-[#FEF2F2] rounded-xl">
           <p className="text-xs text-[#6B7280] text-center">
             For questions about this policy, contact us at legal@urgentcarex.com
           </p>

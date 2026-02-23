@@ -101,7 +101,7 @@ export default function MedicalHistoryView({ onBack, onEdit, userData = {} }: Me
           onClick={onEditClick}
           className="p-2 hover:bg-[#F3F4F6] rounded-lg transition-colors"
         >
-          <Edit2 className="w-4 h-4 text-[#6B7280]" />
+          <Edit2 className="w-4 h-4 text-[#D72638]" />
         </button>
       </div>
       
@@ -131,7 +131,7 @@ export default function MedicalHistoryView({ onBack, onEdit, userData = {} }: Me
           onClick={() => onEdit('social-history')}
           className="p-2 hover:bg-[#F3F4F6] rounded-lg transition-colors"
         >
-          <Edit2 className="w-4 h-4 text-[#6B7280]" />
+          <Edit2 className="w-4 h-4 text-[#D72638]" />
         </button>
       </div>
       
@@ -153,21 +153,21 @@ export default function MedicalHistoryView({ onBack, onEdit, userData = {} }: Me
   );
 
   return (
-    <div className="flex flex-col h-full bg-[#F9FAFB]">
+    <div className="flex flex-col h-full bg-white">
       {/* Header */}
-      <div className="flex items-center justify-between p-4 bg-white border-b border-[#E5E7EB]">
+      <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] flex items-center justify-between px-4 py-4">
         <div className="flex items-center gap-3">
           <button onClick={onBack} className="p-2">
-            <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
+            <ArrowLeft className="w-6 h-6 text-white" />
           </button>
-          <h2 className="text-lg font-semibold text-[#1F2937]">Medical History</h2>
+          <h2 className="text-lg font-semibold text-white">Medical History</h2>
         </div>
       </div>
 
       {/* Content */}
       <div className="flex-1 overflow-y-auto px-6 py-6 space-y-4">
         {/* Info Banner */}
-        <div className="bg-[#EFF6FF] border border-[#BFDBFE] rounded-xl p-4">
+        <div className="bg-[#FEF2F2] border border-[#D72638]/20 rounded-xl p-4">
           <p className="text-sm text-[#1F2937]">
             Keep your medical history up to date for better care recommendations and faster appointments.
           </p>
@@ -221,8 +221,8 @@ export default function MedicalHistoryView({ onBack, onEdit, userData = {} }: Me
           onClick={() => onEdit('chronic-conditions')}
           className="w-full flex items-center justify-center gap-2 p-4 bg-white border-2 border-dashed border-[#E5E7EB] rounded-xl hover:border-[#D72638] transition-colors"
         >
-          <Plus className="w-5 h-5 text-[#6B7280]" />
-          <span className="text-base font-medium text-[#6B7280]">Update Medical Information</span>
+          <Plus className="w-5 h-5 text-[#D72638]" />
+          <span className="text-base font-medium text-[#D72638]">Update Medical Information</span>
         </button>
 
         {/* Last Updated */}
