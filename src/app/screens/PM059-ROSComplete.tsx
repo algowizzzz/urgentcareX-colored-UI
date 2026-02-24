@@ -52,13 +52,13 @@ export default function ROSComplete({ onViewResults, onGoHome, onBack }: ROSComp
       <div className="flex-1 overflow-y-auto pb-24">
         <div className="px-8 py-8">
           {/* Summary Card */}
-          <div className="bg-[#F3F4F6] rounded-2xl p-6 mb-6">
+          <div className="bg-[#FEF2F2] rounded-2xl p-6 mb-6">
             <h2 className="text-lg font-semibold text-[#1F2937] mb-4">
               {QUESTIONNAIRE_NAME} Summary
             </h2>
             <div className="space-y-3 mb-4">
               {rosSummary.map((item, index) => (
-                <div key={index} className="pb-3 border-b border-[#E5E7EB] last:border-0 last:pb-0">
+                <div key={index} className="pb-3 border-b border-[#D72638]/20 last:border-0 last:pb-0">
                   <p className="text-sm font-medium text-[#1F2937] mb-1">
                     {item.category}
                   </p>
@@ -71,7 +71,7 @@ export default function ROSComplete({ onViewResults, onGoHome, onBack }: ROSComp
           </div>
 
           {/* Info Notice */}
-          <div className="bg-[#F3F4F6] border-l-4 border-[#D72638] rounded-xl p-5 mb-6">
+          <div className="bg-[#FEF2F2] border-l-4 border-[#D72638] rounded-xl p-5 mb-6">
             <h3 className="text-base font-semibold text-[#1F2937] mb-2">
               Shared with Your Provider
             </h3>
@@ -84,7 +84,7 @@ export default function ROSComplete({ onViewResults, onGoHome, onBack }: ROSComp
           <Button 
             onClick={onGoHome}
             variant="outline"
-            className="w-full h-[48px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="w-full h-[48px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             <Home className="w-5 h-5 mr-2" />
             Go to Dashboard
@@ -93,7 +93,7 @@ export default function ROSComplete({ onViewResults, onGoHome, onBack }: ROSComp
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button 
           onClick={onViewResults}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"

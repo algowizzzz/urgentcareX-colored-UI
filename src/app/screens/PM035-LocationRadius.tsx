@@ -59,7 +59,7 @@ export default function LocationRadius({ onContinue, onBack, initialData }: Loca
                 step="5"
                 value={radius}
                 onChange={handleSliderChange}
-                className="w-full h-2 bg-[#E5E7EB] rounded-full appearance-none cursor-pointer
+                className="w-full h-2 bg-[#FECDD3] rounded-full appearance-none cursor-pointer
                   [&::-webkit-slider-thumb]:appearance-none
                   [&::-webkit-slider-thumb]:w-6
                   [&::-webkit-slider-thumb]:h-6
@@ -84,7 +84,7 @@ export default function LocationRadius({ onContinue, onBack, initialData }: Loca
           </div>
 
           {/* Visual Representation */}
-          <div className="bg-[#F3F4F6] rounded-2xl p-6 mb-6">
+          <div className="bg-[#FEF2F2] rounded-2xl p-6 mb-6">
             <div className="flex items-center justify-center gap-3">
               <MapPin className="w-6 h-6 text-[#1F2937]" />
               <p className="text-base text-[#374151]">
@@ -96,7 +96,7 @@ export default function LocationRadius({ onContinue, onBack, initialData }: Loca
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button
           onClick={handleContinue}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"

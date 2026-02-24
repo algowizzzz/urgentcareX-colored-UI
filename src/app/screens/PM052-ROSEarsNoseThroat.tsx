@@ -60,7 +60,7 @@ export default function ROSEarsNoseThroat({ onContinue, onBack, initialData }: R
           <p className="text-sm font-medium text-[#6B7280] mb-2">
             {QUESTIONNAIRE_NAME}: Step 4 of 8
           </p>
-          <div className="w-full h-1 bg-[#E5E7EB] rounded-full overflow-hidden">
+          <div className="w-full h-1 bg-[#FECDD3] rounded-full overflow-hidden">
             <div className="h-full bg-[#D72638] rounded-full" style={{ width: '50%' }}></div>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function ROSEarsNoseThroat({ onContinue, onBack, initialData }: R
               className={`flex items-center gap-3 cursor-pointer p-4 rounded-xl transition-all ${
                 selectedSymptoms[symptom]
                   ? 'bg-[#D72638]/5 border-2 border-[#D72638]'
-                  : 'bg-white border-2 border-[#E5E7EB] hover:border-[#D72638]/30'
+                  : 'bg-white border-2 border-[#D72638]/20 hover:border-[#D72638]/30'
               }`}
             >
               <Checkbox
@@ -103,7 +103,7 @@ export default function ROSEarsNoseThroat({ onContinue, onBack, initialData }: R
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button 
           onClick={handleContinue}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"

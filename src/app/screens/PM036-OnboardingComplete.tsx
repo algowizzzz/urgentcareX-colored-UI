@@ -26,7 +26,7 @@ export default function OnboardingComplete({ onStartFindingCare }: OnboardingCom
           </p>
 
           {/* Completion List */}
-          <div className="w-full bg-white border border-[#E5E7EB] rounded-2xl p-6 mb-6">
+          <div className="w-full bg-[#FEF2F2] border border-[#D72638]/20 rounded-2xl p-6 mb-6">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <span className="text-xl text-[#10B981]">✓</span>
@@ -52,7 +52,7 @@ export default function OnboardingComplete({ onStartFindingCare }: OnboardingCom
             <p className="text-sm text-[#6B7280] text-center mb-2">
               Profile Completion: 100%
             </p>
-            <div className="w-full h-1 bg-[#E5E7EB] rounded-full overflow-hidden">
+            <div className="w-full h-1 bg-[#FECDD3] rounded-full overflow-hidden">
               <div className="h-full bg-[#D72638] rounded-full" style={{ width: '100%' }}></div>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function OnboardingComplete({ onStartFindingCare }: OnboardingCom
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button 
           onClick={onStartFindingCare}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"

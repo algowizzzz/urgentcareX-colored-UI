@@ -82,13 +82,13 @@ export default function MyFeedbackHistory({ onViewFeedback, onProvideFeedback, o
         {/* Quick Stats */}
         <div className="px-6 py-6 border-b border-[#E5E7EB]">
           <div className="grid grid-cols-2 gap-3">
-            <div className="bg-[#F3F4F6] rounded-xl p-4 text-center">
+            <div className="bg-[#FEF2F2] rounded-xl p-4 text-center">
               <p className="text-2xl font-bold text-[#1F2937] mb-1">
                 {feedbackList.filter(f => f.type === 'provider').length}
               </p>
               <p className="text-xs text-[#6B7280]">Provider Reviews</p>
             </div>
-            <div className="bg-[#F3F4F6] rounded-xl p-4 text-center">
+            <div className="bg-[#FEF2F2] rounded-xl p-4 text-center">
               <p className="text-2xl font-bold text-[#1F2937] mb-1">
                 {feedbackList.filter(f => f.type === 'app').length}
               </p>
@@ -133,7 +133,7 @@ export default function MyFeedbackHistory({ onViewFeedback, onProvideFeedback, o
                           className={`w-4 h-4 ${
                             star <= feedback.rating
                               ? 'fill-[#F59E0B] text-[#F59E0B]'
-                              : 'text-[#E5E7EB]'
+                              : 'text-[#FECDD3]'
                           }`}
                         />
                       ))}

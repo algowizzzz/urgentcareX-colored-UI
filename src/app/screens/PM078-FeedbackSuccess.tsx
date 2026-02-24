@@ -38,7 +38,7 @@ export default function FeedbackSuccess({
           <h2 className="text-lg font-semibold text-[#1F2937] mb-4 text-center">Your Rating</h2>
           
           <div className="text-center mb-4">
-            <div className="w-16 h-16 bg-[#F3F4F6] rounded-full flex items-center justify-center text-3xl mx-auto mb-3">
+            <div className="w-16 h-16 bg-[#FEF2F2] rounded-full flex items-center justify-center text-3xl mx-auto mb-3">
               👨‍⚕️
             </div>
             <p className="text-base font-semibold text-[#1F2937]">{providerName}</p>
@@ -51,7 +51,7 @@ export default function FeedbackSuccess({
                 className={`w-8 h-8 ${
                   star <= rating
                     ? 'fill-[#D72638] text-[#D72638]'
-                    : 'text-[#E5E7EB]'
+                    : 'text-[#FECDD3]'
                 }`}
               />
             ))}
@@ -65,7 +65,7 @@ export default function FeedbackSuccess({
         <div className="mb-6">
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">How Your Feedback Helps</h3>
           <div className="space-y-3">
-            <div className="flex items-start gap-3 p-4 bg-[#F3F4F6] rounded-xl">
+            <div className="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl">
               <span className="text-lg">📊</span>
               <div>
                 <p className="text-sm font-medium text-[#1F2937] mb-1">Improves Quality</p>
@@ -73,7 +73,7 @@ export default function FeedbackSuccess({
               </div>
             </div>
 
-            <div className="flex items-start gap-3 p-4 bg-[#F3F4F6] rounded-xl">
+            <div className="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl">
               <span className="text-lg">👥</span>
               <div>
                 <p className="text-sm font-medium text-[#1F2937] mb-1">Helps Others</p>
@@ -81,7 +81,7 @@ export default function FeedbackSuccess({
               </div>
             </div>
 
-            <div className="flex items-start gap-3 p-4 bg-[#F3F4F6] rounded-xl">
+            <div className="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl">
               <span className="text-lg">⭐</span>
               <div>
                 <p className="text-sm font-medium text-[#1F2937] mb-1">Recognizes Excellence</p>

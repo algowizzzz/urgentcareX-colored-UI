@@ -40,7 +40,7 @@ export default function InsuranceIntro({ onAddInsurance, onNoInsurance, onBack }
 
           {/* Benefits Cards */}
           <div className="space-y-3 mb-8">
-            <div className="bg-white border border-[#E5E7EB] rounded-2xl p-5">
+            <div className="bg-white border border-[#D72638]/20 rounded-2xl p-5">
               <div className="flex items-start gap-3">
                 <span className="text-xl">✓</span>
                 <div>
@@ -51,7 +51,7 @@ export default function InsuranceIntro({ onAddInsurance, onNoInsurance, onBack }
               </div>
             </div>
 
-            <div className="bg-white border border-[#E5E7EB] rounded-2xl p-5">
+            <div className="bg-white border border-[#D72638]/20 rounded-2xl p-5">
               <div className="flex items-start gap-3">
                 <span className="text-xl">✓</span>
                 <div>
@@ -62,7 +62,7 @@ export default function InsuranceIntro({ onAddInsurance, onNoInsurance, onBack }
               </div>
             </div>
 
-            <div className="bg-white border border-[#E5E7EB] rounded-2xl p-5">
+            <div className="bg-white border border-[#D72638]/20 rounded-2xl p-5">
               <div className="flex items-start gap-3">
                 <span className="text-xl">✓</span>
                 <div>
@@ -75,7 +75,7 @@ export default function InsuranceIntro({ onAddInsurance, onNoInsurance, onBack }
           </div>
 
           {/* Security Notice */}
-          <div className="flex items-start gap-3 mb-6 p-4 bg-[#F3F4F6] rounded-xl">
+          <div className="flex items-start gap-3 mb-6 p-4 bg-[#FEF2F2] rounded-xl">
             <span className="text-xl">🔒</span>
             <p className="text-sm text-[#6B7280]">
               Your insurance information is encrypted and secure.
@@ -85,7 +85,7 @@ export default function InsuranceIntro({ onAddInsurance, onNoInsurance, onBack }
       </div>
 
       {/* Fixed Bottom Buttons */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4 space-y-3">
+      <div className="bg-white border-t border-[#D72638]/20 p-4 space-y-3">
         <Button 
           onClick={onAddInsurance}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"
@@ -96,7 +96,7 @@ export default function InsuranceIntro({ onAddInsurance, onNoInsurance, onBack }
         <Button 
           onClick={onNoInsurance}
           variant="outline"
-          className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+          className="w-full h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
         >
           I don't have insurance
         </Button>

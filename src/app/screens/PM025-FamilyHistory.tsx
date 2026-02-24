@@ -118,10 +118,10 @@ export default function FamilyHistory({ onContinue, onSkip, onBack, initialData 
     const conditions = getConditions(section);
 
     return (
-      <div className="border border-[#E5E7EB] rounded-xl mb-3 overflow-hidden">
+      <div className="border border-[#D72638]/20 rounded-xl mb-3 overflow-hidden">
         <button
           onClick={() => toggleSection(section)}
-          className="w-full p-4 flex items-center justify-between bg-white hover:bg-[#F3F4F6] transition-colors"
+          className="w-full p-4 flex items-center justify-between bg-white hover:bg-[#FEF2F2] transition-colors"
         >
           <div className="flex items-center gap-3">
             <span className="text-xl">{icon}</span>
@@ -140,7 +140,7 @@ export default function FamilyHistory({ onContinue, onSkip, onBack, initialData 
         </button>
 
         {isExpanded && (
-          <div className="border-t border-[#E5E7EB] p-4 bg-[#F9FAFB]">
+          <div className="border-t border-[#D72638]/20 p-4 bg-[#FEF2F2]/50">
             <div className="space-y-3">
               {CONDITIONS.map((condition) => (
                 <div
@@ -203,7 +203,7 @@ export default function FamilyHistory({ onContinue, onSkip, onBack, initialData 
           {/* None of the above */}
           <div
             onClick={handleNoneToggle}
-            className="flex items-center gap-3 cursor-pointer mb-6 p-4 bg-[#F3F4F6] rounded-xl"
+            className="flex items-center gap-3 cursor-pointer mb-6 p-4 bg-[#FEF2F2] rounded-xl"
           >
             <Checkbox
               checked={noneSelected}
@@ -217,12 +217,12 @@ export default function FamilyHistory({ onContinue, onSkip, onBack, initialData 
       </div>
 
       {/* Fixed Bottom Buttons */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <div className="flex gap-3">
           <Button 
             onClick={onSkip}
             variant="outline"
-            className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             Skip
           </Button>

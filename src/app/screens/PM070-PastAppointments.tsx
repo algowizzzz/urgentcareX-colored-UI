@@ -106,7 +106,7 @@ export default function PastAppointments({ onViewDetails, onBack }: PastAppointm
               className={`px-4 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
                 filterPeriod === f.value
                   ? 'bg-[#D72638] text-white'
-                  : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB] border border-[#E5E7EB]'
+                  : 'bg-[#FEF2F2] text-[#D72638] hover:bg-[#E5E7EB] border border-[#FECACA]'
               }`}
             >
               {f.label}
@@ -165,7 +165,7 @@ export default function PastAppointments({ onViewDetails, onBack }: PastAppointm
                     </div>
 
                     {/* Divider */}
-                    <div className="border-t border-dashed border-[#F3F4F6] my-3"></div>
+                    <div className="border-t border-dashed border-[#E5E7EB] my-3"></div>
 
                     {/* Details row */}
                     <div className="flex items-center gap-3 mb-3">
@@ -231,7 +231,7 @@ export default function PastAppointments({ onViewDetails, onBack }: PastAppointm
                           <span className="text-[10px] font-semibold text-[#B45309]">Docs</span>
                         </div>
                       )}
-                      <div className="flex items-center gap-1 px-2 py-0.5 bg-[#F3F4F6] rounded-full border border-[#E5E7EB]">
+                      <div className="flex items-center gap-1 px-2 py-0.5 bg-[#FEF2F2] rounded-full border border-[#E5E7EB]">
                         <svg width="10" height="10" viewBox="0 0 24 24" fill="none">
                           <circle cx="12" cy="12" r="9" fill="#6B7280" />
                           <path d="M8 12L11 15L16 9" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

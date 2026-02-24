@@ -173,7 +173,7 @@ export default function NotificationSettings({ onSave, onBack }: NotificationSet
         </div>
 
         {/* Info Notice */}
-        <div className="bg-[#F3F4F6] rounded-xl p-4">
+        <div className="bg-[#FEF2F2] rounded-xl p-4">
           <p className="text-sm text-[#6B7280]">
             You can change these settings at any time. Critical health alerts will always be sent regardless of your preferences.
           </p>

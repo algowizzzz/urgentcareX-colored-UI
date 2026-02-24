@@ -40,7 +40,7 @@ export function ErrorModal({ title, message, onClose, onRetry }: { title: string
               Try Again
             </Button>
           )}
-          <Button onClick={onClose} variant="outline" className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl">
+          <Button onClick={onClose} variant="outline" className="w-full h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl">
             {onRetry ? 'Cancel' : 'Close'}
           </Button>
         </div>
@@ -83,7 +83,7 @@ export function ConfirmationModal({
           >
             {confirmText}
           </Button>
-          <Button onClick={onCancel} variant="outline" className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl">
+          <Button onClick={onCancel} variant="outline" className="w-full h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl">
             {cancelText}
           </Button>
         </div>

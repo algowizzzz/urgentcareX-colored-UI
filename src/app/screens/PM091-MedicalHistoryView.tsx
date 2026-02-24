@@ -91,7 +91,7 @@ export default function MedicalHistoryView({ onBack, onEdit, userData = {} }: Me
     items: string[] | null; 
     onEditClick: () => void;
   }) => (
-    <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
+    <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
           <span className="text-xl">{icon}</span>
@@ -99,7 +99,7 @@ export default function MedicalHistoryView({ onBack, onEdit, userData = {} }: Me
         </div>
         <button 
           onClick={onEditClick}
-          className="p-2 hover:bg-[#F3F4F6] rounded-lg transition-colors"
+          className="p-2 hover:bg-[#FEF2F2] rounded-lg transition-colors"
         >
           <Edit2 className="w-4 h-4 text-[#D72638]" />
         </button>
@@ -121,7 +121,7 @@ export default function MedicalHistoryView({ onBack, onEdit, userData = {} }: Me
   );
 
   const SocialHistoryCard = () => (
-    <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
+    <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
           <span className="text-xl">🏃</span>
@@ -129,7 +129,7 @@ export default function MedicalHistoryView({ onBack, onEdit, userData = {} }: Me
         </div>
         <button 
           onClick={() => onEdit('social-history')}
-          className="p-2 hover:bg-[#F3F4F6] rounded-lg transition-colors"
+          className="p-2 hover:bg-[#FEF2F2] rounded-lg transition-colors"
         >
           <Edit2 className="w-4 h-4 text-[#D72638]" />
         </button>
@@ -219,7 +219,7 @@ export default function MedicalHistoryView({ onBack, onEdit, userData = {} }: Me
         {/* Add New Button */}
         <button 
           onClick={() => onEdit('chronic-conditions')}
-          className="w-full flex items-center justify-center gap-2 p-4 bg-white border-2 border-dashed border-[#E5E7EB] rounded-xl hover:border-[#D72638] transition-colors"
+          className="w-full flex items-center justify-center gap-2 p-4 bg-white border-2 border-dashed border-[#D72638]/20 rounded-xl hover:border-[#D72638] transition-colors"
         >
           <Plus className="w-5 h-5 text-[#D72638]" />
           <span className="text-base font-medium text-[#D72638]">Update Medical Information</span>

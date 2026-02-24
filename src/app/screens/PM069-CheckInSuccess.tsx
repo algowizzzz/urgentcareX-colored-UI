@@ -60,7 +60,7 @@ export default function CheckInSuccess({
             </div>
 
             <div className="flex items-start gap-3">
-              <div className="w-8 h-8 bg-[#F3F4F6] rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-8 h-8 bg-[#FEF2F2] rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-base">👨‍⚕️</span>
               </div>
               <div>
@@ -70,7 +70,7 @@ export default function CheckInSuccess({
             </div>
 
             <div className="flex items-start gap-3">
-              <div className="w-8 h-8 bg-[#F3F4F6] rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-8 h-8 bg-[#FEF2F2] rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-base">⏳</span>
               </div>
               <div>
@@ -85,7 +85,7 @@ export default function CheckInSuccess({
         <div className="mb-6">
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">While You Wait</h3>
           <div className="space-y-3">
-            <div className="flex items-start gap-3 p-4 bg-[#F3F4F6] rounded-xl">
+            <div className="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl">
               <span className="text-lg">📱</span>
               <div>
                 <p className="text-sm font-medium text-[#1F2937] mb-1">Stay Nearby</p>
@@ -93,7 +93,7 @@ export default function CheckInSuccess({
               </div>
             </div>
 
-            <div className="flex items-start gap-3 p-4 bg-[#F3F4F6] rounded-xl">
+            <div className="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl">
               <span className="text-lg">🚻</span>
               <div>
                 <p className="text-sm font-medium text-[#1F2937] mb-1">Restrooms Available</p>
@@ -101,7 +101,7 @@ export default function CheckInSuccess({
               </div>
             </div>
 
-            <div className="flex items-start gap-3 p-4 bg-[#F3F4F6] rounded-xl">
+            <div className="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl">
               <span className="text-lg">💧</span>
               <div>
                 <p className="text-sm font-medium text-[#1F2937] mb-1">Water & Coffee</p>
@@ -125,7 +125,7 @@ export default function CheckInSuccess({
         </div>
 
         {/* Need Help? */}
-        <div className="bg-[#F3F4F6] rounded-xl p-5 mb-6">
+        <div className="bg-[#FEF2F2] rounded-xl p-5 mb-6">
           <h3 className="text-base font-semibold text-[#1F2937] mb-2">
             Need Help?
           </h3>
@@ -142,7 +142,7 @@ export default function CheckInSuccess({
           <Button 
             onClick={onViewAppointment}
             variant="outline"
-            className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             <MapPin className="w-5 h-5 mr-2" />
             View Clinic Information

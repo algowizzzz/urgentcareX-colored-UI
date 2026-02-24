@@ -190,7 +190,7 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
                   className={`rounded-2xl px-4 py-3 ${
                     message.sender === 'user'
                       ? 'bg-[#D72638] text-white rounded-tr-md'
-                      : 'bg-white text-[#1F2937] rounded-tl-md border border-[#E5E7EB]'
+                      : 'bg-white text-[#1F2937] rounded-tl-md border border-[#D72638]/20'
                   }`}
                   style={message.sender === 'ai' ? { boxShadow: '0 1px 2px rgba(0,0,0,0.04)' } : {}}
                 >
@@ -204,7 +204,7 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
                       <button
                         key={index}
                         onClick={() => handleOptionClick(option)}
-                        className="w-full text-left px-4 py-3 bg-white border border-[#E5E7EB] rounded-xl text-[15px] text-[#1F2937] hover:border-[#D72638]/40 hover:bg-[#FEF2F2] transition-all group"
+                        className="w-full text-left px-4 py-3 bg-white border border-[#D72638]/20 rounded-xl text-[15px] text-[#1F2937] hover:border-[#D72638]/40 hover:bg-[#FEF2F2] transition-all group"
                         style={{ boxShadow: '0 1px 2px rgba(0,0,0,0.03)' }}
                       >
                         <span className="group-hover:text-[#D72638] transition-colors">{option}</span>
@@ -226,7 +226,7 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
       </div>
 
       {/* Input Area */}
-      <div className="bg-white border-t border-[#E5E7EB] p-3" style={{ boxShadow: '0 -1px 3px rgba(0,0,0,0.04)' }}>
+      <div className="bg-white border-t border-[#D72638]/20 p-3" style={{ boxShadow: '0 -1px 3px rgba(0,0,0,0.04)' }}>
         {/* Recording Indicator */}
         {isRecording && (
           <div className="mb-3 flex items-center justify-center gap-2 text-[#EF4444] animate-pulse">
@@ -243,7 +243,7 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
               onChange={(e) => setInputText(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && handleSendMessage(inputText)}
               placeholder={isRecording ? "Listening..." : "Describe your symptoms..."}
-              className="w-full h-[44px] px-4 rounded-xl border border-[#E5E7EB] text-[15px] focus:outline-none focus:border-[#D72638] focus:ring-1 focus:ring-[#D72638]/20 bg-[#F9FAFB] transition-all"
+              className="w-full h-[44px] px-4 rounded-xl border border-[#D72638]/20 text-[15px] focus:outline-none focus:border-[#D72638] focus:ring-1 focus:ring-[#D72638]/20 bg-[#FEF2F2] transition-all"
               disabled={isRecording}
             />
           </div>
@@ -252,7 +252,7 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
             className={`w-[44px] h-[44px] rounded-xl flex items-center justify-center transition-all shrink-0 ${
               isRecording
                 ? 'bg-[#EF4444] hover:bg-[#DC2626] ring-4 ring-[#EF4444]/20'
-                : 'bg-[#F3F4F6] hover:bg-[#E5E7EB] border border-[#E5E7EB]'
+                : 'bg-[#FEF2F2] hover:bg-[#FECDD3] border border-[#D72638]/20'
             }`}
           >
             {isRecording ? <MicOff className="w-5 h-5 text-white" /> : <Mic className="w-5 h-5 text-[#6B7280]" />}

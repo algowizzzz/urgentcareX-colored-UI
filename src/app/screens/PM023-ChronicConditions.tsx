@@ -95,7 +95,7 @@ export default function ChronicConditions({ onContinue, onSkip, onBack, initialD
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="🔍 Search conditions..."
-              className="h-[52px] rounded-xl border-[#E5E7EB] text-base pl-12"
+              className="h-[52px] rounded-xl border-[#D72638]/20 text-base pl-12"
             />
           </div>
 
@@ -125,7 +125,7 @@ export default function ChronicConditions({ onContinue, onSkip, onBack, initialD
           {/* None of the above */}
           <div
             onClick={handleNoneToggle}
-            className="flex items-center gap-3 cursor-pointer mb-6 p-4 bg-[#F3F4F6] rounded-xl"
+            className="flex items-center gap-3 cursor-pointer mb-6 p-4 bg-[#FEF2F2] rounded-xl"
           >
             <Checkbox
               checked={noneSelected}
@@ -146,12 +146,12 @@ export default function ChronicConditions({ onContinue, onSkip, onBack, initialD
       </div>
 
       {/* Fixed Bottom Buttons */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <div className="flex gap-3">
           <Button 
             onClick={onSkip}
             variant="outline"
-            className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             Skip
           </Button>

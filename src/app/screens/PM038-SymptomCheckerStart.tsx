@@ -32,7 +32,7 @@ export default function SymptomCheckerStart({ onStart, onBack }: SymptomCheckerS
 
         {/* Features */}
         <div className="space-y-4 mb-8">
-          <div className="flex items-start gap-4 p-4 bg-[#F3F4F6] rounded-xl">
+          <div className="flex items-start gap-4 p-4 bg-[#FEF2F2] rounded-xl">
             <div className="w-10 h-10 bg-[#10B981]/10 rounded-full flex items-center justify-center flex-shrink-0">
               <Clock className="w-5 h-5 text-[#10B981]" />
             </div>
@@ -46,7 +46,7 @@ export default function SymptomCheckerStart({ onStart, onBack }: SymptomCheckerS
             </div>
           </div>
 
-          <div className="flex items-start gap-4 p-4 bg-[#F3F4F6] rounded-xl">
+          <div className="flex items-start gap-4 p-4 bg-[#FEF2F2] rounded-xl">
             <div className="w-10 h-10 bg-[#10B981]/10 rounded-full flex items-center justify-center flex-shrink-0">
               <Shield className="w-5 h-5 text-[#10B981]" />
             </div>
@@ -60,7 +60,7 @@ export default function SymptomCheckerStart({ onStart, onBack }: SymptomCheckerS
             </div>
           </div>
 
-          <div className="flex items-start gap-4 p-4 bg-[#F3F4F6] rounded-xl">
+          <div className="flex items-start gap-4 p-4 bg-[#FEF2F2] rounded-xl">
             <div className="w-10 h-10 bg-[#10B981]/10 rounded-full flex items-center justify-center flex-shrink-0">
               <MessageSquare className="w-5 h-5 text-[#10B981]" />
             </div>
@@ -102,7 +102,7 @@ export default function SymptomCheckerStart({ onStart, onBack }: SymptomCheckerS
         </div>
 
       {/* Bottom Button */}
-      <div className="px-8 py-4 bg-white border-t border-[#E5E7EB]">
+      <div className="px-8 py-4 bg-white border-t border-[#D72638]/20">
         <Button 
           onClick={onStart}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"

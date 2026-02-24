@@ -18,7 +18,7 @@ export default function MedicalRecords({
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Header */}
-      <div className="flex items-center justify-between p-4 border-b border-[#E5E7EB]">
+      <div className="flex items-center justify-between p-4 border-b border-[#D72638]/20">
         <button onClick={onBack} className="p-2">
           <ArrowLeft className="w-6 h-6 text-[#1F2937]" />
         </button>
@@ -29,7 +29,7 @@ export default function MedicalRecords({
       </div>
 
       {/* Search */}
-      <div className="px-4 py-4 border-b border-[#E5E7EB]">
+      <div className="px-4 py-4 border-b border-[#D72638]/20">
         <div className="relative">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#6B7280]" />
           <input
@@ -37,7 +37,7 @@ export default function MedicalRecords({
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search medical records..."
-            className="w-full h-[48px] pl-12 pr-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#D72638]"
+            className="w-full h-[48px] pl-12 pr-4 border border-[#D72638]/20 rounded-xl text-base focus:outline-none focus:border-[#D72638]"
           />
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function MedicalRecords({
           <div className="grid grid-cols-2 gap-3">
             <button
               onClick={onViewConditions}
-              className="p-5 bg-white border border-[#E5E7EB] rounded-2xl hover:border-[#D72638] transition-colors"
+              className="p-5 bg-white border border-[#D72638]/20 rounded-2xl hover:border-[#D72638] transition-colors"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 bg-[#F59E0B]/10 rounded-full flex items-center justify-center mb-3">
@@ -63,7 +63,7 @@ export default function MedicalRecords({
 
             <button
               onClick={onViewAllergies}
-              className="p-5 bg-white border border-[#E5E7EB] rounded-2xl hover:border-[#D72638] transition-colors"
+              className="p-5 bg-white border border-[#D72638]/20 rounded-2xl hover:border-[#D72638] transition-colors"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="w-12 h-12 bg-[#EF4444]/10 rounded-full flex items-center justify-center mb-3">
@@ -84,7 +84,7 @@ export default function MedicalRecords({
           </div>
 
           <div className="space-y-3">
-            <div className="flex items-start gap-3 p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#D72638] transition-colors cursor-pointer">
+            <div className="flex items-start gap-3 p-4 bg-white border border-[#D72638]/20 rounded-xl hover:border-[#D72638] transition-colors cursor-pointer">
               <div className="w-10 h-10 bg-[#10B981]/10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Activity className="w-5 h-5 text-[#10B981]" />
               </div>
@@ -97,7 +97,7 @@ export default function MedicalRecords({
               </div>
             </div>
 
-            <div className="flex items-start gap-3 p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#D72638] transition-colors cursor-pointer">
+            <div className="flex items-start gap-3 p-4 bg-white border border-[#D72638]/20 rounded-xl hover:border-[#D72638] transition-colors cursor-pointer">
               <div className="w-10 h-10 bg-[#D72638]/10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Pill className="w-5 h-5 text-[#1F2937]" />
               </div>
@@ -110,7 +110,7 @@ export default function MedicalRecords({
               </div>
             </div>
 
-            <div className="flex items-start gap-3 p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#D72638] transition-colors cursor-pointer">
+            <div className="flex items-start gap-3 p-4 bg-white border border-[#D72638]/20 rounded-xl hover:border-[#D72638] transition-colors cursor-pointer">
               <div className="w-10 h-10 bg-[#D72638]/10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <FileText className="w-5 h-5 text-[#1F2937]" />
               </div>
@@ -120,7 +120,7 @@ export default function MedicalRecords({
               </div>
             </div>
 
-            <div className="flex items-start gap-3 p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#D72638] transition-colors cursor-pointer">
+            <div className="flex items-start gap-3 p-4 bg-white border border-[#D72638]/20 rounded-xl hover:border-[#D72638] transition-colors cursor-pointer">
               <div className="w-10 h-10 bg-[#10B981]/10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Activity className="w-5 h-5 text-[#10B981]" />
               </div>
@@ -138,7 +138,7 @@ export default function MedicalRecords({
         {/* Health Summary */}
         <div className="mb-6">
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">Health Summary</h3>
-          <div className="bg-[#F3F4F6] rounded-2xl p-5">
+          <div className="bg-[#FEF2F2] rounded-2xl p-5">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <p className="text-sm text-[#6B7280]">Blood Type</p>

@@ -52,7 +52,7 @@ export default function SecurityPrivacy({ onNavigate, onBack }: SecurityPrivacyP
         </div>
 
         {/* HIPAA Compliance */}
-        <div className="bg-[#F3F4F6] border-l-4 border-[#D72638] rounded-xl p-4">
+        <div className="bg-[#FEF2F2] border-l-4 border-[#D72638] rounded-xl p-4">
           <h3 className="text-sm font-semibold text-[#1F2937] mb-2">
             🔒 HIPAA Compliant
           </h3>

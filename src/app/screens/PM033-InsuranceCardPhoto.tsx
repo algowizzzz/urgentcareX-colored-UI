@@ -47,7 +47,7 @@ export default function InsuranceCardPhoto({ onContinue, onSkip, onBack, initial
     onUpload: () => void; 
     onRemove: () => void;
   }) => (
-    <div className="border-2 border-dashed border-[#E5E7EB] rounded-2xl p-6 mb-4">
+    <div className="border-2 border-dashed border-[#D72638]/20 rounded-2xl p-6 mb-4">
       <h3 className="text-base font-semibold text-[#1F2937] mb-4">
         Card {side === 'front' ? 'Front' : 'Back'}
       </h3>
@@ -61,7 +61,7 @@ export default function InsuranceCardPhoto({ onContinue, onSkip, onBack, initial
           />
           <button
             onClick={onRemove}
-            className="absolute top-2 right-2 p-2 bg-white rounded-full shadow-lg hover:bg-[#F3F4F6]"
+            className="absolute top-2 right-2 p-2 bg-white rounded-full shadow-lg hover:bg-[#FEF2F2]"
           >
             <X className="w-5 h-5 text-[#EF4444]" />
           </button>
@@ -76,7 +76,7 @@ export default function InsuranceCardPhoto({ onContinue, onSkip, onBack, initial
         </div>
       ) : (
         <div>
-          <div className="bg-[#F3F4F6] rounded-xl h-[180px] flex flex-col items-center justify-center mb-3">
+          <div className="bg-[#FEF2F2] rounded-xl h-[180px] flex flex-col items-center justify-center mb-3">
             <Camera className="w-12 h-12 text-[#6B7280] mb-2" />
             <p className="text-sm text-[#6B7280]">No photo added</p>
           </div>
@@ -84,14 +84,14 @@ export default function InsuranceCardPhoto({ onContinue, onSkip, onBack, initial
           <div className="flex gap-2">
             <button
               onClick={onUpload}
-              className="flex-1 flex items-center justify-center gap-2 py-3 bg-white border border-[#E5E7EB] rounded-xl text-sm font-medium text-[#1F2937] hover:bg-[#F3F4F6]"
+              className="flex-1 flex items-center justify-center gap-2 py-3 bg-white border border-[#D72638]/20 rounded-xl text-sm font-medium text-[#1F2937] hover:bg-[#FEF2F2]"
             >
               <Camera className="w-4 h-4" />
               Take Photo
             </button>
             <button
               onClick={onUpload}
-              className="flex-1 flex items-center justify-center gap-2 py-3 bg-white border border-[#E5E7EB] rounded-xl text-sm font-medium text-[#1F2937] hover:bg-[#F3F4F6]"
+              className="flex-1 flex items-center justify-center gap-2 py-3 bg-white border border-[#D72638]/20 rounded-xl text-sm font-medium text-[#1F2937] hover:bg-[#FEF2F2]"
             >
               <Upload className="w-4 h-4" />
               Upload
@@ -125,7 +125,7 @@ export default function InsuranceCardPhoto({ onContinue, onSkip, onBack, initial
           </p>
 
           {/* Tips Card */}
-          <div className="bg-[#F3F4F6] rounded-xl p-4 mb-6">
+          <div className="bg-[#FEF2F2] rounded-xl p-4 mb-6">
             <p className="text-sm font-semibold text-[#1F2937] mb-2">📸 Photo Tips:</p>
             <ul className="text-sm text-[#6B7280] space-y-1 ml-4">
               <li>• Ensure all text is clearly visible</li>
@@ -151,7 +151,7 @@ export default function InsuranceCardPhoto({ onContinue, onSkip, onBack, initial
           />
 
           {/* Security Notice */}
-          <div className="flex items-start gap-2 mb-6 p-4 bg-[#F3F4F6] rounded-xl">
+          <div className="flex items-start gap-2 mb-6 p-4 bg-[#FEF2F2] rounded-xl">
             <span className="text-lg">🔒</span>
             <p className="text-sm text-[#6B7280]">
               Your insurance card photos are encrypted and stored securely.
@@ -161,12 +161,12 @@ export default function InsuranceCardPhoto({ onContinue, onSkip, onBack, initial
       </div>
 
       {/* Fixed Bottom Buttons */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <div className="flex gap-3">
           <Button 
             onClick={onSkip}
             variant="outline"
-            className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             Skip
           </Button>

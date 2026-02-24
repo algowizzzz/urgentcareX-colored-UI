@@ -93,7 +93,7 @@ export default function ChangePassword({ onSave, onBack }: ChangePasswordProps) 
 
           {/* Password Requirements */}
           {newPassword && (
-            <div className="bg-[#F3F4F6] rounded-xl p-4">
+            <div className="bg-[#FEF2F2] rounded-xl p-4">
               <p className="text-sm font-medium text-[#1F2937] mb-3">Password Requirements:</p>
               <div className="space-y-2">
                 <div className={`flex items-center gap-2 text-sm ${hasMinLength ? 'text-[#10B981]' : 'text-[#6B7280]'}`}>

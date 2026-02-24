@@ -37,7 +37,7 @@
   --destructive-foreground: #ffffff;
   --border: #E5E7EB;
   --input: transparent;
-  --input-background: #F3F4F6;
+  --input-background: #FEF2F2;
   --switch-background: #cbced4;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
@@ -139,6 +139,12 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+
+  *::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
   }
 
   body {

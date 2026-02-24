@@ -58,7 +58,7 @@ export default function BasicInfoName({ onContinue, onBack, initialData }: Basic
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 placeholder="Maria"
-                className="h-[52px] rounded-xl border-[#E5E7EB] text-base"
+                className="h-[52px] rounded-xl border-[#D72638]/20 text-base"
               />
             </div>
 
@@ -73,7 +73,7 @@ export default function BasicInfoName({ onContinue, onBack, initialData }: Basic
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 placeholder="Garcia"
-                className="h-[52px] rounded-xl border-[#E5E7EB] text-base"
+                className="h-[52px] rounded-xl border-[#D72638]/20 text-base"
               />
             </div>
 
@@ -88,7 +88,7 @@ export default function BasicInfoName({ onContinue, onBack, initialData }: Basic
                 value={middleName}
                 onChange={(e) => setMiddleName(e.target.value)}
                 placeholder=""
-                className="h-[52px] rounded-xl border-[#E5E7EB] text-base"
+                className="h-[52px] rounded-xl border-[#D72638]/20 text-base"
               />
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function BasicInfoName({ onContinue, onBack, initialData }: Basic
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button 
           onClick={handleContinue}
           disabled={!isValid}

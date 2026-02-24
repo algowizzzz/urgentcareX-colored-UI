@@ -24,7 +24,7 @@ export default function HIPAANotice({ onBack }: HIPAANoticeProps) {
             Notice of Privacy Practices
           </h2>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Intro */}
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">
@@ -32,7 +32,7 @@ export default function HIPAANotice({ onBack }: HIPAANoticeProps) {
           </h3>
 
           {/* Info Box */}
-          <div className="bg-[#F3F4F6] border border-[#E5E7EB] rounded-2xl p-5 mb-6">
+          <div className="bg-[#FEF2F2] border border-[#D72638]/20 rounded-2xl p-5 mb-6">
             <div className="text-2xl mb-3">🔒</div>
             <p className="text-sm text-[#6B7280]">
               This notice describes how medical information about you may be used 
@@ -41,7 +41,7 @@ export default function HIPAANotice({ onBack }: HIPAANoticeProps) {
             </p>
           </div>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Your Rights */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -61,7 +61,7 @@ export default function HIPAANotice({ onBack }: HIPAANoticeProps) {
             <li>File a complaint if you feel your rights are violated</li>
           </ul>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Your Choices */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -81,7 +81,7 @@ export default function HIPAANotice({ onBack }: HIPAANoticeProps) {
             share your information if we believe it is in your best interest.
           </p>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Our Uses and Disclosures */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -120,7 +120,7 @@ export default function HIPAANotice({ onBack }: HIPAANoticeProps) {
             improve your care.
           </p>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Other Uses */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -137,7 +137,7 @@ export default function HIPAANotice({ onBack }: HIPAANoticeProps) {
             <li>For research purposes (with your authorization or under strict conditions)</li>
           </ul>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Our Responsibilities */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -150,7 +150,7 @@ export default function HIPAANotice({ onBack }: HIPAANoticeProps) {
             <li>We will not use or share your information other than as described here unless you tell us we can in writing</li>
           </ul>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Changes */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -162,7 +162,7 @@ export default function HIPAANotice({ onBack }: HIPAANoticeProps) {
             upon request and on our website.
           </p>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Contact */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">

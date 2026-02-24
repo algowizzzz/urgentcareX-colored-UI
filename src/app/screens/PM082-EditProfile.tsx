@@ -80,7 +80,7 @@ export default function EditProfile({ onSave, onBack }: EditProfileProps) {
               type="email"
               value={email}
               readOnly
-              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base bg-[#F3F4F6] text-[#6B7280]"
+              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base bg-[#FEF2F2] text-[#6B7280]"
             />
             <p className="text-xs text-[#6B7280] mt-1">Email cannot be changed</p>
           </div>

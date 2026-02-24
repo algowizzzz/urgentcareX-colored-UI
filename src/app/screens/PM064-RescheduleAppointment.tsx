@@ -51,7 +51,7 @@ export default function RescheduleAppointment({
       </div>
 
       {/* Current Appointment Info */}
-      <div className="px-6 py-4 bg-[#F3F4F6] border-b border-[#E5E7EB]">
+      <div className="px-6 py-4 bg-[#FEF2F2] border-b border-[#E5E7EB]">
         <p className="text-sm text-[#6B7280] mb-2">Current Appointment</p>
         <p className="text-base font-semibold text-[#1F2937]">{providerName}</p>
         <div className="flex items-center gap-4 mt-2">
@@ -81,8 +81,8 @@ export default function RescheduleAppointment({
                 }}
                 className={`flex-shrink-0 w-16 py-3 rounded-xl text-center transition-all ${
                   selectedDate === date.date
-                    ? 'bg-[#F06070] text-white'
-                    : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#F06070]'
+                    ? 'bg-[#D72638] text-white'
+                    : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#D72638]'
                 }`}
               >
                 <p className="text-xs mb-1">{date.day}</p>
@@ -108,8 +108,8 @@ export default function RescheduleAppointment({
                     onClick={() => setSelectedTime(time)}
                     className={`py-3 rounded-xl text-sm font-medium transition-all ${
                       selectedTime === time
-                        ? 'bg-[#F06070] text-white'
-                        : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#F06070]'
+                        ? 'bg-[#D72638] text-white'
+                        : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#D72638]'
                     }`}
                   >
                     {time}
@@ -128,8 +128,8 @@ export default function RescheduleAppointment({
                     onClick={() => setSelectedTime(time)}
                     className={`py-3 rounded-xl text-sm font-medium transition-all ${
                       selectedTime === time
-                        ? 'bg-[#F06070] text-white'
-                        : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#F06070]'
+                        ? 'bg-[#D72638] text-white'
+                        : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#D72638]'
                     }`}
                   >
                     {time}
@@ -148,8 +148,8 @@ export default function RescheduleAppointment({
                     onClick={() => setSelectedTime(time)}
                     className={`py-3 rounded-xl text-sm font-medium transition-all ${
                       selectedTime === time
-                        ? 'bg-[#F06070] text-white'
-                        : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#F06070]'
+                        ? 'bg-[#D72638] text-white'
+                        : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#D72638]'
                     }`}
                   >
                     {time}

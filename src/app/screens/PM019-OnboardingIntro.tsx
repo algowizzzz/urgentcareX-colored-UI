@@ -23,7 +23,7 @@ export default function OnboardingIntro({ onStart }: OnboardingIntroProps) {
           </p>
 
           {/* Steps Card */}
-          <div className="bg-white border border-[#E5E7EB] rounded-2xl p-6 mb-8">
+          <div className="bg-[#FEF2F2] border border-[#D72638]/20 rounded-2xl p-6 mb-8">
             <div className="space-y-5">
               <div className="flex items-start gap-4">
                 <div className="text-2xl">👤</div>
@@ -86,7 +86,7 @@ export default function OnboardingIntro({ onStart }: OnboardingIntroProps) {
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button 
           onClick={onStart}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"

@@ -210,8 +210,8 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
           onClick={() => setFilter('all')}
           className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             filter === 'all'
-              ? 'bg-[#F06070] text-white'
-              : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
+              ? 'bg-[#D72638] text-white'
+              : 'bg-[#FEF2F2] text-[#D72638] hover:bg-[#FECDD3]'
           }`}
         >
           All ({appointments.length})
@@ -220,8 +220,8 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
           onClick={() => setFilter('pending')}
           className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             filter === 'pending'
-              ? 'bg-[#F06070] text-white'
-              : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
+              ? 'bg-[#D72638] text-white'
+              : 'bg-[#FEF2F2] text-[#D72638] hover:bg-[#FECDD3]'
           }`}
         >
           Pending ({appointments.filter(a => a.status === 'pending').length})
@@ -230,8 +230,8 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
           onClick={() => setFilter('confirmed')}
           className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             filter === 'confirmed'
-              ? 'bg-[#F06070] text-white'
-              : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
+              ? 'bg-[#D72638] text-white'
+              : 'bg-[#FEF2F2] text-[#D72638] hover:bg-[#FECDD3]'
           }`}
         >
           Confirmed ({appointments.filter(a => a.status === 'confirmed').length})
@@ -240,8 +240,8 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
           onClick={() => setFilter('completed')}
           className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             filter === 'completed'
-              ? 'bg-[#F06070] text-white'
-              : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
+              ? 'bg-[#D72638] text-white'
+              : 'bg-[#FEF2F2] text-[#D72638] hover:bg-[#FECDD3]'
           }`}
         >
           Completed ({appointments.filter(a => a.status === 'completed').length})
@@ -250,8 +250,8 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
           onClick={() => setFilter('cancelled')}
           className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             filter === 'cancelled'
-              ? 'bg-[#F06070] text-white'
-              : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
+              ? 'bg-[#D72638] text-white'
+              : 'bg-[#FEF2F2] text-[#D72638] hover:bg-[#FECDD3]'
           }`}
         >
           Cancelled ({appointments.filter(a => a.status === 'cancelled').length})
@@ -262,7 +262,7 @@ export default function UpcomingAppointments({ onViewDetails, onBack, initialFil
       <div className="flex-1 overflow-y-auto px-4 py-4 pb-24">
         {filteredAppointments.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full py-12">
-            <div className="w-24 h-24 bg-[#F3F4F6] rounded-full flex items-center justify-center mb-4">
+            <div className="w-24 h-24 bg-[#FEF2F2] rounded-full flex items-center justify-center mb-4">
               <Calendar className="w-12 h-12 text-[#6B7280]" />
             </div>
             <h3 className="text-lg font-semibold text-[#1F2937] mb-2">No Appointments</h3>

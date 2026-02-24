@@ -58,10 +58,10 @@ export default function LocationSetup({ onContinue, onBack, initialData }: Locat
           <button
             onClick={handleUseCurrentLocation}
             disabled={useCurrentLocation}
-            className="w-full bg-white border-2 border-[#E5E7EB] rounded-2xl p-6 mb-6 hover:bg-[#F3F4F6] transition-colors disabled:opacity-50"
+            className="w-full bg-white border-2 border-[#D72638]/20 rounded-2xl p-6 mb-6 hover:bg-[#FEF2F2] transition-colors disabled:opacity-50"
           >
             <div className="flex flex-col items-center gap-3">
-              <div className="w-16 h-16 bg-[#F3F4F6] rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 bg-[#FEF2F2] rounded-full flex items-center justify-center">
                 <MapPin className="w-8 h-8 text-[#1F2937]" />
               </div>
               <h3 className="text-base font-semibold text-[#1F2937]">
@@ -78,9 +78,9 @@ export default function LocationSetup({ onContinue, onBack, initialData }: Locat
 
           {/* Divider */}
           <div className="flex items-center gap-4 mb-6">
-            <div className="flex-1 h-[1px] bg-[#E5E7EB]"></div>
+            <div className="flex-1 h-[1px] bg-[#FECDD3]"></div>
             <span className="text-sm text-[#6B7280]">or</span>
-            <div className="flex-1 h-[1px] bg-[#E5E7EB]"></div>
+            <div className="flex-1 h-[1px] bg-[#FECDD3]"></div>
           </div>
 
           {/* ZIP Code Input */}
@@ -93,14 +93,14 @@ export default function LocationSetup({ onContinue, onBack, initialData }: Locat
               value={zipCode}
               onChange={(e) => setZipCode(e.target.value)}
               placeholder="90017"
-              className="h-[52px] rounded-xl border-[#E5E7EB] text-base"
+              className="h-[52px] rounded-xl border-[#D72638]/20 text-base"
             />
           </div>
         </div>
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button 
           onClick={handleContinue}
           disabled={!isValid}

@@ -113,7 +113,7 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
           <Button 
             onClick={() => setShowAddModal(true)}
             variant="outline"
-            className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6] mb-6"
+            className="w-full h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2] mb-6"
           >
             + Add Allergy
           </Button>
@@ -128,7 +128,7 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
                 {allergies.map((allergy, index) => (
                   <div
                     key={index}
-                    className="bg-white border border-[#E5E7EB] rounded-xl p-4"
+                    className="bg-white border border-[#D72638]/20 rounded-xl p-4"
                   >
                     <div className="flex items-start justify-between mb-2">
                       <div className="flex items-center gap-2">
@@ -139,7 +139,7 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
                       </div>
                       <button
                         onClick={() => handleRemoveAllergy(index)}
-                        className="p-2 hover:bg-[#F3F4F6] rounded-lg transition-colors"
+                        className="p-2 hover:bg-[#FEF2F2] rounded-lg transition-colors"
                       >
                         <X className="w-5 h-5 text-[#6B7280]" />
                       </button>
@@ -164,7 +164,7 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
           {/* None of the above */}
           <div
             onClick={handleNoneToggle}
-            className="flex items-center gap-3 cursor-pointer mb-6 p-4 bg-[#F3F4F6] rounded-xl"
+            className="flex items-center gap-3 cursor-pointer mb-6 p-4 bg-[#FEF2F2] rounded-xl"
           >
             <Checkbox
               checked={noneSelected}
@@ -178,12 +178,12 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
       </div>
 
       {/* Fixed Bottom Buttons */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <div className="flex gap-3">
           <Button 
             onClick={onSkip}
             variant="outline"
-            className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             Skip
           </Button>
@@ -210,7 +210,7 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
                 <select
                   value={newAllergy.type}
                   onChange={(e) => setNewAllergy({ ...newAllergy, type: e.target.value })}
-                  className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base"
+                  className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base"
                 >
                   <option value="">Select type...</option>
                   {ALLERGY_TYPES.map(type => (
@@ -235,7 +235,7 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
                           setNewAllergy({ ...newAllergy, allergen: e.target.value });
                         }
                       }}
-                      className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base mb-3"
+                      className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base mb-3"
                     >
                       <option value="">Select allergen...</option>
                       {COMMON_ALLERGENS[newAllergy.type]?.map(allergen => (
@@ -251,7 +251,7 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
                           setNewAllergy({ ...newAllergy, allergen: e.target.value });
                         }}
                         placeholder="Enter custom allergen"
-                        className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base"
+                        className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base"
                       />
                     )}
                   </>
@@ -261,7 +261,7 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
                     value={newAllergy.allergen}
                     onChange={(e) => setNewAllergy({ ...newAllergy, allergen: e.target.value })}
                     placeholder="e.g., Penicillin"
-                    className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base"
+                    className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base"
                   />
                 )}
               </div>
@@ -273,7 +273,7 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
                 <select
                   value={newAllergy.reaction}
                   onChange={(e) => setNewAllergy({ ...newAllergy, reaction: e.target.value })}
-                  className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base"
+                  className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base"
                 >
                   <option value="">Select reaction...</option>
                   {REACTIONS.map(reaction => (
@@ -289,7 +289,7 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
                 <select
                   value={newAllergy.severity}
                   onChange={(e) => setNewAllergy({ ...newAllergy, severity: e.target.value })}
-                  className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base"
+                  className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base"
                 >
                   <option value="">Select severity...</option>
                   {SEVERITIES.map(severity => (
@@ -307,14 +307,14 @@ export default function Allergies({ onContinue, onSkip, onBack, initialData = []
                   setCustomAllergen('');
                 }}
                 variant="outline"
-                className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium"
+                className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium"
               >
                 Cancel
               </Button>
               <Button 
                 onClick={handleAddAllergy}
                 disabled={!newAllergy.allergen || !newAllergy.type || !newAllergy.reaction || !newAllergy.severity}
-                className="flex-1 h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E] disabled:bg-[#E5E7EB] disabled:text-[#9CA3AF]"
+                className="flex-1 h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E] disabled:bg-[#FECDD3] disabled:text-[#9CA3AF]"
               >
                 Add
               </Button>

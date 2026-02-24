@@ -32,7 +32,7 @@ export default function CancelConfirmation({
       {/* Content */}
       <div className="flex-1 px-6 py-6 overflow-y-auto pb-8">
         {/* Cancellation Details */}
-        <div className="bg-[#F3F4F6] rounded-2xl p-6 mb-6">
+        <div className="bg-[#FEF2F2] rounded-2xl p-6 mb-6">
           <h2 className="text-lg font-semibold text-[#1F2937] mb-4">Cancellation Details</h2>
           
           <div className="space-y-3">

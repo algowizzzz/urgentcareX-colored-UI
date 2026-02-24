@@ -40,7 +40,7 @@ export default function AppointmentReason({ providerName, onContinue, onBack }: 
       </div>
 
       {/* Provider Info */}
-      <div className="px-4 py-3 bg-[#F3F4F6] border-b border-[#E5E7EB]">
+      <div className="px-4 py-3 bg-[#FEF2F2] border-b border-[#D72638]/20">
         <p className="text-sm text-[#6B7280]">Appointment with</p>
         <p className="text-base font-semibold text-[#1F2937]">{providerName}</p>
       </div>
@@ -60,7 +60,7 @@ export default function AppointmentReason({ providerName, onContinue, onBack }: 
                 className={`w-full text-left p-4 rounded-xl transition-all ${
                   selectedReason === reason
                     ? 'bg-[#D72638] text-white'
-                    : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:border-[#D72638]'
+                    : 'bg-white border border-[#D72638]/20 text-[#1F2937] hover:border-[#D72638]'
                 }`}
               >
                 {reason}
@@ -81,12 +81,12 @@ export default function AppointmentReason({ providerName, onContinue, onBack }: 
             value={details}
             onChange={(e) => setDetails(e.target.value)}
             placeholder="Describe your symptoms, concerns, or questions..."
-            className="w-full h-32 px-4 py-3 border border-[#E5E7EB] rounded-xl text-base resize-none focus:outline-none focus:border-[#D72638]"
+            className="w-full h-32 px-4 py-3 border border-[#D72638]/20 rounded-xl text-base resize-none focus:outline-none focus:border-[#D72638]"
           />
         </div>
 
         {/* Info Notice */}
-        <div className="bg-[#F3F4F6] rounded-xl p-4">
+        <div className="bg-[#FEF2F2] rounded-xl p-4">
           <div className="flex items-start gap-2">
             <span className="text-lg">ℹ️</span>
             <p className="text-sm text-[#6B7280]">
@@ -97,7 +97,7 @@ export default function AppointmentReason({ providerName, onContinue, onBack }: 
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-[#E5E7EB] p-4 max-w-[390px] mx-auto">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-[#D72638]/20 p-4 max-w-[390px] mx-auto">
         <Button 
           onClick={handleContinue}
           disabled={!selectedReason}

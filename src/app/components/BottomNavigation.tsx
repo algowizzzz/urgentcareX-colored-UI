@@ -72,7 +72,6 @@ function ProfileIcon({ active }: { active: boolean }) {
   );
 }
 
-
 export default function BottomNavigation({
   activeTab,
   onNavigateHome,
@@ -81,56 +80,55 @@ export default function BottomNavigation({
   onNavigateHistory,
   onNavigateProfile
 }: BottomNavigationProps) {
-  const leftTabs = [
+  const tabs = [
     { id: 'home' as NavTab, label: 'Home', icon: HomeIcon, onClick: onNavigateHome },
     { id: 'appointments' as NavTab, label: 'Appointments', icon: AppointmentsIcon, onClick: onNavigateAppointments },
-  ];
-
-  const rightTabs = [
+    { id: null, label: 'AI Chat', icon: null, onClick: onNavigateChat },
     { id: 'history' as NavTab, label: 'History', icon: HistoryIcon, onClick: onNavigateHistory },
     { id: 'profile' as NavTab, label: 'Profile', icon: ProfileIcon, onClick: onNavigateProfile },
   ];
 
-  const renderTab = (tab: { id: NavTab; label: string; icon: React.FC<{ active: boolean }>; onClick: () => void }) => {
-    const Icon = tab.icon;
-    const isActive = activeTab === tab.id;
-
-    return (
-      <button
-        key={tab.id}
-        onClick={tab.onClick}
-        className={`flex flex-col items-center gap-0.5 py-1.5 px-3 rounded-xl transition-all duration-200 relative ${isActive ? 'bg-[#FEF2F2]' : ''}`}
-      >
-        {isActive && (
-          <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-6 h-[3px] rounded-full bg-[#D72638]" />
-        )}
-        <div className="relative">
-          <Icon active={isActive} />
-        </div>
-        <span className={`text-[10px] leading-tight ${isActive ? 'text-[#D72638] font-bold' : 'text-[#9CA3AF] font-medium'}`}>
-          {tab.label}
-        </span>
-      </button>
-    );
-  };
-
   return (
-    <div className="bg-white border-t border-[#E5E7EB] px-4 pb-2 pt-1.5 flex justify-around items-end relative" style={{ boxShadow: '0 -2px 10px rgba(0,0,0,0.04)' }}>
-      {leftTabs.map(renderTab)}
+    <div className="bg-white border-t border-[#E5E7EB] pb-2 pt-1.5 relative" style={{ boxShadow: '0 -2px 10px rgba(0,0,0,0.04)', display: 'grid', gridTemplateColumns: '1.15fr 1.05fr 1fr 1fr 0.8fr' }}>
+      {tabs.map((tab) => {
+        // Center FAB button
+        if (tab.id === null) {
+          return (
+            <div key="ai-chat" className="flex flex-col items-center -mt-6">
+              <button
+                onClick={tab.onClick}
+                className="w-14 h-14 rounded-[16px] bg-[#1A1A1A] flex items-center justify-center shadow-lg transition-transform duration-200 active:scale-95"
+                style={{ boxShadow: '0 4px 15px rgba(0, 0, 0, 0.3)' }}
+              >
+                <img src={logo} alt="AI Chat" className="w-10 h-10" />
+              </button>
+              <span className="text-[10px] leading-tight text-[#9CA3AF] font-medium mt-0.5">AI Chat</span>
+            </div>
+          );
+        }
 
-      {/* Center FAB - Chat/AI Button */}
-      <div className="flex flex-col items-center -mt-6">
-        <button
-          onClick={onNavigateChat}
-          className="w-14 h-14 rounded-full bg-gradient-to-br from-[#D72638] to-[#B91C2E] flex items-center justify-center shadow-lg transition-transform duration-200 active:scale-95"
-          style={{ boxShadow: '0 4px 15px rgba(215, 38, 56, 0.4)' }}
-        >
-          <img src={logo} alt="AI Chat" className="w-8 h-8 brightness-0 invert" />
-        </button>
-        <span className="text-[10px] leading-tight text-[#9CA3AF] font-medium mt-0.5">AI Chat</span>
-      </div>
+        // Regular tab
+        const Icon = tab.icon!;
+        const isActive = activeTab === tab.id;
 
-      {rightTabs.map(renderTab)}
+        return (
+          <button
+            key={tab.id}
+            onClick={tab.onClick}
+            className="flex flex-col items-center gap-0.5 py-1.5 relative overflow-hidden"
+          >
+            {isActive && (
+              <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-6 h-[3px] rounded-full bg-[#D72638]" />
+            )}
+            <div className={`flex items-center justify-center w-10 h-7 rounded-lg ${isActive ? 'bg-[#FEF2F2]' : ''}`}>
+              <Icon active={isActive} />
+            </div>
+            <span className={`text-[10px] leading-tight whitespace-nowrap ${isActive ? 'text-[#D72638] font-bold' : 'text-[#9CA3AF] font-medium'}`}>
+              {tab.label}
+            </span>
+          </button>
+        );
+      })}
     </div>
   );
 }

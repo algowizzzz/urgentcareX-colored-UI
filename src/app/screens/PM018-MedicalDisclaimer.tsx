@@ -33,7 +33,7 @@ export default function MedicalDisclaimer({ onUnderstand, onBack }: MedicalDiscl
             Important Medical Notice
           </h2>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* This app does NOT */}
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">
@@ -94,7 +94,7 @@ export default function MedicalDisclaimer({ onUnderstand, onBack }: MedicalDiscl
             </div>
           </div>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Emergency Warning */}
           <div className="bg-[#FEF2F2] border-2 border-[#EF4444] rounded-2xl p-5 mb-6">
@@ -124,7 +124,7 @@ export default function MedicalDisclaimer({ onUnderstand, onBack }: MedicalDiscl
             </div>
           </div>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* What We Do */}
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">
@@ -139,7 +139,7 @@ export default function MedicalDisclaimer({ onUnderstand, onBack }: MedicalDiscl
             <li>Organize your medical information for provider visits</li>
           </ul>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Your Responsibility */}
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">
@@ -157,7 +157,7 @@ export default function MedicalDisclaimer({ onUnderstand, onBack }: MedicalDiscl
             <li>You will not rely solely on this app for health decisions</li>
           </ul>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Limitation of Liability */}
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">
@@ -173,7 +173,7 @@ export default function MedicalDisclaimer({ onUnderstand, onBack }: MedicalDiscl
       </ScrollArea>
 
       {/* Fixed Bottom Button */}
-      <div className="p-6 border-t border-[#E5E7EB] bg-white">
+      <div className="p-6 border-t border-[#D72638]/20 bg-white">
         <Button 
           onClick={onUnderstand}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"

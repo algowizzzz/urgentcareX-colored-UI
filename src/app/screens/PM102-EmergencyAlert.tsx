@@ -52,7 +52,7 @@ export default function EmergencyAlert({ onCall911, onDismiss }: EmergencyAlertP
           <Button 
             onClick={onDismiss}
             variant="outline"
-            className="w-full h-[48px] border-[#E5E7EB] text-[#6B7280] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="w-full h-[48px] border-[#D72638]/20 text-[#6B7280] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             I'll Seek Care on My Own
           </Button>

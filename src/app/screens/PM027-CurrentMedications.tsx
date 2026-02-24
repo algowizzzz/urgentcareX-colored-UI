@@ -168,7 +168,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
           <Button 
             onClick={() => setShowAddModal(true)}
             variant="outline"
-            className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6] mb-6"
+            className="w-full h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2] mb-6"
           >
             + Add Medication
           </Button>
@@ -183,7 +183,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
                 {medications.map((medication, index) => (
                   <div
                     key={index}
-                    className="bg-white border border-[#E5E7EB] rounded-xl p-4"
+                    className="bg-white border border-[#D72638]/20 rounded-xl p-4"
                   >
                     <div className="flex items-start justify-between mb-2">
                       <div className="flex items-center gap-2">
@@ -194,7 +194,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
                       </div>
                       <button
                         onClick={() => handleRemoveMedication(index)}
-                        className="p-2 hover:bg-[#F3F4F6] rounded-lg transition-colors"
+                        className="p-2 hover:bg-[#FEF2F2] rounded-lg transition-colors"
                       >
                         <X className="w-5 h-5 text-[#6B7280]" />
                       </button>
@@ -213,7 +213,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
           {/* None of the above */}
           <div
             onClick={handleNoneToggle}
-            className="flex items-center gap-3 cursor-pointer mb-6 p-4 bg-[#F3F4F6] rounded-xl"
+            className="flex items-center gap-3 cursor-pointer mb-6 p-4 bg-[#FEF2F2] rounded-xl"
           >
             <Checkbox
               checked={noneSelected}
@@ -227,12 +227,12 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
       </div>
 
       {/* Fixed Bottom Buttons */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <div className="flex gap-3">
           <Button 
             onClick={onSkip}
             variant="outline"
-            className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             Skip
           </Button>
@@ -259,7 +259,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
                 <select
                   value={newMedication.name}
                   onChange={(e) => setNewMedication({ ...newMedication, name: e.target.value })}
-                  className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base bg-white"
+                  className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base bg-white"
                 >
                   <option value="">Select medication...</option>
                   {MEDICATIONS.map(med => (
@@ -277,7 +277,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
                     <select
                       value={dosageQuantity}
                       onChange={(e) => setDosageQuantity(e.target.value)}
-                      className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base bg-white"
+                      className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base bg-white"
                     >
                       <option value="">Quantity...</option>
                       {DOSAGE_QUANTITIES.map(qty => (
@@ -289,7 +289,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
                     <select
                       value={dosageUnit}
                       onChange={(e) => setDosageUnit(e.target.value)}
-                      className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base bg-white"
+                      className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base bg-white"
                     >
                       <option value="">Unit...</option>
                       {DOSAGE_UNITS.map(unit => (
@@ -305,7 +305,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
                     value={customQuantity}
                     onChange={(e) => setCustomQuantity(e.target.value)}
                     placeholder="Enter quantity"
-                    className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base mt-3"
+                    className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base mt-3"
                   />
                 )}
                 {/* Custom unit input when "Other" is selected */}
@@ -315,7 +315,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
                     value={customUnit}
                     onChange={(e) => setCustomUnit(e.target.value)}
                     placeholder="Enter unit"
-                    className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base mt-3"
+                    className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base mt-3"
                   />
                 )}
               </div>
@@ -327,7 +327,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
                 <select
                   value={newMedication.frequency}
                   onChange={(e) => setNewMedication({ ...newMedication, frequency: e.target.value })}
-                  className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base bg-white"
+                  className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base bg-white"
                 >
                   <option value="">Select frequency...</option>
                   {FREQUENCIES.map(freq => (
@@ -343,7 +343,7 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
                 <select
                   value={newMedication.purpose}
                   onChange={(e) => setNewMedication({ ...newMedication, purpose: e.target.value })}
-                  className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base bg-white"
+                  className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base bg-white"
                 >
                   <option value="">Select purpose...</option>
                   {PURPOSES.map(purpose => (
@@ -364,14 +364,14 @@ export default function CurrentMedications({ onContinue, onSkip, onBack, initial
                   setCustomUnit('');
                 }}
                 variant="outline"
-                className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium"
+                className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium"
               >
                 Cancel
               </Button>
               <Button
                 onClick={handleAddMedication}
                 disabled={!newMedication.name || !isDosageValid() || !newMedication.frequency}
-                className="flex-1 h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E] disabled:bg-[#E5E7EB] disabled:text-[#9CA3AF]"
+                className="flex-1 h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E] disabled:bg-[#FECDD3] disabled:text-[#9CA3AF]"
               >
                 Add
               </Button>

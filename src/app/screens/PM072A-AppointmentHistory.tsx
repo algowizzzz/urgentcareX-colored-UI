@@ -67,7 +67,7 @@ export default function AppointmentHistory({ onViewPast, onViewUpcoming, onBack 
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">Quick Stats</h3>
           
           <div className="space-y-4">
-            <div className="bg-[#F3F4F6] rounded-xl p-4">
+            <div className="bg-[#FEF2F2] rounded-xl p-4">
               <div className="flex items-center justify-between mb-2">
                 <p className="text-sm text-[#6B7280]">Last Visit</p>
                 <Calendar className="w-4 h-4 text-[#6B7280]" />
@@ -77,7 +77,7 @@ export default function AppointmentHistory({ onViewPast, onViewUpcoming, onBack 
               </p>
             </div>
 
-            <div className="bg-[#F3F4F6] rounded-xl p-4">
+            <div className="bg-[#FEF2F2] rounded-xl p-4">
               <div className="flex items-center justify-between mb-2">
                 <p className="text-sm text-[#6B7280]">Most Visited Provider</p>
                 <TrendingUp className="w-4 h-4 text-[#6B7280]" />
@@ -86,7 +86,7 @@ export default function AppointmentHistory({ onViewPast, onViewUpcoming, onBack 
               <p className="text-xs text-[#6B7280] mt-1">5 visits</p>
             </div>
 
-            <div className="bg-[#F3F4F6] rounded-xl p-4">
+            <div className="bg-[#FEF2F2] rounded-xl p-4">
               <div className="flex items-center justify-between mb-2">
                 <p className="text-sm text-[#6B7280]">Average Visits Per Year</p>
                 <TrendingUp className="w-4 h-4 text-[#6B7280]" />
@@ -102,7 +102,7 @@ export default function AppointmentHistory({ onViewPast, onViewUpcoming, onBack 
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">Visit Types</h3>
           
           <div className="space-y-3">
-            <div className="flex items-center justify-between p-4 bg-[#F3F4F6] rounded-xl">
+            <div className="flex items-center justify-between p-4 bg-[#FEF2F2] rounded-xl">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-[#D72638] rounded-full flex items-center justify-center">
                   <span className="text-white text-lg">🏥</span>
@@ -115,7 +115,7 @@ export default function AppointmentHistory({ onViewPast, onViewUpcoming, onBack 
               <p className="text-lg font-bold text-[#1F2937]">11</p>
             </div>
 
-            <div className="flex items-center justify-between p-4 bg-[#F3F4F6] rounded-xl">
+            <div className="flex items-center justify-between p-4 bg-[#FEF2F2] rounded-xl">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-[#D72638]/70 rounded-full flex items-center justify-center">
                   <span className="text-white text-lg">📹</span>
@@ -136,7 +136,7 @@ export default function AppointmentHistory({ onViewPast, onViewUpcoming, onBack 
           
           <div className="space-y-3">
             <div className="flex items-center gap-3 p-3 bg-white border border-[#E5E7EB] rounded-xl">
-              <div className="w-12 h-12 bg-[#F3F4F6] rounded-full flex items-center justify-center text-2xl">
+              <div className="w-12 h-12 bg-[#FEF2F2] rounded-full flex items-center justify-center text-2xl">
                 👩‍⚕️
               </div>
               <div className="flex-1">
@@ -146,7 +146,7 @@ export default function AppointmentHistory({ onViewPast, onViewUpcoming, onBack 
             </div>
 
             <div className="flex items-center gap-3 p-3 bg-white border border-[#E5E7EB] rounded-xl">
-              <div className="w-12 h-12 bg-[#F3F4F6] rounded-full flex items-center justify-center text-2xl">
+              <div className="w-12 h-12 bg-[#FEF2F2] rounded-full flex items-center justify-center text-2xl">
                 👨‍⚕️
               </div>
               <div className="flex-1">
@@ -156,7 +156,7 @@ export default function AppointmentHistory({ onViewPast, onViewUpcoming, onBack 
             </div>
 
             <div className="flex items-center gap-3 p-3 bg-white border border-[#E5E7EB] rounded-xl">
-              <div className="w-12 h-12 bg-[#F3F4F6] rounded-full flex items-center justify-center text-2xl">
+              <div className="w-12 h-12 bg-[#FEF2F2] rounded-full flex items-center justify-center text-2xl">
                 👩‍⚕️
               </div>
               <div className="flex-1">
@@ -180,7 +180,7 @@ export default function AppointmentHistory({ onViewPast, onViewUpcoming, onBack 
           <Button 
             onClick={onViewPast}
             variant="outline"
-            className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             <Filter className="w-5 h-5 mr-2" />
             View Past Appointments

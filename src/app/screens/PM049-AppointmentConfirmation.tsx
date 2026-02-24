@@ -85,7 +85,7 @@ export default function AppointmentConfirmation({
           <div className="space-y-3">
             {/* Removed Check Your Email card */}
 
-            <div className="flex items-start gap-3 p-4 bg-[#F3F4F6] rounded-xl">
+            <div className="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl">
               <span className="text-xl">📋</span>
               <div>
                 <p className="text-sm font-medium text-[#1F2937] mb-1">Prepare for Your Visit</p>
@@ -93,7 +93,7 @@ export default function AppointmentConfirmation({
               </div>
             </div>
 
-            <div className="flex items-start gap-3 p-4 bg-[#F3F4F6] rounded-xl">
+            <div className="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl">
               <span className="text-xl">⏰</span>
               <div>
                 <p className="text-sm font-medium text-[#1F2937] mb-1">Arrive Early</p>
@@ -105,7 +105,7 @@ export default function AppointmentConfirmation({
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button 
           onClick={onGoHome}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"

@@ -69,7 +69,7 @@ export default function Dashboard({
   ];
 
   return (
-    <div className="flex flex-col h-full bg-[#F3F4F6] relative">
+    <div className="flex flex-col h-full bg-white relative">
       {/* Header */}
       <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] px-6 pt-8 pb-5">
         <div className="flex items-center justify-between">
@@ -107,7 +107,7 @@ export default function Dashboard({
           ></div>
 
           {/* Notification Panel */}
-          <div className="absolute top-0 right-0 bottom-0 w-full bg-[#F9FAFB] z-50 shadow-2xl">
+          <div className="absolute top-0 right-0 bottom-0 w-full bg-white z-50 shadow-2xl">
             {/* Panel Header */}
             <div className="bg-gradient-to-r from-[#8B1A2B] to-[#D72638] px-6 py-4 flex items-center justify-between">
               <div className="flex items-center gap-2">
@@ -157,8 +157,8 @@ export default function Dashboard({
               {notifications.length === 0 && (
                 <div className="flex flex-col items-center justify-center py-20 px-6">
                   <svg width="64" height="64" viewBox="0 0 24 24" fill="none" className="mb-4">
-                    <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="#E5E7EB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="#E5E7EB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="#FECDD3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="#FECDD3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <p className="text-base font-medium text-[#9CA3AF] text-center">
                     No notifications yet

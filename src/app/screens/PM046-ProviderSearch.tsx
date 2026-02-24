@@ -150,21 +150,21 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
       </div>
 
       {/* Location - With change button */}
-      <div className="px-4 py-3 bg-[#F3F4F6] flex items-center gap-2">
-        <MapPin className="w-4 h-4 text-[#6B7280]" />
-        <span className="text-sm text-[#6B7280]">Los Angeles, CA 90210 • Within 10 miles</span>
-        <button className="ml-auto text-sm text-[#D72638] font-medium">Change</button>
+      <div className="px-4 py-3 bg-[#FEF2F2] flex items-center gap-2">
+        <MapPin className="w-4 h-4 text-[#D72638]" />
+        <span className="text-sm text-[#D72638]">Los Angeles, CA 90210 • Within 10 miles</span>
+        <button className="ml-auto text-sm text-[#B91C2E] font-semibold">Change</button>
       </div>
 
       {/* Filter Tabs */}
-      <div className="px-4 py-3 border-b border-[#E5E7EB] overflow-x-auto">
+      <div className="px-4 py-3 border-b border-[#D72638]/20 overflow-x-auto">
         <div className="flex gap-2 whitespace-nowrap">
           <button
             onClick={() => setActiveTab('all')}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               activeTab === 'all'
-                ? 'bg-[#F06070] text-white'
-                : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
+                ? 'bg-[#D72638] text-white'
+                : 'bg-[#FEF2F2] text-[#D72638] hover:bg-[#FECDD3]'
             }`}
           >
             All
@@ -173,8 +173,8 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
             onClick={() => setActiveTab('facilities')}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               activeTab === 'facilities'
-                ? 'bg-[#F06070] text-white'
-                : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
+                ? 'bg-[#D72638] text-white'
+                : 'bg-[#FEF2F2] text-[#D72638] hover:bg-[#FECDD3]'
             }`}
           >
             Facilities
@@ -183,8 +183,8 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
             onClick={() => setActiveTab('doctors')}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               activeTab === 'doctors'
-                ? 'bg-[#F06070] text-white'
-                : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
+                ? 'bg-[#D72638] text-white'
+                : 'bg-[#FEF2F2] text-[#D72638] hover:bg-[#FECDD3]'
             }`}
           >
             Doctors
@@ -195,8 +195,8 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
               onClick={() => setActiveTab('insurance')}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 activeTab === 'insurance'
-                  ? 'bg-[#F06070] text-white'
-                  : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
+                  ? 'bg-[#D72638] text-white'
+                  : 'bg-[#FEF2F2] text-[#D72638] hover:bg-[#FECDD3]'
               }`}
             >
               Accepts My Insurance
@@ -217,7 +217,7 @@ export default function ProviderSearch({ onSelectProvider, onBack }: ProviderSea
             <div
               key={provider.id}
               onClick={() => onSelectProvider(provider)}
-              className="border border-[#E5E7EB] rounded-2xl p-4 hover:border-[#D72638] transition-colors cursor-pointer"
+              className="border border-[#D72638]/20 rounded-2xl p-4 hover:border-[#D72638] hover:bg-[#FEF2F2] transition-colors cursor-pointer"
             >
               {/* Type Badge + Insurance Tag */}
               <div className="flex items-center gap-2 mb-3 flex-wrap">

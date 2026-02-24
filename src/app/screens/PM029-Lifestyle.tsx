@@ -53,7 +53,7 @@ export default function Lifestyle({ onContinue, onSkip, onBack, initialData }: L
       className={`px-4 py-3 rounded-xl text-sm font-medium transition-all ${
         selected
           ? 'bg-[#D72638] text-white'
-          : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:bg-[#F3F4F6]'
+          : 'bg-white border border-[#D72638]/20 text-[#1F2937] hover:bg-[#FEF2F2]'
       }`}
     >
       {label}
@@ -137,9 +137,9 @@ export default function Lifestyle({ onContinue, onSkip, onBack, initialData }: L
                 step="0.5"
                 value={sleepHours}
                 onChange={(e) => setSleepHours(parseFloat(e.target.value))}
-                className="w-full h-2 bg-[#E5E7EB] rounded-lg appearance-none cursor-pointer slider"
+                className="w-full h-2 bg-[#FECDD3] rounded-lg appearance-none cursor-pointer slider"
                 style={{
-                  background: `linear-gradient(to right, #1F2937 0%, #1F2937 ${((sleepHours - 3) / 9) * 100}%, #E5E7EB ${((sleepHours - 3) / 9) * 100}%, #E5E7EB 100%)`
+                  background: `linear-gradient(to right, #D72638 0%, #D72638 ${((sleepHours - 3) / 9) * 100}%, #FECDD3 ${((sleepHours - 3) / 9) * 100}%, #FECDD3 100%)`
                 }}
               />
               <div className="flex justify-between text-sm text-[#6B7280] mt-2">
@@ -167,7 +167,7 @@ export default function Lifestyle({ onContinue, onSkip, onBack, initialData }: L
                         : index === 1
                         ? 'bg-[#F59E0B] text-white'
                         : 'bg-[#EF4444] text-white'
-                      : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:bg-[#F3F4F6]'
+                      : 'bg-white border border-[#D72638]/20 text-[#1F2937] hover:bg-[#FEF2F2]'
                   }`}
                 >
                   {option}
@@ -186,19 +186,19 @@ export default function Lifestyle({ onContinue, onSkip, onBack, initialData }: L
               value={occupation}
               onChange={(e) => setOccupation(e.target.value)}
               placeholder="e.g., Software Engineer, Teacher"
-              className="h-[52px] rounded-xl border-[#E5E7EB] text-base"
+              className="h-[52px] rounded-xl border-[#D72638]/20 bg-[#FEF2F2] text-base"
             />
           </div>
         </div>
       </div>
 
       {/* Fixed Bottom Buttons */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <div className="flex gap-3">
           <Button 
             onClick={onSkip}
             variant="outline"
-            className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             Skip
           </Button>

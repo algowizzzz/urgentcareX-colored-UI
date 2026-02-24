@@ -36,7 +36,7 @@ export default function RescheduleConfirmation({
       {/* Content */}
       <div className="flex-1 px-6 py-6 overflow-y-auto pb-8">
         {/* New Appointment Details */}
-        <div className="bg-[#F3F4F6] rounded-2xl p-6 mb-6">
+        <div className="bg-[#FEF2F2] rounded-2xl p-6 mb-6">
           <h2 className="text-lg font-semibold text-[#1F2937] mb-4">Updated Appointment</h2>
           
           <div className="space-y-4 mb-4">
@@ -75,7 +75,7 @@ export default function RescheduleConfirmation({
           <Button 
             onClick={onViewAppointment}
             variant="outline"
-            className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             <Calendar className="w-5 h-5 mr-2" />
             View Appointment Details

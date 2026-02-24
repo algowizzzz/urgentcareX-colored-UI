@@ -19,7 +19,7 @@ function ChatIllustration() {
       <rect x="95" y="12" width="50" height="6" rx="3" fill="#374151" />
 
       {/* AI message bubble */}
-      <rect x="76" y="42" width="72" height="28" rx="10" fill="#F3F4F6" />
+      <rect x="76" y="42" width="72" height="28" rx="10" fill="#FEF2F2" />
       <circle cx="88" cy="56" r="3" fill="#9CA3AF" />
       <circle cx="100" cy="56" r="3" fill="#9CA3AF" />
       <circle cx="112" cy="56" r="3" fill="#9CA3AF" />
@@ -32,7 +32,7 @@ function ChatIllustration() {
       <rect x="112" y="93" width="32" height="3" rx="1.5" fill="white" opacity="0.7" />
 
       {/* AI response */}
-      <rect x="76" y="118" width="80" height="22" rx="10" fill="#F3F4F6" />
+      <rect x="76" y="118" width="80" height="22" rx="10" fill="#FEF2F2" />
       <rect x="84" y="126" width="50" height="3" rx="1.5" fill="#9CA3AF" />
 
       {/* User message */}
@@ -64,9 +64,9 @@ function MapIllustration() {
       <line x1="90" y1="20" x2="90" y2="180" stroke="#DBEAFE" strokeWidth="1" />
       <line x1="160" y1="20" x2="160" y2="180" stroke="#DBEAFE" strokeWidth="1" />
       {/* Roads */}
-      <path d="M20 95 L220 95" stroke="#E5E7EB" strokeWidth="6" />
-      <path d="M125 20 L125 180" stroke="#E5E7EB" strokeWidth="6" />
-      <path d="M40 40 L180 160" stroke="#E5E7EB" strokeWidth="3" opacity="0.5" />
+      <path d="M20 95 L220 95" stroke="#FECDD3" strokeWidth="6" />
+      <path d="M125 20 L125 180" stroke="#FECDD3" strokeWidth="6" />
+      <path d="M40 40 L180 160" stroke="#FECDD3" strokeWidth="3" opacity="0.5" />
 
       {/* Location pin 1 - Primary (you are here) */}
       <circle cx="125" cy="95" r="18" fill="#D72638" opacity="0.15" />
@@ -113,7 +113,7 @@ function CalendarIllustration() {
   return (
     <svg width="240" height="200" viewBox="0 0 240 200" fill="none">
       {/* Calendar body */}
-      <rect x="40" y="30" width="160" height="140" rx="14" fill="white" stroke="#E5E7EB" strokeWidth="1.5" />
+      <rect x="40" y="30" width="160" height="140" rx="14" fill="white" stroke="#FECDD3" strokeWidth="1.5" />
       {/* Calendar header */}
       <rect x="40" y="30" width="160" height="40" rx="14" fill="#D72638" />
       <rect x="40" y="56" width="160" height="14" fill="#D72638" />
@@ -296,7 +296,7 @@ export default function WelcomeCarousel({ onComplete, onSkip }: WelcomeCarouselP
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-2 h-2 rounded-full transition-colors duration-200 ${
-                index === currentSlide ? 'bg-[#D72638]' : 'bg-[#E5E7EB]'
+                index === currentSlide ? 'bg-[#D72638]' : 'bg-[#FECDD3]'
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
@@ -310,7 +310,7 @@ export default function WelcomeCarousel({ onComplete, onSkip }: WelcomeCarouselP
             <Button
               onClick={goBack}
               variant="outline"
-              className="h-[52px] px-4 border-[#E5E7EB] text-[#1F2937] rounded-xl"
+              className="h-[52px] px-4 border-[#D72638]/20 text-[#1F2937] rounded-xl"
             >
               <ChevronLeft className="w-5 h-5" />
             </Button>

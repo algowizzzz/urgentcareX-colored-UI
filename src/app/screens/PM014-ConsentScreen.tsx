@@ -44,7 +44,7 @@ export default function ConsentScreen({
           {/* Privacy Policy Card */}
           <button
             onClick={onViewPrivacyPolicy}
-            className="w-full bg-white border border-[#E5E7EB] rounded-2xl p-5 mb-4 text-left hover:bg-[#F3F4F6] transition-colors"
+            className="w-full bg-white border border-[#D72638]/20 rounded-2xl p-5 mb-4 text-left hover:bg-[#FEF2F2] transition-colors"
           >
             <div className="flex items-start gap-3">
               <div className="text-2xl">🔒</div>
@@ -65,7 +65,7 @@ export default function ConsentScreen({
           {/* Terms of Service Card */}
           <button
             onClick={onViewTermsOfService}
-            className="w-full bg-white border border-[#E5E7EB] rounded-2xl p-5 mb-4 text-left hover:bg-[#F3F4F6] transition-colors"
+            className="w-full bg-white border border-[#D72638]/20 rounded-2xl p-5 mb-4 text-left hover:bg-[#FEF2F2] transition-colors"
           >
             <div className="flex items-start gap-3">
               <div className="text-2xl">📄</div>
@@ -86,7 +86,7 @@ export default function ConsentScreen({
           {/* How We Use Your Data Card */}
           <button
             onClick={onViewDataUsage}
-            className="w-full bg-white border border-[#E5E7EB] rounded-2xl p-5 mb-4 text-left hover:bg-[#F3F4F6] transition-colors"
+            className="w-full bg-white border border-[#D72638]/20 rounded-2xl p-5 mb-4 text-left hover:bg-[#FEF2F2] transition-colors"
           >
             <div className="flex items-start gap-3">
               <div className="text-2xl">📋</div>
@@ -107,7 +107,7 @@ export default function ConsentScreen({
           {/* Important Disclaimer Card */}
           <button
             onClick={onViewDisclaimer}
-            className="w-full bg-white border border-[#E5E7EB] rounded-2xl p-5 mb-4 text-left hover:bg-[#F3F4F6] transition-colors"
+            className="w-full bg-white border border-[#D72638]/20 rounded-2xl p-5 mb-4 text-left hover:bg-[#FEF2F2] transition-colors"
           >
             <div className="flex items-start gap-3">
               <div className="text-2xl">⚠️</div>
@@ -128,7 +128,7 @@ export default function ConsentScreen({
           {/* HIPAA Notice Card */}
           <button
             onClick={onViewHIPAA}
-            className="w-full bg-white border border-[#E5E7EB] rounded-2xl p-5 mb-4 text-left hover:bg-[#F3F4F6] transition-colors"
+            className="w-full bg-white border border-[#D72638]/20 rounded-2xl p-5 mb-4 text-left hover:bg-[#FEF2F2] transition-colors"
           >
             <div className="flex items-start gap-3">
               <div className="text-2xl">🏥</div>
@@ -167,7 +167,7 @@ export default function ConsentScreen({
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button
           onClick={onContinue}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"

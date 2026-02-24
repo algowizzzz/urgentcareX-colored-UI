@@ -37,7 +37,7 @@ export default function CheckIn({
       </div>
 
       {/* Appointment Info */}
-      <div className="px-6 py-4 bg-[#F3F4F6] border-b border-[#E5E7EB]">
+      <div className="px-6 py-4 bg-[#FEF2F2] border-b border-[#E5E7EB]">
         <p className="text-sm text-[#6B7280] mb-1">Checking in for</p>
         <p className="text-base font-semibold text-[#1F2937]">{providerName}</p>
         <p className="text-sm text-[#6B7280] mt-1">Today at {appointmentTime}</p>
@@ -150,7 +150,7 @@ export default function CheckIn({
           <h3 className="text-base font-semibold text-[#1F2937] mb-3">
             Insurance Information
           </h3>
-          <div className="bg-[#F3F4F6] rounded-xl p-4 mb-3">
+          <div className="bg-[#FEF2F2] rounded-xl p-4 mb-3">
             <p className="text-sm font-medium text-[#1F2937] mb-1">Blue Cross Blue Shield</p>
             <p className="text-sm text-[#6B7280]">Member ID: ABC123456789</p>
           </div>
@@ -173,7 +173,7 @@ export default function CheckIn({
           <h3 className="text-base font-semibold text-[#1F2937] mb-3">
             Consent to Treat
           </h3>
-          <div className="bg-[#F3F4F6] rounded-xl p-4 mb-3">
+          <div className="bg-[#FEF2F2] rounded-xl p-4 mb-3">
             <p className="text-sm text-[#6B7280]">
               By checking in, you consent to examination and treatment by the healthcare provider. You understand that you are financially responsible for all charges not covered by insurance.
             </p>

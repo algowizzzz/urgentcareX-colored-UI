@@ -43,7 +43,7 @@ export default function SymptomCheckTranscript({ session, onBack, onFindCare }: 
       </div>
 
       {/* Session Info */}
-      <div className="px-6 py-4 bg-[#F3F4F6] border-b border-[#E5E7EB]">
+      <div className="px-6 py-4 bg-[#FEF2F2] border-b border-[#D72638]/20">
         <div className="flex items-center justify-between mb-2">
           <p className="text-xs text-[#6B7280]">
             {session.startedAt.toLocaleDateString('en-US', { 
@@ -83,7 +83,7 @@ export default function SymptomCheckTranscript({ session, onBack, onFindCare }: 
                   className={`rounded-2xl px-4 py-3 ${
                     message.sender === 'user'
                       ? 'bg-[#D72638] text-white rounded-tr-sm'
-                      : 'bg-[#F3F4F6] text-[#1F2937] rounded-tl-sm'
+                      : 'bg-[#FEF2F2] text-[#1F2937] rounded-tl-sm'
                   }`}
                 >
                   <p className="text-base">{message.text}</p>
@@ -95,7 +95,7 @@ export default function SymptomCheckTranscript({ session, onBack, onFindCare }: 
                     {message.options.map((option, index) => (
                       <div
                         key={index}
-                        className="w-full text-left px-4 py-3 bg-white border border-[#E5E7EB] rounded-xl text-sm text-[#6B7280]"
+                        className="w-full text-left px-4 py-3 bg-white border border-[#D72638]/20 rounded-xl text-sm text-[#6B7280]"
                       >
                         {option}
                       </div>
@@ -113,7 +113,7 @@ export default function SymptomCheckTranscript({ session, onBack, onFindCare }: 
       </div>
 
       {/* Bottom Notice */}
-      <div className="border-t border-[#E5E7EB] p-4 bg-[#F3F4F6]">
+      <div className="border-t border-[#D72638]/20 p-4 bg-[#FEF2F2]">
         <p className="text-xs text-center text-[#6B7280]">
           This is a read-only transcript of your symptom check conversation
         </p>
@@ -121,7 +121,7 @@ export default function SymptomCheckTranscript({ session, onBack, onFindCare }: 
 
       {/* Find Care Button - Only for completed sessions */}
       {session.status === 'completed' && onFindCare && (
-        <div className="bg-white border-t border-[#E5E7EB] p-4">
+        <div className="bg-white border-t border-[#D72638]/20 p-4">
           <Button
             onClick={onFindCare}
             className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E] flex items-center justify-center gap-2"

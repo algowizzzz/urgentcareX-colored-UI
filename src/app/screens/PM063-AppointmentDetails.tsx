@@ -79,7 +79,7 @@ export default function AppointmentDetails({
           </div>
 
           <div className="flex items-start gap-4 mb-4">
-            <div className="w-16 h-16 bg-[#F3F4F6] rounded-full flex items-center justify-center text-3xl">
+            <div className="w-16 h-16 bg-[#FEF2F2] rounded-full flex items-center justify-center text-3xl">
               {appointment.type === 'facility' ? '🏥' : '👨‍⚕️'}
             </div>
             <div className="flex-1">
@@ -210,7 +210,7 @@ export default function AppointmentDetails({
             <Button
               onClick={onReschedule}
               variant="outline"
-              className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+              className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
             >
               <Calendar className="w-5 h-5 mr-2" />
               Reschedule Appointment

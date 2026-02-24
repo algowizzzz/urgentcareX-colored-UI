@@ -61,7 +61,7 @@ export default function ProviderFeedback({
       <div className="flex-1 overflow-y-auto px-6 py-6">
         {/* Provider Info */}
         <div className="text-center mb-8">
-          <div className="w-20 h-20 bg-[#F3F4F6] rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
+          <div className="w-20 h-20 bg-[#FEF2F2] rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
             👨‍⚕️
           </div>
           <h3 className="text-xl font-bold text-[#1F2937] mb-2">
@@ -90,7 +90,7 @@ export default function ProviderFeedback({
                   className={`w-12 h-12 ${
                     star <= (hoveredRating || rating)
                       ? 'fill-[#F59E0B] text-[#F59E0B]'
-                      : 'text-[#E5E7EB]'
+                      : 'text-[#FECDD3]'
                   }`}
                 />
               </button>
@@ -120,7 +120,7 @@ export default function ProviderFeedback({
               value={feedback}
               onChange={(e) => setFeedback(e.target.value)}
               placeholder="What went well? What could be improved?"
-              className="w-full h-32 px-4 py-3 border border-[#E5E7EB] rounded-xl text-base resize-none focus:outline-none focus:border-[#D72638]"
+              className="w-full h-32 px-4 py-3 border border-[#D72638]/20 rounded-xl text-base resize-none focus:outline-none focus:border-[#D72638]"
             />
             <p className="text-xs text-[#6B7280] mt-2">
               Your feedback helps us improve our service

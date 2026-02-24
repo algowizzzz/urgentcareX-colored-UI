@@ -59,7 +59,7 @@ export default function SocialHistory({ onContinue, onSkip, onBack, initialData 
       className={`px-4 py-3 rounded-xl text-base font-medium transition-all ${
         selected
           ? 'bg-[#D72638] text-white'
-          : 'bg-white border border-[#E5E7EB] text-[#1F2937] hover:bg-[#F3F4F6]'
+          : 'bg-white border border-[#D72638]/20 text-[#1F2937] hover:bg-[#FEF2F2]'
       }`}
     >
       {label}
@@ -117,7 +117,7 @@ export default function SocialHistory({ onContinue, onSkip, onBack, initialData 
                 value={tobaccoDetails}
                 onChange={(e) => setTobaccoDetails(e.target.value)}
                 placeholder="e.g., 1 pack per day for 5 years"
-                className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base"
+                className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base"
               />
             )}
           </div>
@@ -143,7 +143,7 @@ export default function SocialHistory({ onContinue, onSkip, onBack, initialData 
                 value={alcoholDetails}
                 onChange={(e) => setAlcoholDetails(e.target.value)}
                 placeholder="e.g., 2-3 drinks per week"
-                className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base"
+                className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base"
               />
             )}
           </div>
@@ -169,7 +169,7 @@ export default function SocialHistory({ onContinue, onSkip, onBack, initialData 
                 value={drugsDetails}
                 onChange={(e) => setDrugsDetails(e.target.value)}
                 placeholder="Type (optional)"
-                className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base"
+                className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base"
               />
             )}
           </div>
@@ -192,7 +192,7 @@ export default function SocialHistory({ onContinue, onSkip, onBack, initialData 
           </div>
 
           {/* Privacy Notice */}
-          <div className="flex items-start gap-2 mb-6 p-4 bg-[#F3F4F6] rounded-xl">
+          <div className="flex items-start gap-2 mb-6 p-4 bg-[#FEF2F2] rounded-xl">
             <span className="text-lg">🔒</span>
             <p className="text-sm text-[#6B7280]">
               Your answers are confidential and help us provide better care.
@@ -202,12 +202,12 @@ export default function SocialHistory({ onContinue, onSkip, onBack, initialData 
       </div>
 
       {/* Fixed Bottom Buttons */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <div className="flex gap-3">
           <Button 
             onClick={onSkip}
             variant="outline"
-            className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             Skip
           </Button>

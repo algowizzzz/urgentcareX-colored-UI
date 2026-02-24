@@ -60,7 +60,7 @@ export default function InsuranceProviderSelection({ onSelectProvider, onBack }:
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="🔍 Search providers..."
-              className="h-[52px] rounded-xl border-[#E5E7EB] text-base pl-12"
+              className="h-[52px] rounded-xl border-[#D72638]/20 text-base pl-12"
             />
           </div>
 
@@ -74,7 +74,7 @@ export default function InsuranceProviderSelection({ onSelectProvider, onBack }:
               <button
                 key={provider.name}
                 onClick={() => onSelectProvider(provider.name)}
-                className="w-full bg-white border border-[#E5E7EB] rounded-xl p-4 flex items-center justify-between hover:bg-[#F3F4F6] transition-colors"
+                className="w-full bg-white border border-[#D72638]/20 rounded-xl p-4 flex items-center justify-between hover:bg-[#FEF2F2] transition-colors"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-xl">{provider.icon}</span>

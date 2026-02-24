@@ -74,7 +74,7 @@ export default function AppFeedback({ onSubmit, onSkip, onBack }: AppFeedbackPro
                   className={`w-12 h-12 ${
                     star <= (hoveredRating || rating)
                       ? 'fill-[#F59E0B] text-[#F59E0B]'
-                      : 'text-[#E5E7EB]'
+                      : 'text-[#FECDD3]'
                   }`}
                 />
               </button>
@@ -105,7 +105,7 @@ export default function AppFeedback({ onSubmit, onSkip, onBack }: AppFeedbackPro
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                     selectedCategory === category
                       ? 'bg-[#D72638] text-white'
-                      : 'bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]'
+                      : 'bg-[#FEF2F2] text-[#D72638] hover:bg-[#FECDD3]'
                   }`}
                 >
                   {category}
@@ -128,7 +128,7 @@ export default function AppFeedback({ onSubmit, onSkip, onBack }: AppFeedbackPro
               value={feedback}
               onChange={(e) => setFeedback(e.target.value)}
               placeholder="Share your thoughts..."
-              className="w-full h-32 px-4 py-3 border border-[#E5E7EB] rounded-xl text-base resize-none focus:outline-none focus:border-[#D72638]"
+              className="w-full h-32 px-4 py-3 border border-[#D72638]/20 rounded-xl text-base resize-none focus:outline-none focus:border-[#D72638]"
             />
             <p className="text-xs text-[#6B7280] mt-2">
               Your feedback is reviewed by our product team
@@ -167,7 +167,7 @@ export default function AppFeedback({ onSubmit, onSkip, onBack }: AppFeedbackPro
         )}
 
         {/* Privacy Notice */}
-        <div className="bg-[#F3F4F6] rounded-xl p-4">
+        <div className="bg-[#FEF2F2] rounded-xl p-4">
           <p className="text-xs text-[#6B7280]">
             Your feedback is confidential and helps us improve the app. We may contact you for clarification if needed.
           </p>
@@ -175,7 +175,7 @@ export default function AppFeedback({ onSubmit, onSkip, onBack }: AppFeedbackPro
       </div>
 
       {/* Fixed Bottom Buttons */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-[#E5E7EB] p-4 max-w-[390px] mx-auto">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-[#D72638]/20 p-4 max-w-[390px] mx-auto">
         <div className="space-y-3">
           <Button 
             onClick={handleSubmit}

@@ -136,7 +136,7 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
           label: 'Help & Support',
           action: () => onNavigate('help-support'),
           color: '#D72638',
-          bg: '#FEF2F2',
+          bg: '#F9FAFB',
           border: '#FECACA',
           icon: (
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -190,7 +190,7 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
             <Button
               onClick={() => onNavigate('edit-profile')}
               variant="outline"
-              className="w-full h-[44px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-sm font-medium hover:bg-[#F3F4F6]"
+              className="w-full h-[44px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-sm font-medium hover:bg-[#FEF2F2]"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="mr-2">
                 <circle cx="12" cy="8" r="4" stroke="#6B7280" strokeWidth="1.8" />
@@ -210,8 +210,8 @@ export default function Settings({ onNavigate, onLogout, onBack, onNavigateHome,
                 <button
                   key={item.label}
                   onClick={item.action}
-                  className={`w-full flex items-center justify-between p-3.5 hover:bg-[#F9FAFB] transition-colors ${
-                    idx < section.items.length - 1 ? 'border-b border-[#F3F4F6]' : ''
+                  className={`w-full flex items-center justify-between p-3.5 hover:bg-[#FEF2F2] transition-colors ${
+                    idx < section.items.length - 1 ? 'border-b border-[#E5E7EB]' : ''
                   }`}
                 >
                   <div className="flex items-center gap-3">

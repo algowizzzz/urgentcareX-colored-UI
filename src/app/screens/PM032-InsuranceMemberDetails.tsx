@@ -72,7 +72,7 @@ export default function InsuranceMemberDetails({ providerName, onContinue, onBac
                 value={memberId}
                 onChange={(e) => setMemberId(e.target.value)}
                 placeholder="BCB789456123"
-                className="h-[52px] rounded-xl border-[#E5E7EB] text-base"
+                className="h-[52px] rounded-xl border-[#D72638]/20 bg-[#FEF2F2] text-base"
               />
             </div>
 
@@ -87,7 +87,7 @@ export default function InsuranceMemberDetails({ providerName, onContinue, onBac
                 value={groupNumber}
                 onChange={(e) => setGroupNumber(e.target.value)}
                 placeholder="GRP-LA-2024"
-                className="h-[52px] rounded-xl border-[#E5E7EB] text-base"
+                className="h-[52px] rounded-xl border-[#D72638]/20 bg-[#FEF2F2] text-base"
               />
             </div>
 
@@ -102,7 +102,7 @@ export default function InsuranceMemberDetails({ providerName, onContinue, onBac
                 value={subscriberName}
                 onChange={(e) => setSubscriberName(e.target.value)}
                 placeholder="Maria Garcia"
-                className="h-[52px] rounded-xl border-[#E5E7EB] text-base"
+                className="h-[52px] rounded-xl border-[#D72638]/20 bg-[#FEF2F2] text-base"
               />
             </div>
 
@@ -115,7 +115,7 @@ export default function InsuranceMemberDetails({ providerName, onContinue, onBac
                 id="relationship"
                 value={relationship}
                 onChange={(e) => setRelationship(e.target.value)}
-                className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base"
+                className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 bg-[#FEF2F2] text-base"
               >
                 {RELATIONSHIPS.map(rel => (
                   <option key={rel} value={rel}>{rel}</option>
@@ -125,7 +125,7 @@ export default function InsuranceMemberDetails({ providerName, onContinue, onBac
           </div>
 
           {/* Help Link */}
-          <button className="w-full mb-6 p-4 bg-[#F3F4F6] rounded-xl text-left hover:bg-[#E5E7EB] transition-colors">
+          <button className="w-full mb-6 p-4 bg-[#FEF2F2] rounded-xl text-left hover:bg-[#FECDD3] transition-colors">
             <div className="flex items-center gap-2">
               <span className="text-xl">💡</span>
               <span className="text-base text-[#1F2937]">Where do I find this?</span>
@@ -135,7 +135,7 @@ export default function InsuranceMemberDetails({ providerName, onContinue, onBac
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button 
           onClick={handleContinue}
           disabled={!isValid}

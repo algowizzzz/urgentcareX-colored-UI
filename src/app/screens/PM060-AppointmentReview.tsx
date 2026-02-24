@@ -39,7 +39,7 @@ export default function AppointmentReview({
           </h3>
 
           {/* Provider Details */}
-          <div className="border border-[#E5E7EB] rounded-2xl p-5 mb-4">
+          <div className="border border-[#D72638]/20 rounded-2xl p-5 mb-4">
             <div className="flex items-start gap-3 mb-4">
               <User className="w-5 h-5 text-[#6B7280] mt-0.5" />
               <div className="flex-1">
@@ -89,7 +89,7 @@ export default function AppointmentReview({
           </div>
 
           {/* Insurance */}
-          <div className="border border-[#E5E7EB] rounded-2xl p-5 mb-6">
+          <div className="border border-[#D72638]/20 rounded-2xl p-5 mb-6">
             <div className="flex items-center gap-3">
               <CreditCard className="w-5 h-5 text-[#6B7280]" />
               <div className="flex-1">
@@ -107,7 +107,7 @@ export default function AppointmentReview({
               Important Reminders
             </h3>
             <div className="space-y-3">
-              <div className="flex items-start gap-3 p-4 bg-[#F3F4F6] rounded-xl">
+              <div className="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl">
                 <span className="text-lg">⏰</span>
                 <div>
                   <p className="text-sm font-medium text-[#1F2937] mb-1">Arrive Early</p>
@@ -115,7 +115,7 @@ export default function AppointmentReview({
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 p-4 bg-[#F3F4F6] rounded-xl">
+              <div className="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl">
                 <span className="text-lg">📋</span>
                 <div>
                   <p className="text-sm font-medium text-[#1F2937] mb-1">What to Bring</p>
@@ -123,7 +123,7 @@ export default function AppointmentReview({
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 p-4 bg-[#F3F4F6] rounded-xl">
+              <div className="flex items-start gap-3 p-4 bg-[#FEF2F2] rounded-xl">
                 <span className="text-lg">📱</span>
                 <div>
                   <p className="text-sm font-medium text-[#1F2937] mb-1">Appointment Reminders</p>
@@ -146,7 +146,7 @@ export default function AppointmentReview({
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-[#E5E7EB] p-4 max-w-[390px] mx-auto">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-[#D72638]/20 p-4 max-w-[390px] mx-auto">
         <Button 
           onClick={onConfirm}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"

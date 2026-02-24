@@ -24,7 +24,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
       </div>
       <div className="flex-1 overflow-y-auto px-6 py-6 space-y-6">
         {/* Contact Support */}
-        <div className="bg-[#FEF2F2] border border-[#D72638]/20 rounded-xl p-5">
+        <div className="bg-[#FEF2F2] border border-[#E5E7EB] rounded-xl p-5">
           <h3 className="text-base font-semibold text-[#1F2937] mb-3">Contact Support</h3>
           <p className="text-sm text-[#6B7280] mb-2">
             Need help? Email us anytime:
@@ -44,7 +44,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
         <div>
           <h3 className="text-lg font-semibold text-[#1F2937] mb-4">Frequently Asked Questions</h3>
           <div className="space-y-4">
-            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
+            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 How do I book an appointment?
               </h4>
@@ -53,7 +53,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
               </p>
             </div>
 
-            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
+            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 How does the AI symptom checker work?
               </h4>
@@ -62,7 +62,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
               </p>
             </div>
 
-            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
+            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 Is my health information secure?
               </h4>
@@ -71,7 +71,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
               </p>
             </div>
 
-            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
+            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 Can I book for family members?
               </h4>
@@ -80,7 +80,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
               </p>
             </div>
 
-            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
+            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 What if I need to cancel my appointment?
               </h4>
@@ -89,7 +89,7 @@ export function HelpSupport({ onBack }: { onBack: () => void }) {
               </p>
             </div>
 
-            <div className="bg-white border border-[#D72638]/20 rounded-xl p-4">
+            <div className="bg-white border border-[#E5E7EB] rounded-xl p-4">
               <h4 className="text-base font-semibold text-[#1F2937] mb-2">
                 Do you accept insurance?
               </h4>

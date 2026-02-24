@@ -33,14 +33,14 @@ export default function ROSIntro({ onStart, onSkip, onBack }: ROSIntroProps) {
         </h1>
 
         {/* Disclaimer Card */}
-        <div className="bg-[#F3F4F6] rounded-xl p-5 mb-4">
+        <div className="bg-[#FEF2F2] rounded-xl p-5 mb-4">
           <p className="text-sm text-[#6B7280]">
             To help you save time at the doctor's office, please complete this questionnaire.
           </p>
         </div>
 
         {/* Info Card */}
-        <div className="bg-[#F3F4F6] rounded-xl p-5 mb-6">
+        <div className="bg-[#FEF2F2] rounded-xl p-5 mb-6">
           <h3 className="text-base font-semibold text-[#1F2937] mb-3">
             What is the {QUESTIONNAIRE_NAME}?
           </h3>
@@ -54,7 +54,7 @@ export default function ROSIntro({ onStart, onSkip, onBack }: ROSIntroProps) {
           <Button 
             onClick={onSkip}
             variant="outline"
-            className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             Skip
           </Button>

@@ -22,7 +22,7 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
           {/* Last Updated */}
           <p className="text-sm text-[#6B7280] mb-6">Last Updated: January 2026</p>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Section 1 */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -38,7 +38,7 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
             <li>Location data</li>
           </ul>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Section 2 */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -56,7 +56,7 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
             <li>Comply with legal obligations</li>
           </ul>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Section 3 */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -75,7 +75,7 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
             We never sell your personal health information to third parties.
           </p>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Section 4 */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -87,7 +87,7 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
             All health data is encrypted both in transit and at rest.
           </p>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Section 5 */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -104,7 +104,7 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
             <li>Export your data</li>
           </ul>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Section 6 */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -116,7 +116,7 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
             cookie preferences in your device settings.
           </p>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Section 7 */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -127,7 +127,7 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
             knowingly collect information from children without parental consent.
           </p>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Section 8 */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -138,7 +138,7 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
             you of any material changes via email or in-app notification.
           </p>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Section 9 */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
@@ -150,7 +150,7 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
             processed in the United States.
           </p>
 
-          <div className="h-px bg-[#E5E7EB] mb-6"></div>
+          <div className="h-px bg-[#FECDD3] mb-6"></div>
 
           {/* Section 10 */}
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">

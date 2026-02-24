@@ -107,7 +107,7 @@ export default function PastSurgeries({ onContinue, onSkip, onBack, initialData 
           <Button 
             onClick={() => setShowModal(true)}
             variant="outline"
-            className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6] mb-6"
+            className="w-full h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2] mb-6"
           >
             + Add Surgery
           </Button>
@@ -122,7 +122,7 @@ export default function PastSurgeries({ onContinue, onSkip, onBack, initialData 
                 {surgeries.map((surgery) => (
                   <div
                     key={surgery.id}
-                    className="bg-white border border-[#E5E7EB] rounded-xl p-4 flex items-start justify-between"
+                    className="bg-white border border-[#D72638]/20 rounded-xl p-4 flex items-start justify-between"
                   >
                     <div>
                       <p className="text-base font-semibold text-[#1F2937] mb-1">
@@ -132,7 +132,7 @@ export default function PastSurgeries({ onContinue, onSkip, onBack, initialData 
                     </div>
                     <button
                       onClick={() => handleRemoveSurgery(surgery.id)}
-                      className="p-2 hover:bg-[#F3F4F6] rounded-lg transition-colors"
+                      className="p-2 hover:bg-[#FEF2F2] rounded-lg transition-colors"
                     >
                       <X className="w-5 h-5 text-[#6B7280]" />
                     </button>
@@ -145,12 +145,12 @@ export default function PastSurgeries({ onContinue, onSkip, onBack, initialData 
       </div>
 
       {/* Fixed Bottom Buttons */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <div className="flex gap-3">
           <Button 
             onClick={onSkip}
             variant="outline"
-            className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             Skip
           </Button>
@@ -177,7 +177,7 @@ export default function PastSurgeries({ onContinue, onSkip, onBack, initialData 
                 <select
                   value={surgeryType}
                   onChange={(e) => setSurgeryType(e.target.value)}
-                  className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base"
+                  className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base"
                 >
                   <option value="">Select surgery type...</option>
                   {surgeryTypes.map(type => (
@@ -190,7 +190,7 @@ export default function PastSurgeries({ onContinue, onSkip, onBack, initialData 
                     value={customSurgeryType}
                     onChange={(e) => setCustomSurgeryType(e.target.value)}
                     placeholder="Enter surgery type"
-                    className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base mt-2"
+                    className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base mt-2"
                   />
                 )}
               </div>
@@ -202,7 +202,7 @@ export default function PastSurgeries({ onContinue, onSkip, onBack, initialData 
                 <select
                   value={surgeryYear}
                   onChange={(e) => setSurgeryYear(e.target.value)}
-                  className="w-full h-[52px] px-4 rounded-xl border border-[#E5E7EB] text-base"
+                  className="w-full h-[52px] px-4 rounded-xl border border-[#D72638]/20 text-base"
                 >
                   <option value="">Select year...</option>
                   {years.map(year => (
@@ -221,7 +221,7 @@ export default function PastSurgeries({ onContinue, onSkip, onBack, initialData 
                   setSurgeryYear('');
                 }}
                 variant="outline"
-                className="flex-1 h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium"
+                className="flex-1 h-[52px] border-[#D72638]/20 text-[#1F2937] rounded-xl text-base font-medium"
               >
                 Cancel
               </Button>

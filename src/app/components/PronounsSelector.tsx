@@ -76,8 +76,8 @@ export default function PronounsSelector({
               onClick={() => handleOptionClick(option.id)}
               className={`h-[52px] rounded-xl border-2 text-base font-medium transition-all ${
                 isSelected
-                  ? 'border-[#D72638] bg-[#F3F4F6]'
-                  : 'border-[#E5E7EB] bg-white'
+                  ? 'border-[#D72638] bg-[#FEF2F2]'
+                  : 'border-[#D72638]/20 bg-white hover:bg-[#FEF2F2]'
               }`}
             >
               {option.label}
@@ -93,7 +93,7 @@ export default function PronounsSelector({
           placeholder="Enter your pronouns (e.g., xe/xem)"
           value={customValue}
           onChange={(e) => handleCustomInputChange(e.target.value)}
-          className="h-[52px] rounded-xl border-[#E5E7EB] text-base mt-3"
+          className="h-[52px] rounded-xl border-[#D72638]/20 text-base mt-3"
         />
       )}
     </div>

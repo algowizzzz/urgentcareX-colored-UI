@@ -68,7 +68,7 @@ export default function BasicInfoDOBSex({ onContinue, onBack, initialData }: Bas
                 type="date"
                 value={dateOfBirth}
                 onChange={(e) => setDateOfBirth(e.target.value)}
-                className="h-[52px] rounded-xl border-[#E5E7EB] text-base pr-12"
+                className="h-[52px] rounded-xl border-[#D72638]/20 text-base pr-12"
                 max={new Date().toISOString().split('T')[0]}
               />
               <Calendar className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#6B7280] pointer-events-none" />
@@ -95,8 +95,8 @@ export default function BasicInfoDOBSex({ onContinue, onBack, initialData }: Bas
                 onClick={() => setSex('male')}
                 className={`h-[72px] rounded-xl border-2 text-base font-medium transition-all ${
                   sex === 'male'
-                    ? 'border-[#D72638] bg-[#F3F4F6]'
-                    : 'border-[#E5E7EB] bg-white'
+                    ? 'border-[#D72638] bg-[#FEF2F2]'
+                    : 'border-[#D72638]/20 bg-white hover:bg-[#FEF2F2]'
                 }`}
               >
                 <div className="flex flex-col items-center justify-center">
@@ -109,8 +109,8 @@ export default function BasicInfoDOBSex({ onContinue, onBack, initialData }: Bas
                 onClick={() => setSex('female')}
                 className={`h-[72px] rounded-xl border-2 text-base font-medium transition-all ${
                   sex === 'female'
-                    ? 'border-[#D72638] bg-[#F3F4F6]'
-                    : 'border-[#E5E7EB] bg-white'
+                    ? 'border-[#D72638] bg-[#FEF2F2]'
+                    : 'border-[#D72638]/20 bg-white hover:bg-[#FEF2F2]'
                 }`}
               >
                 <div className="flex flex-col items-center justify-center">
@@ -124,8 +124,8 @@ export default function BasicInfoDOBSex({ onContinue, onBack, initialData }: Bas
               onClick={() => setSex('prefer-not-to-say')}
               className={`w-full h-[52px] rounded-xl border-2 text-base font-medium transition-all ${
                 sex === 'prefer-not-to-say'
-                  ? 'border-[#D72638] bg-[#F3F4F6]'
-                  : 'border-[#E5E7EB] bg-white'
+                  ? 'border-[#D72638] bg-[#FEF2F2]'
+                  : 'border-[#D72638]/20 bg-white hover:bg-[#FEF2F2]'
               }`}
             >
               Prefer not to say
@@ -141,7 +141,7 @@ export default function BasicInfoDOBSex({ onContinue, onBack, initialData }: Bas
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button 
           onClick={handleContinue}
           disabled={!isValid}

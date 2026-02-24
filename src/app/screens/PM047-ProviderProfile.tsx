@@ -88,7 +88,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
         </div>
 
         {/* About */}
-        <div className="px-6 py-6 border-t border-[#E5E7EB]">
+        <div className="px-6 py-6 border-t border-[#D72638]/20">
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">About</h2>
           <p className="text-base text-[#6B7280] mb-4">
             {provider.type === 'facility' 
@@ -100,7 +100,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
 
         {/* Credentials */}
         {provider.type === 'doctor' && (
-          <div className="px-6 py-6 border-t border-[#E5E7EB]">
+          <div className="px-6 py-6 border-t border-[#D72638]/20">
             <h2 className="text-xl font-semibold text-[#1F2937] mb-4">Credentials & Experience</h2>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
@@ -130,7 +130,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
 
         {/* Facility Hours & Services */}
         {provider.type === 'facility' && (
-          <div className="px-6 py-6 border-t border-[#E5E7EB]">
+          <div className="px-6 py-6 border-t border-[#D72638]/20">
             <h2 className="text-xl font-semibold text-[#1F2937] mb-4">Hours & Services</h2>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
@@ -169,7 +169,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
         )}
 
         {/* Specialties */}
-        <div className="px-6 py-6 border-t border-[#E5E7EB]">
+        <div className="px-6 py-6 border-t border-[#D72638]/20">
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">Specialties</h2>
           <div className="flex flex-wrap gap-2">
             {['Preventive Care', 'Chronic Disease', 'Diabetes Management', 'Hypertension', 'Annual Checkups'].map((specialty) => (
@@ -181,7 +181,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
         </div>
 
         {/* Location */}
-        <div className="px-6 py-6 border-t border-[#E5E7EB]">
+        <div className="px-6 py-6 border-t border-[#D72638]/20">
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">Location</h2>
           <div className="bg-[#FEF2F2] rounded-xl p-4 mb-3">
             <p className="text-sm font-medium text-[#1F2937] mb-1">UrgentCareX Medical Center</p>
@@ -194,12 +194,12 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
         </div>
 
         {/* Reviews */}
-        <div className="px-6 py-6 border-t border-[#E5E7EB]">
+        <div className="px-6 py-6 border-t border-[#D72638]/20">
           <h2 className="text-xl font-semibold text-[#1F2937] mb-4">
             {provider.type === 'facility' ? 'Facility Reviews' : 'Patient Reviews'}
           </h2>
           <div className="space-y-4">
-            <div className="border border-[#E5E7EB] rounded-xl p-4 border-l-4 border-l-[#D72638]">
+            <div className="border border-[#D72638]/20 rounded-xl p-4 border-l-4 border-l-[#D72638]">
               <div className="flex items-center gap-2 mb-2">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
@@ -218,13 +218,13 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
             </div>
             {provider.type === 'facility' && (
               <>
-                <div className="border border-[#E5E7EB] rounded-xl p-4 border-l-4 border-l-[#D72638]">
+                <div className="border border-[#D72638]/20 rounded-xl p-4 border-l-4 border-l-[#D72638]">
                   <div className="flex items-center gap-2 mb-2">
                     <div className="flex">
                       {[...Array(4)].map((_, i) => (
                         <Star key={i} className="w-4 h-4 fill-[#F59E0B] text-[#F59E0B]" />
                       ))}
-                      <Star className="w-4 h-4 text-[#E5E7EB]" />
+                      <Star className="w-4 h-4 text-[#FECDD3]" />
                     </div>
                     <span className="text-sm text-[#6B7280]">1 month ago</span>
                   </div>
@@ -233,7 +233,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
                   </p>
                   <p className="text-xs text-[#6B7280]">- Maria S.</p>
                 </div>
-                <div className="border border-[#E5E7EB] rounded-xl p-4 border-l-4 border-l-[#D72638]">
+                <div className="border border-[#D72638]/20 rounded-xl p-4 border-l-4 border-l-[#D72638]">
                   <div className="flex items-center gap-2 mb-2">
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (
@@ -254,7 +254,7 @@ export default function ProviderProfile({ provider, onBookAppointment, onBack }:
       </div>
 
       {/* Fixed Bottom Button */}
-      <div className="bg-white border-t border-[#E5E7EB] p-4">
+      <div className="bg-white border-t border-[#D72638]/20 p-4">
         <Button
           onClick={onBookAppointment}
           className="w-full h-[52px] bg-[#D72638] text-white rounded-xl text-base font-medium hover:bg-[#B91C2E]"

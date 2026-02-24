@@ -63,7 +63,7 @@ export default function CancelAppointment({
         </p>
 
         {/* Appointment Info */}
-        <div className="bg-[#F3F4F6] rounded-xl p-5 mb-6">
+        <div className="bg-[#FEF2F2] rounded-xl p-5 mb-6">
           <p className="text-sm text-[#6B7280] mb-2">Appointment Being Cancelled</p>
           <p className="text-base font-semibold text-[#1F2937] mb-1">{providerName}</p>
           <p className="text-sm text-[#6B7280]">
@@ -83,7 +83,7 @@ export default function CancelAppointment({
           <Button 
             onClick={onBack}
             variant="outline"
-            className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#F3F4F6]"
+            className="w-full h-[52px] border-[#E5E7EB] text-[#1F2937] rounded-xl text-base font-medium hover:bg-[#FEF2F2]"
           >
             Keep Appointment
           </Button>
