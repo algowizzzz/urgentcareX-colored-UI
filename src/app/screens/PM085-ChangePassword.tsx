@@ -47,7 +47,7 @@ export default function ChangePassword({ onSave, onBack }: ChangePasswordProps) 
                 type={showCurrent ? 'text' : 'password'}
                 value={currentPassword}
                 onChange={(e) => setCurrentPassword(e.target.value)}
-                className="w-full h-[52px] px-4 pr-12 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#D72638]"
+                className="w-full h-[52px] px-4 pr-12 border border-[#E5E7EB] rounded-xl text-base bg-[#FEF2F2] focus:outline-none focus:border-[#D72638]"
                 placeholder="Enter current password"
               />
               <button
@@ -74,7 +74,7 @@ export default function ChangePassword({ onSave, onBack }: ChangePasswordProps) 
                 type={showNew ? 'text' : 'password'}
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
-                className="w-full h-[52px] px-4 pr-12 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#D72638]"
+                className="w-full h-[52px] px-4 pr-12 border border-[#E5E7EB] rounded-xl text-base bg-[#FEF2F2] focus:outline-none focus:border-[#D72638]"
                 placeholder="Enter new password"
               />
               <button
@@ -130,7 +130,7 @@ export default function ChangePassword({ onSave, onBack }: ChangePasswordProps) 
                 type={showConfirm ? 'text' : 'password'}
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="w-full h-[52px] px-4 pr-12 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#D72638]"
+                className="w-full h-[52px] px-4 pr-12 border border-[#E5E7EB] rounded-xl text-base bg-[#FEF2F2] focus:outline-none focus:border-[#D72638]"
                 placeholder="Confirm new password"
               />
               <button
