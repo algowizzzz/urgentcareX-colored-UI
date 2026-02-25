@@ -187,7 +187,6 @@ export default function Dashboard({
               <h2 className="text-base font-semibold text-[#1F2937]">
                 How can we help you today?
               </h2>
-              <p className="text-xs text-[#9CA3AF]">AI-powered symptom assessment</p>
             </div>
           </div>
           <Button
