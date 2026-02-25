@@ -246,7 +246,7 @@ export default function WelcomeCarousel({ onComplete, onSkip }: WelcomeCarouselP
       <div className="flex justify-end p-4">
         <button
           onClick={onSkip}
-          className="text-base font-medium text-[#6B7280]"
+          className="text-base font-medium text-[#D72638]"
         >
           Skip
         </button>

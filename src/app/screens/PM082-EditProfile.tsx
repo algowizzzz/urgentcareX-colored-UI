@@ -56,7 +56,7 @@ export default function EditProfile({ onSave, onBack }: EditProfileProps) {
               type="text"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
-              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#D72638]"
+              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base bg-[#FEF2F2] focus:outline-none focus:border-[#D72638]"
             />
           </div>
 
@@ -68,7 +68,7 @@ export default function EditProfile({ onSave, onBack }: EditProfileProps) {
               type="text"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
-              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#D72638]"
+              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base bg-[#FEF2F2] focus:outline-none focus:border-[#D72638]"
             />
           </div>
 
@@ -93,7 +93,7 @@ export default function EditProfile({ onSave, onBack }: EditProfileProps) {
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#D72638]"
+              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base bg-[#FEF2F2] focus:outline-none focus:border-[#D72638]"
             />
             <p className="text-xs text-[#6B7280] mt-1">Providers may call to coordinate appointment details</p>
           </div>
@@ -106,7 +106,7 @@ export default function EditProfile({ onSave, onBack }: EditProfileProps) {
               type="date"
               value={dateOfBirth}
               onChange={(e) => setDateOfBirth(e.target.value)}
-              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base focus:outline-none focus:border-[#D72638]"
+              className="w-full h-[52px] px-4 border border-[#E5E7EB] rounded-xl text-base bg-[#FEF2F2] focus:outline-none focus:border-[#D72638]"
             />
           </div>
 

@@ -161,8 +161,8 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
           <div>
             <h2 className="text-[15px] font-semibold text-white leading-tight">Symptom Checker</h2>
             <div className="flex items-center gap-1">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#10B981]"></div>
-              <span className="text-[11px] text-[#10B981] font-medium">AI Online</span>
+              <div className="w-1.5 h-1.5 rounded-full bg-white"></div>
+              <span className="text-[11px] text-white font-medium">AI Online</span>
             </div>
           </div>
         </div>
