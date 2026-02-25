@@ -82,7 +82,7 @@ export default function BottomNavigation({
 }: BottomNavigationProps) {
   const tabs = [
     { id: 'home' as NavTab, label: 'Home', icon: HomeIcon, onClick: onNavigateHome },
-    { id: 'appointments' as NavTab, label: 'Appointments', icon: AppointmentsIcon, onClick: onNavigateAppointments },
+    { id: 'appointments' as NavTab, label: 'Bookings', icon: AppointmentsIcon, onClick: onNavigateAppointments },
     { id: null, label: 'AI Chat', icon: null, onClick: onNavigateChat },
     { id: 'history' as NavTab, label: 'History', icon: HistoryIcon, onClick: onNavigateHistory },
     { id: 'profile' as NavTab, label: 'Profile', icon: ProfileIcon, onClick: onNavigateProfile },
