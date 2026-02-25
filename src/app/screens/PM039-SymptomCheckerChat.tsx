@@ -155,8 +155,8 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
           <ArrowLeft className="w-5 h-5 text-white" />
         </button>
         <div className="flex items-center gap-2.5 flex-1">
-          <div className="w-9 h-9 bg-white/20 rounded-xl flex items-center justify-center">
-            <img src={logo} alt="UrgentCareX" className="w-6 h-6 brightness-0 invert" />
+          <div className="w-9 h-9 bg-[#1A1A1A] rounded-xl flex items-center justify-center">
+            <img src={logo} alt="UrgentCareX" className="w-6 h-6" />
           </div>
           <div>
             <h2 className="text-[15px] font-semibold text-white leading-tight">Symptom Checker</h2>
@@ -179,8 +179,8 @@ export default function SymptomCheckerChat({ onComplete, onBack }: SymptomChecke
               <div className="max-w-[80%]">
                 {message.sender === 'ai' && (
                   <div className="flex items-center gap-2 mb-1.5">
-                    <div className="w-7 h-7 bg-[#D72638] rounded-lg flex items-center justify-center">
-                      <img src={logo} alt="UrgentCareX" className="w-5 h-5 brightness-0 invert" />
+                    <div className="w-7 h-7 bg-[#1A1A1A] rounded-lg flex items-center justify-center">
+                      <img src={logo} alt="UrgentCareX" className="w-5 h-5" />
                     </div>
                     <span className="text-[11px] text-[#9CA3AF] font-medium">UrgentCareX AI</span>
                   </div>
