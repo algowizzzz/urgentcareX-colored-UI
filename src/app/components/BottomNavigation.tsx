@@ -89,7 +89,7 @@ export default function BottomNavigation({
   ];
 
   return (
-    <div className="bg-white border-t border-[#E5E7EB] pb-2 pt-1.5 relative" style={{ boxShadow: '0 -2px 10px rgba(0,0,0,0.04)', display: 'grid', gridTemplateColumns: '1.15fr 1.05fr 1fr 1fr 0.8fr' }}>
+    <div className="bg-white border-t border-[#E5E7EB] pb-2 pt-1.5 relative" style={{ boxShadow: '0 -2px 10px rgba(0,0,0,0.04)', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr' }}>
       {tabs.map((tab) => {
         // Center FAB button
         if (tab.id === null) {
